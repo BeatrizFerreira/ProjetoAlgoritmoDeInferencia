@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:p="http://primefaces.prime.com.tr/ui"
+	  xmlns:f="http://java.sun.com/jsf/core">
+	  
+	  <h:head>
+	  	<title>Bem vindo ao sistema</title>
+	  </h:head>
+	  
+	  <div id="format" class="ui-widget ui-widget-header" align="center">
+			<div id="logo" >
+				<h1>Olá, Seja Bem Vindo!!!</h1>
+			</div>
+		</div>
+	  
+	  <h:body style="background-color: #AEE0F0; margin-top: 20px; width: 1256px; margin-right: 90px; position: absolute; left: 115px; font-size: 12px;">
+	<!-- <p:themeSwitcher initialText="Mudar thema: " buttonPreText="Tema: "/> -->
+	<h:form>
+	
+	<p:breadCrumb preview="true" expandEffectDuration="200" previewWidth="24">
+		<p:menuitem value="Categorias" url="usuario.jsf"/>  
+	    <p:menuitem value="Cadastre-se" url="usuario.jsf" />  
+	    <p:menuitem value="Crétido" url="usuario.jsf" />  
+	    <p:menuitem value="Cartões" url="usuario.jsf" />  
+	    <p:menuitem value="Investimento" url="usuario.jsf" />  
+	    <p:menuitem value="Seguros" url="usuario.jsf" />  
+	    <p:menuitem value="Previdência" url="usuario.jsf" />  
+	</p:breadCrumb>
+		
+		  <p:panel header="..:: Banco XPTO ::..">
+		 
+		  	<p:commandButton action="#{usuarioBean.novo}" value="Cadastre-se" ajax="false" style="width: 100px"/><br/>
+		  	<p:commandButton action="#{usuarioBean.novo}" value="Crédito" ajax="false" style="width: 100px"/><br/>
+		  	<p:commandButton action="#{usuarioBean.novo}" value="Cartões" ajax="false" style="width: 100px"/><br/>
+		  	<p:commandButton action="#{usuarioBean.novo}" value="Investimento" ajax="false" style="width: 100px"/><br/>
+		  	<p:commandButton action="#{usuarioBean.novo}" value="Seguros" ajax="false" style="width: 100px"/><br/>
+		  	<p:commandButton action="#{usuarioBean.novo}" value="Previdência" ajax="false" style="width: 100px"/><br/>
+		  	
+		   <h:panelGrid columns="2">
+		  	<p:menu type="tiered" style="width:180px">  
+        <p:submenu label="Gerência" icon="ui-icon ui-icon-refresh" >  
+            <p:menuitem value="Cadastrar" url="usuario.jsf"  update="messages" icon="ui-icon ui-icon-disk" />  
+            <p:menuitem value="Listar" url="listagem.jsf" update="messages" icon="ui-icon ui-icon-arrowrefresh-1-w" />  
+        </p:submenu>  
+        <p:submenu label="Cartões" icon="ui-icon ui-icon-newwin">  
+            <p:menuitem value="Crédito" url="usuario.jsf" update="messages" ajax="false" icon="ui-icon ui-icon-close"/>  
+        </p:submenu>  
+        <p:submenu label="Relacionamento" icon="ui-icon ui-icon-extlink">  
+            <p:submenu label="Prime Links">  
+                <p:menuitem value="Prime" url="http://www.prime.com.tr" />  
+                <p:menuitem value="PrimeFaces" url="http://www.primefaces.org" />  
+            </p:submenu>  
+            <p:menuitem value="TouchFaces" url="usuario.jsf" />  
+        </p:submenu>  
+    </p:menu>  
+    </h:panelGrid>
+		  </p:panel>
+		  
+		  
+		  
+		  
+		  </h:form>
+
+	  </h:body>
+	  
+</html>

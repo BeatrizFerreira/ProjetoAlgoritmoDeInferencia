@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ns1="http://www.ime.usp.br/ontolattes#"
+   xmlns:ns2="http://www.semanticlattes.com.br/curriculo#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#form-acadf44d78c4-d56c-4e0a-aff1-47f1cbb3d4e6-luiz-carlos-miyadaira-ribeiro-junior">
+    <ns1:tituloDoTrabalhoDeConclusaoDeCurso></ns1:tituloDoTrabalhoDeConclusaoDeCurso>
+    <ns1:nivel>Graduação em Tecnologia em Processamento de Dados</ns1:nivel>
+    <ns1:anoDeInicio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</ns1:anoDeInicio>
+    <ns1:anoDeConclusao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</ns1:anoDeConclusao>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#Graduacao"/>
+    <ns1:realizadoNaInstituicao rdf:resource="http://www.ime.usp.br/ontolattes#inst-faculdade-de-informática-de-lins"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_orientacao_060ca266-6d7f-4132-bc21-62acf6d3e2e0">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Orientacao"/>
+    <ns2:temOrientado rdf:resource="http://www.semanticlattes.com.br/curriculo#_estudante_060ca266-6d7f-4132-bc21-62acf6d3e2e0"/>
+    <ns2:temTrabalho rdf:resource="http://www.semanticlattes.com.br/curriculo#_trabalho_060ca266-6d7f-4132-bc21-62acf6d3e2e0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#dba-detalhes-b99438c8-2138-4a62-b17b-902651915ae3">
+    <ns1:realizadoNaInstituicao rdf:resource="http://www.ime.usp.br/ontolattes#inst-iniciação-científica-(graduando-em-engenharia-de-software)---universidade-de-brasília"/>
+    <ns1:tipoDeOrientacao>Orientador</ns1:tipoDeOrientacao>
+    <ns1:nomeDoOrientado>Kamilla Holanda Crozara</ns1:nomeDoOrientado>
+    <ns1:financiadoPelaAgencia rdf:resource="http://www.ime.usp.br/ontolattes#agencia-fundação-universidade-de-brasília"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDaOrientacaoEmAndamentoDeIniciacaoCientifica"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-2021be82-2dd5-45be-bfbb-3a9f6c031263">
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+    <ns1:autor> RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+    <ns1:autor>FIGUEIREDO, R.M.C </ns1:autor>
+    <ns1:titulo>Graduação em Engenharia de Software: uma proposta de flexibilização e interdisciplinaridade</ns1:titulo>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:autor> CANEDO, E. D. </ns1:autor>
+    <ns1:autor> CHAIM, R. M. </ns1:autor>
+    <ns1:autor> SALES, A.B. </ns1:autor>
+    <ns1:autor> ROCHA, A. </ns1:autor>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:autor> SANTOS, G. A. </ns1:autor>
+    <ns1:autor> RAMOS, C.S</ns1:autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-4c5d8b18-44d2-46ec-909f-84edf9a161b2">
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2004</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-dfeade45-17e4-4fbf-ae45-a7a738bfe2a1">
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:titulo>quantum computational paths</ns1:titulo>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:temRelevancia>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-bf44ed5a-59bf-47dd-8c6f-db41d653a95f">
+    <ns1:titulo>Modelos de Avaliação e de Implantação de Processos de Software em Micro e Pequenas Empresas: Uma Análise Comparativa</ns1:titulo>
+    <ns1:autor> RIBEIRO JUNIOR, L. C. M.</ns1:autor>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:autor> RAMOS, C.S </ns1:autor>
+    <ns1:autor> FIGUEIREDO, R.M.C </ns1:autor>
+    <ns1:autor>CROZARA, K. H </ns1:autor>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-4da95df3-ec27-4371-a3e0-dce144f0e4b1">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-b0b74ac2-7dd8-4311-8c6c-0fbb278abb8d">
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</ns1:ano>
+    <ns1:titulo>Can quantum entanglement detection schemes improve search?. Quantum Information Processing (Dordrecht</ns1:titulo>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:temRelevancia>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_b0b74ac2-7dd8-4311-8c6c-0fbb278abb8d">
+    <ns2:ehEdicaoDoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_periodico_b0b74ac2-7dd8-4311-8c6c-0fbb278abb8d"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#EdicaoPeriodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#form-acad11ebb59b-39fe-4728-a2c7-ed45e5fbb8df-luiz-carlos-miyadaira-ribeiro-junior">
+    <ns1:anoDeConclusao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</ns1:anoDeConclusao>
+    <ns1:nomeDoOrientador>Marina Teresa Pires Vieira</ns1:nomeDoOrientador>
+    <ns1:tituloDaDissertacaoTese>Busca baseada em Conteúdo em Documentos de Fala/Texto em um Banco de Dados MHEG-5</ns1:tituloDaDissertacaoTese>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#Mestrado"/>
+    <ns1:anoDeInicio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</ns1:anoDeInicio>
+    <ns1:financiadoPelaAgencia rdf:resource="http://www.ime.usp.br/ontolattes#agencia-fundação-de-amparo-à-pesquisa-do-estado-de-são-paulo."/>
+    <ns1:realizadoNaInstituicao rdf:resource="http://www.ime.usp.br/ontolattes#inst-universidade-federal-de-são-carlos,-ufscar,-brasil"/>
+    <ns1:nivel>Mestrado em Ciência da Computação</ns1:nivel>
+    <ns1:anoDeObtencaoDoTitulo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</ns1:anoDeObtencaoDoTitulo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#dba-detalhes-f5325cff-36a0-4b90-9bc2-ea2fe9c9d626">
+    <ns1:nomeDoOrientado>Eduardo Barbosa</ns1:nomeDoOrientado>
+    <ns1:tipoDeOrientacao>Orientador</ns1:tipoDeOrientacao>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDaOrientacaoEmAndamentoDeIniciacaoCientifica"/>
+    <ns1:realizadoNaInstituicao rdf:resource="http://www.ime.usp.br/ontolattes#inst-iniciação-científica-(graduando-em-engenharia-de-software)---universidade-de-brasília"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#artpub-c5c7318d-9210-4c8e-91b8-103e980dbb02">
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_c5c7318d-9210-4c8e-91b8-103e980dbb02"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-c5c7318d-9210-4c8e-91b8-103e980dbb02"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#ArtigosPublicados"/>
+    <ns1:temDetalhamentoDoArtigo rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-c5c7318d-9210-4c8e-91b8-103e980dbb02"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-lvrpub-f635685e-b2c6-40fe-a4b0-2578f79b56a1">
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:autor> CARDOSO, JOÃO M. P.</ns1:autor>
+    <ns1:titulo>Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering</ns1:titulo>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicosDoLivro"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</ns1:ano>
+    <ns1:autor> Tarrataca, Luís </ns1:autor>
+    <ns1:autor>SANTOS, ANDRÉ C. </ns1:autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-4c5d8b18-44d2-46ec-909f-84edf9a161b2">
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_4c5d8b18-44d2-46ec-909f-84edf9a161b2"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-4c5d8b18-44d2-46ec-909f-84edf9a161b2"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-4c5d8b18-44d2-46ec-909f-84edf9a161b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-b12db091-d11c-4521-bee6-19c280b126ab">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:autor> CUGNASCA, E.</ns1:autor>
+    <ns1:autor> Antonio Mauro Saraiva </ns1:autor>
+    <ns1:autor>RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:titulo>MODELAGEM DE BANCO DE DADOS ESPAÇO-TEMPORAL PARA AGRICULTURA DE PRECISÃO</ns1:titulo>
+    <ns1:autor> MURAKAMI, E. </ns1:autor>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-c5c7318d-9210-4c8e-91b8-103e980dbb02">
+    <ns1:volume>8</ns1:volume>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoArtigo"/>
+    <ns1:paginaInicial rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:paginaInicial>
+    <ns1:fasciculo></ns1:fasciculo>
+    <ns1:tituloDoLivro>Quantum Iterative Deepening with an Application to the Halting Problem</ns1:tituloDoLivro>
+    <ns1:tituloDoPeriodicoOuRevista>Plos One</ns1:tituloDoPeriodicoOuRevista>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-b12db091-d11c-4521-bee6-19c280b126ab">
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-b12db091-d11c-4521-bee6-19c280b126ab"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-b12db091-d11c-4521-bee6-19c280b126ab"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_b12db091-d11c-4521-bee6-19c280b126ab"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_dfeade45-17e4-4fbf-ae45-a7a738bfe2a1">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#ArtigoPeriodico"/>
+    <ns2:ehPublicadoEmEdicaoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_dfeade45-17e4-4fbf-ae45-a7a738bfe2a1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_5ed20e11-7331-4d7b-bcaf-3471ed50d4ec">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#ArtigoPeriodico"/>
+    <ns2:ehPublicadoEmEdicaoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_5ed20e11-7331-4d7b-bcaf-3471ed50d4ec"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_8e9b1858-ccd0-46ed-b0f0-7bac72a4ec9d">
+    <ns2:ehPublicadoEmEdicaoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_8e9b1858-ccd0-46ed-b0f0-7bac72a4ec9d"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#ArtigoPeriodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-4c5d8b18-44d2-46ec-909f-84edf9a161b2">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:autor> Antonio Mauro Saraiva </ns1:autor>
+    <ns1:autor>RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+    <ns1:titulo>COMPONENTES ESPAÇO-TEMPORAL PARA AGRICULTURA DE PRECISÃO</ns1:titulo>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2004</ns1:ano>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:temRelevancia>
+    <ns1:autor> MURAKAMI, E.</ns1:autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#artpub-dfeade45-17e4-4fbf-ae45-a7a738bfe2a1">
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-dfeade45-17e4-4fbf-ae45-a7a738bfe2a1"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_dfeade45-17e4-4fbf-ae45-a7a738bfe2a1"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#ArtigosPublicados"/>
+    <ns1:temDetalhamentoDoArtigo rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-dfeade45-17e4-4fbf-ae45-a7a738bfe2a1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#artpub-65b35509-96fc-47e5-9ac0-55e390895152">
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-65b35509-96fc-47e5-9ac0-55e390895152"/>
+    <ns1:temDetalhamentoDoArtigo rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-65b35509-96fc-47e5-9ac0-55e390895152"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#ArtigosPublicados"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_65b35509-96fc-47e5-9ac0-55e390895152"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#artpub-5ed20e11-7331-4d7b-bcaf-3471ed50d4ec">
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-5ed20e11-7331-4d7b-bcaf-3471ed50d4ec"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_5ed20e11-7331-4d7b-bcaf-3471ed50d4ec"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#ArtigosPublicados"/>
+    <ns1:temDetalhamentoDoArtigo rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-5ed20e11-7331-4d7b-bcaf-3471ed50d4ec"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-5448c1df-ddfd-41e5-8b08-81c025d2622b">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-5ed20e11-7331-4d7b-bcaf-3471ed50d4ec">
+    <ns1:fasciculo></ns1:fasciculo>
+    <ns1:paginaInicial rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">510</ns1:paginaInicial>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoArtigo"/>
+    <ns1:tituloDoLivro>Problem-solving and Quantum Computation</ns1:tituloDoLivro>
+    <ns1:volume>3</ns1:volume>
+    <ns1:tituloDoPeriodicoOuRevista>Cognitive Computation (Print)</ns1:tituloDoPeriodicoOuRevista>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgresex-be4b2211-2b13-4868-950f-3d87ecbf8de8">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgresex-be4b2211-2b13-4868-950f-3d87ecbf8de8"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_be4b2211-2b13-4868-950f-3d87ecbf8de8"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgresex-detalhes-be4b2211-2b13-4868-950f-3d87ecbf8de8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-93938e82-259e-4aca-b4e4-2f30f8f399e4">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_cv-luiz-carlos-miyadaira-ribeiro-junior">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Pessoa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-dfeade45-17e4-4fbf-ae45-a7a738bfe2a1">
+    <ns1:volume>12</ns1:volume>
+    <ns1:tituloDoPeriodicoOuRevista>Quantum Information Processing (Print)</ns1:tituloDoPeriodicoOuRevista>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoArtigo"/>
+    <ns1:paginaInicial rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1365</ns1:paginaInicial>
+    <ns1:tituloDoLivro>Intricacies of quantum computational paths</ns1:tituloDoLivro>
+    <ns1:fasciculo></ns1:fasciculo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_9c7931b0-89f6-4636-aade-ed094368dbba">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#ArtigoPeriodico"/>
+    <ns2:ehPublicadoEmEdicaoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_9c7931b0-89f6-4636-aade-ed094368dbba"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-b0b74ac2-7dd8-4311-8c6c-0fbb278abb8d">
+    <ns1:volume>11</ns1:volume>
+    <ns1:tituloDoLivro>Can quantum entanglement detection schemes improve search?. Quantum Information Processing (Dordrecht</ns1:tituloDoLivro>
+    <ns1:tituloDoPeriodicoOuRevista>Online)</ns1:tituloDoPeriodicoOuRevista>
+    <ns1:paginaInicial rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</ns1:paginaInicial>
+    <ns1:fasciculo></ns1:fasciculo>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoArtigo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-2f32e826-a08f-44f4-9894-88c99af244a4">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:titulo>Graduação em Engenharia de Software versus Graduação em Engenharia de Computação: uma reflexão</ns1:titulo>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:autor> RAMOS, C.S </ns1:autor>
+    <ns1:autor>FIGUEIREDO, R.M.C </ns1:autor>
+    <ns1:autor> RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+    <ns1:autor> CANEDO, E. D.</ns1:autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-65b35509-96fc-47e5-9ac0-55e390895152">
+    <ns1:volume>15</ns1:volume>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoArtigo"/>
+    <ns1:tituloDoPeriodicoOuRevista>Journal on Special Topics in Mobile Networks and Applications</ns1:tituloDoPeriodicoOuRevista>
+    <ns1:paginaInicial rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">819</ns1:paginaInicial>
+    <ns1:tituloDoLivro>The Feasibility of Navigation Algorithms on Smartphones using J2ME</ns1:tituloDoLivro>
+    <ns1:fasciculo></ns1:fasciculo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-2f32e826-a08f-44f4-9894-88c99af244a4">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-2f32e826-a08f-44f4-9894-88c99af244a4"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-2f32e826-a08f-44f4-9894-88c99af244a4"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_2f32e826-a08f-44f4-9894-88c99af244a4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#dg-luiz-carlos-miyadaira-ribeiro-junior">
+    <ns1:nomeCompleto>Luiz Carlos Miyadaira Ribeiro Junior</ns1:nomeCompleto>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosGerais"/>
+    <ns1:sexo>Masculino</ns1:sexo>
+    <ns1:nomeEmCitacoesBibliograficas>RIBEIRO JUNIOR, L. C. M.;RIBEIRO JUNIOR, LUIZ CARLOS MIYADAIRA</ns1:nomeEmCitacoesBibliograficas>
+    <ns1:temFormacaoAcademicaTitulacao rdf:resource="http://www.ime.usp.br/ontolattes#form-acad11ebb59b-39fe-4728-a2c7-ed45e5fbb8df-luiz-carlos-miyadaira-ribeiro-junior"/>
+    <ns1:nomeDoArquivoDeFoto>http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&amp;id=K4770151H4</ns1:nomeDoArquivoDeFoto>
+    <ns1:temEndereco rdf:resource="http://www.ime.usp.br/ontolattes#ende_prof-luiz-carlos-miyadaira-ribeiro-junior"/>
+    <ns1:temFormacaoAcademicaTitulacao rdf:resource="http://www.ime.usp.br/ontolattes#form-acad747deab7-5720-4373-95d4-0c43a555834a-luiz-carlos-miyadaira-ribeiro-junior"/>
+    <ns1:temFormacaoAcademicaTitulacao rdf:resource="http://www.ime.usp.br/ontolattes#form-acadf44d78c4-d56c-4e0a-aff1-47f1cbb3d4e6-luiz-carlos-miyadaira-ribeiro-junior"/>
+    <ns1:idLattes>0468265522433921</ns1:idLattes>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#ende_prof-luiz-carlos-miyadaira-ribeiro-junior">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#EnderecoProfissional"/>
+    <ns1:latitude>0</ns1:latitude>
+    <ns1:uf>brasilia</ns1:uf>
+    <ns1:cep>72405610</ns1:cep>
+    <ns1:pais>brasil</ns1:pais>
+    <ns1:longitude>0</ns1:longitude>
+    <ns1:logradouro>Universidade de Brasília, Faculdade Gama. Área Especial 2 Lote 14 Setor Central 72405-610 - Brasilia, DF - Brasil Telefone: (61) 34843443 URL da Homepage: http://www.fga.unb.br/unbgama/</ns1:logradouro>
+    <ns1:cidade>Brasilia</ns1:cidade>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#form-acad52c1e669-b3c3-4703-b09c-37581721962e-luís-domingues-tomé-jardim-tarrataca">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#PosDoutorado"/>
+    <ns1:anoDeInicio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</ns1:anoDeInicio>
+    <ns1:nivel>Pós-Doutorado</ns1:nivel>
+    <ns1:realizadoNaInstituicao rdf:resource="http://www.ime.usp.br/ontolattes#inst-laboratório-nacional-de-computação-científica"/>
+    <ns1:financiadoPelaAgencia rdf:resource="http://www.ime.usp.br/ontolattes#agencia-conselho-nacional-de-desenvolvimento-científico-e-tecnológico."/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#form-acad19b02289-9b26-42c7-9ca7-685546fc7c79-luís-domingues-tomé-jardim-tarrataca">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#Mestrado"/>
+    <ns1:nomeDoOrientador>João M</ns1:nomeDoOrientador>
+    <ns1:realizadoNaInstituicao rdf:resource="http://www.ime.usp.br/ontolattes#inst-instituto-superior-técnico---universidade-de-lisboa"/>
+    <ns1:anoDeObtencaoDoTitulo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</ns1:anoDeObtencaoDoTitulo>
+    <ns1:tituloDaDissertacaoTese>A Gesture Recognition System using Smartphones</ns1:tituloDaDissertacaoTese>
+    <ns1:anoDeConclusao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</ns1:anoDeConclusao>
+    <ns1:anoDeInicio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</ns1:anoDeInicio>
+    <ns1:nivel>Mestrado em MsC in Information Systems Computer Engineering</ns1:nivel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-e8042783-f0eb-45a1-a1d0-3ed525abe35e">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#artpub-8de016a4-471a-46c9-915e-a1b3549dce42">
+    <ns1:temDetalhamentoDoArtigo rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-8de016a4-471a-46c9-915e-a1b3549dce42"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-8de016a4-471a-46c9-915e-a1b3549dce42"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#ArtigosPublicados"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_8de016a4-471a-46c9-915e-a1b3549dce42"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-07694bc6-023b-49f5-bb60-0101426284f9">
+    <ns1:autor>RIBEIRO JUNIOR, L. C. M.</ns1:autor>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</ns1:ano>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:titulo>BUSCA BASEADA EM CONTEÚDO EM DOCUMENTOS DE FALA/TEXTO EM UM BANCO DE DADOS MHEG-5</ns1:titulo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-8cfbc847-1a39-4ffe-9d30-6b093576634a">
+    <ns1:titulo>Definição de Processos de Software baseado em uma Arquitetura de Componentes de Processo</ns1:titulo>
+    <ns1:autor>RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+    <ns1:autor> ALVES, E. </ns1:autor>
+    <ns1:autor> RAMOS, C.S </ns1:autor>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</ns1:ano>
+    <ns1:autor> CROZARA, K. H </ns1:autor>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:temRelevancia>
+    <ns1:autor> NERI, R. H. </ns1:autor>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:autor> FIGUEIREDO, R.M.C</ns1:autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#oam-060ca266-6d7f-4132-bc21-62acf6d3e2e0">
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_orientacao_060ca266-6d7f-4132-bc21-62acf6d3e2e0"/>
+    <ns1:temDadosBasicosDeOrientacoes rdf:resource="http://www.ime.usp.br/ontolattes#dbo-060ca266-6d7f-4132-bc21-62acf6d3e2e0"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#OrientacaoEmAndamentoDeIniciacaoCientifica"/>
+    <ns1:temDetalhamento rdf:resource="http://www.ime.usp.br/ontolattes#dba-detalhes-060ca266-6d7f-4132-bc21-62acf6d3e2e0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#artpub-d3067e14-e483-4ff6-8459-376bec5d1fe9">
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-d3067e14-e483-4ff6-8459-376bec5d1fe9"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#ArtigosPublicados"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_d3067e14-e483-4ff6-8459-376bec5d1fe9"/>
+    <ns1:temDetalhamentoDoArtigo rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-d3067e14-e483-4ff6-8459-376bec5d1fe9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-92e270df-05ea-4099-b683-d137fdb33258">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgresex-detalhes-b7bf7407-f559-45d5-9efe-e5fc4b01f2fa">
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-85e0a876-0ebf-4665-97f5-f24d7311dfa0">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#cv-luiz-carlos-miyadaira-ribeiro-junior">
+    <ns1:temDadosComplementares rdf:resource="http://www.ime.usp.br/ontolattes#oam-f5325cff-36a0-4b90-9bc2-ea2fe9c9d626"/>
+    <ns1:temDadosComplementares rdf:resource="http://www.ime.usp.br/ontolattes#oam-6a5e08c5-0689-4a59-9417-dde114056b26"/>
+    <ns1:temDadosComplementares rdf:resource="http://www.ime.usp.br/ontolattes#oam-b99438c8-2138-4a62-b17b-902651915ae3"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-93938e82-259e-4aca-b4e4-2f30f8f399e4"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgresex-3272e2e8-9d5e-4631-b3f3-47cf1c1ddeea"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-07694bc6-023b-49f5-bb60-0101426284f9"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-eb1e5d6f-4588-47a5-ad1b-c79ccf6c6731"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-2021be82-2dd5-45be-bfbb-3a9f6c031263"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-8cfbc847-1a39-4ffe-9d30-6b093576634a"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#artpub-9c7931b0-89f6-4636-aade-ed094368dbba"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-e8042783-f0eb-45a1-a1d0-3ed525abe35e"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-4da95df3-ec27-4371-a3e0-dce144f0e4b1"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-2f32e826-a08f-44f4-9894-88c99af244a4"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-b12db091-d11c-4521-bee6-19c280b126ab"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-85e0a876-0ebf-4665-97f5-f24d7311dfa0"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#CurriculoVitae"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgresex-b7bf7407-f559-45d5-9efe-e5fc4b01f2fa"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-92e270df-05ea-4099-b683-d137fdb33258"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#artpub-8e9b1858-ccd0-46ed-b0f0-7bac72a4ec9d"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgresex-be4b2211-2b13-4868-950f-3d87ecbf8de8"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-3cbec45a-dce1-4709-82f2-425ee3660c18"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-4c5d8b18-44d2-46ec-909f-84edf9a161b2"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_cv-luiz-carlos-miyadaira-ribeiro-junior"/>
+    <ns1:temDadosComplementares rdf:resource="http://www.ime.usp.br/ontolattes#oam-060ca266-6d7f-4132-bc21-62acf6d3e2e0"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgresex-1d84340a-d089-42fd-88b9-7718fdbba975"/>
+    <ns1:temDadosGerais rdf:resource="http://www.ime.usp.br/ontolattes#dg-luiz-carlos-miyadaira-ribeiro-junior"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-bf44ed5a-59bf-47dd-8c6f-db41d653a95f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgresex-b7bf7407-f559-45d5-9efe-e5fc4b01f2fa">
+    <ns1:autor>RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+    <ns1:titulo>A GEO-SPATIAL DATABASE FOR PRECISION AGRICULTURE INFORMATION SYSTEMS</ns1:titulo>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:autor> Antonio Mauro Saraiva </ns1:autor>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:autor> MURAKAMI, E.</ns1:autor>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_d3067e14-e483-4ff6-8459-376bec5d1fe9">
+    <ns2:ehEdicaoDoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_periodico_d3067e14-e483-4ff6-8459-376bec5d1fe9"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#EdicaoPeriodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgresex-be4b2211-2b13-4868-950f-3d87ecbf8de8">
+    <ns1:autor> Antonio Mauro Saraiva</ns1:autor>
+    <ns1:autor>MURAKAMI, E. </ns1:autor>
+    <ns1:titulo>AN INFRASTRUCTURE FOR DEVELOPMENT OF INFORMATION SYSTEMS FOR PRECISION AGRICULTURE</ns1:titulo>
+    <ns1:autor> RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+    <ns1:autor> CUGNASCA, E. </ns1:autor>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#dbo-b99438c8-2138-4a62-b17b-902651915ae3">
+    <ns1:tituloDoTrabalho>Definição de Processos de Software baseado em uma Arquitetura de Componentes de Processo</ns1:tituloDoTrabalho>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicosDaOrientacaoEmAndamentoDeIniciacaoCientifica"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_65b35509-96fc-47e5-9ac0-55e390895152">
+    <ns2:ehPublicadoEmEdicaoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_65b35509-96fc-47e5-9ac0-55e390895152"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#ArtigoPeriodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#artpub-8e9b1858-ccd0-46ed-b0f0-7bac72a4ec9d">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#ArtigosPublicados"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-8e9b1858-ccd0-46ed-b0f0-7bac72a4ec9d"/>
+    <ns1:temDetalhamentoDoArtigo rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-8e9b1858-ccd0-46ed-b0f0-7bac72a4ec9d"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_8e9b1858-ccd0-46ed-b0f0-7bac72a4ec9d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_65b35509-96fc-47e5-9ac0-55e390895152">
+    <ns2:ehEdicaoDoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_periodico_65b35509-96fc-47e5-9ac0-55e390895152"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#EdicaoPeriodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-65b35509-96fc-47e5-9ac0-55e390895152">
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+    <ns1:titulo>The Feasibility of Navigation Algorithms on Smartphones using J2ME</ns1:titulo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-eb1e5d6f-4588-47a5-ad1b-c79ccf6c6731">
+    <ns1:autor> Antonio Mauro Saraiva </ns1:autor>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:autor> MURAKAMI, E.</ns1:autor>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</ns1:ano>
+    <ns1:autor>RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+    <ns1:titulo>PADRÕES DE ANÁLISE E PROJETO PARA DESENVOLVIMENTO DE SISTEMAS DE INFORMAÇÕES ESPAÇO-TEMPORAIS PARA AGRICULTURA DE PRECISÃO</ns1:titulo>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-92e270df-05ea-4099-b683-d137fdb33258">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-92e270df-05ea-4099-b683-d137fdb33258"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_92e270df-05ea-4099-b683-d137fdb33258"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-92e270df-05ea-4099-b683-d137fdb33258"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-e8042783-f0eb-45a1-a1d0-3ed525abe35e">
+    <ns1:titulo>DESENVOLVIMENTO DE SOFTWARE PARA AGRICULTURA DE PRECISÃO BASEADO EM COMPONENTES INTEROPERÁVEIS</ns1:titulo>
+    <ns1:autor> RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+    <ns1:autor> Antonio Mauro Saraiva</ns1:autor>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:autor> CUGNASCA, E. </ns1:autor>
+    <ns1:autor>MURAKAMI, E. </ns1:autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-bf44ed5a-59bf-47dd-8c6f-db41d653a95f">
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-bf44ed5a-59bf-47dd-8c6f-db41d653a95f"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_bf44ed5a-59bf-47dd-8c6f-db41d653a95f"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-bf44ed5a-59bf-47dd-8c6f-db41d653a95f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#inst-iniciação-científica-(graduando-em-engenharia-de-software)---universidade-de-brasília">
+    <ns1:nomeInstituicaoEmpresa>Iniciação científica (Graduando em Engenharia de Software) - Universidade de Brasília</ns1:nomeInstituicaoEmpresa>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#InstituicaoEmpresa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#cv-luís-domingues-tomé-jardim-tarrataca">
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_cv-luís-domingues-tomé-jardim-tarrataca"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#lvrpub-f635685e-b2c6-40fe-a4b0-2578f79b56a1"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#artpub-b0b74ac2-7dd8-4311-8c6c-0fbb278abb8d"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#artpub-65b35509-96fc-47e5-9ac0-55e390895152"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#artpub-d3067e14-e483-4ff6-8459-376bec5d1fe9"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#tblgcompl-5448c1df-ddfd-41e5-8b08-81c025d2622b"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#artpub-dfeade45-17e4-4fbf-ae45-a7a738bfe2a1"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#lvrpub-063b0dcb-e4d3-42b9-8f86-37d9720367b1"/>
+    <ns1:temDadosGerais rdf:resource="http://www.ime.usp.br/ontolattes#dg-luís-domingues-tomé-jardim-tarrataca"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#artpub-c5c7318d-9210-4c8e-91b8-103e980dbb02"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#artpub-8de016a4-471a-46c9-915e-a1b3549dce42"/>
+    <ns1:temProducaoBibliografica rdf:resource="http://www.ime.usp.br/ontolattes#artpub-5ed20e11-7331-4d7b-bcaf-3471ed50d4ec"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#CurriculoVitae"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_bf44ed5a-59bf-47dd-8c6f-db41d653a95f">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-07694bc6-023b-49f5-bb60-0101426284f9">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-07694bc6-023b-49f5-bb60-0101426284f9"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-07694bc6-023b-49f5-bb60-0101426284f9"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_07694bc6-023b-49f5-bb60-0101426284f9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-c5c7318d-9210-4c8e-91b8-103e980dbb02">
+    <ns1:titulo>Quantum Iterative Deepening with an Application to the Halting Problem</ns1:titulo>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:temRelevancia>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_9c7931b0-89f6-4636-aade-ed094368dbba">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#EdicaoPeriodico"/>
+    <ns2:ehEdicaoDoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_periodico_9c7931b0-89f6-4636-aade-ed094368dbba"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_8de016a4-471a-46c9-915e-a1b3549dce42">
+    <ns2:ehPublicadoEmEdicaoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_8de016a4-471a-46c9-915e-a1b3549dce42"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#ArtigoPeriodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-85e0a876-0ebf-4665-97f5-f24d7311dfa0">
+    <ns1:autor> NERI, R. H. </ns1:autor>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+    <ns1:autor> OLIVEIRA, A. B. S.</ns1:autor>
+    <ns1:autor>FIGUEIREDO, R.M.C </ns1:autor>
+    <ns1:titulo>Graduação em Engenharia de Software em um campus de engenharias</ns1:titulo>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:autor> RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+    <ns1:autor> CRUZ, F. W. </ns1:autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgresex-1d84340a-d089-42fd-88b9-7718fdbba975">
+    <ns1:autor>MURAKAMI, E. </ns1:autor>
+    <ns1:autor> RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:titulo>A SOLUTION FOR INTEROPERABILITY OF PRECISION AGRICULTURE APPLICATIONS USING WEB SERVICES</ns1:titulo>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</ns1:ano>
+    <ns1:autor> MOLIN, J. P.</ns1:autor>
+    <ns1:autor> Antonio Mauro Saraiva </ns1:autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#form-acaded453594-016e-4860-bb5d-8751996d9093-luís-domingues-tomé-jardim-tarrataca">
+    <ns1:anoDeInicio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</ns1:anoDeInicio>
+    <ns1:tituloDoTrabalhoDeConclusaoDeCurso></ns1:tituloDoTrabalhoDeConclusaoDeCurso>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#Graduacao"/>
+    <ns1:anoDeConclusao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</ns1:anoDeConclusao>
+    <ns1:realizadoNaInstituicao rdf:resource="http://www.ime.usp.br/ontolattes#inst-instituto-superior-técnico---universidade-de-lisboa"/>
+    <ns1:nivel>Graduação em BsC in Information Systems Computer Engineering</ns1:nivel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#agencia-fundação-para-a-ciência-e-tecnologia.">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#AgenciaFinanciadora"/>
+    <ns1:nomeAgencia>Fundação para a Ciência e Tecnologia.</ns1:nomeAgencia>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-4da95df3-ec27-4371-a3e0-dce144f0e4b1">
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_4da95df3-ec27-4371-a3e0-dce144f0e4b1"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-4da95df3-ec27-4371-a3e0-dce144f0e4b1"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-4da95df3-ec27-4371-a3e0-dce144f0e4b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#oam-6a5e08c5-0689-4a59-9417-dde114056b26">
+    <ns1:temDadosBasicosDeOrientacoes rdf:resource="http://www.ime.usp.br/ontolattes#dbo-6a5e08c5-0689-4a59-9417-dde114056b26"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_orientacao_6a5e08c5-0689-4a59-9417-dde114056b26"/>
+    <ns1:temDetalhamento rdf:resource="http://www.ime.usp.br/ontolattes#dba-detalhes-6a5e08c5-0689-4a59-9417-dde114056b26"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#OrientacaoEmAndamentoDeIniciacaoCientifica"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_b12db091-d11c-4521-bee6-19c280b126ab">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-8cfbc847-1a39-4ffe-9d30-6b093576634a">
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-8cfbc847-1a39-4ffe-9d30-6b093576634a"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_8cfbc847-1a39-4ffe-9d30-6b093576634a"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-8cfbc847-1a39-4ffe-9d30-6b093576634a"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#inst-universidade-de-são-paulo,-usp,-brasil">
+    <ns1:nomeInstituicaoEmpresa>Universidade de São Paulo, USP, Brasil</ns1:nomeInstituicaoEmpresa>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#InstituicaoEmpresa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_periodico_c5c7318d-9210-4c8e-91b8-103e980dbb02">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Periodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_1d84340a-d089-42fd-88b9-7718fdbba975">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#oam-b99438c8-2138-4a62-b17b-902651915ae3">
+    <ns1:temDadosBasicosDeOrientacoes rdf:resource="http://www.ime.usp.br/ontolattes#dbo-b99438c8-2138-4a62-b17b-902651915ae3"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_orientacao_b99438c8-2138-4a62-b17b-902651915ae3"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#OrientacaoEmAndamentoDeIniciacaoCientifica"/>
+    <ns1:temDetalhamento rdf:resource="http://www.ime.usp.br/ontolattes#dba-detalhes-b99438c8-2138-4a62-b17b-902651915ae3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-lvrpub-detalhes-f635685e-b2c6-40fe-a4b0-2578f79b56a1">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoLivro"/>
+    <ns1:numeroDaEdicaoRevisao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</ns1:numeroDaEdicaoRevisao>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-8de016a4-471a-46c9-915e-a1b3549dce42">
+    <ns1:volume>11</ns1:volume>
+    <ns1:tituloDoPeriodicoOuRevista>Online)</ns1:tituloDoPeriodicoOuRevista>
+    <ns1:paginaInicial rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">189</ns1:paginaInicial>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoArtigo"/>
+    <ns1:tituloDoLivro>A quantum production model. Quantum Information Processing (Dordrecht</ns1:tituloDoLivro>
+    <ns1:fasciculo></ns1:fasciculo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-8e9b1858-ccd0-46ed-b0f0-7bac72a4ec9d">
+    <ns1:volume>9</ns1:volume>
+    <ns1:fasciculo></ns1:fasciculo>
+    <ns1:paginaInicial rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">265</ns1:paginaInicial>
+    <ns1:tituloDoPeriodicoOuRevista>Revista de Gestão da Tecnologia e Sistemas de Informação (Online)</ns1:tituloDoPeriodicoOuRevista>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoArtigo"/>
+    <ns1:tituloDoLivro>PROPOSAL FOR A MEASUREMENT MODEL FOR SOFTWARE TESTS WITH A FOCUS ON THE MANAGEMENT OF OUTSOURCED SERVICES</ns1:tituloDoLivro>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#dba-detalhes-060ca266-6d7f-4132-bc21-62acf6d3e2e0">
+    <ns1:tipoDeOrientacao>Orientador</ns1:tipoDeOrientacao>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDaOrientacaoEmAndamentoDeIniciacaoCientifica"/>
+    <ns1:financiadoPelaAgencia rdf:resource="http://www.ime.usp.br/ontolattes#agencia-fundação-universidade-de-brasília"/>
+    <ns1:nomeDoOrientado>Vitor Makoto Matayoshi</ns1:nomeDoOrientado>
+    <ns1:realizadoNaInstituicao rdf:resource="http://www.ime.usp.br/ontolattes#inst-iniciação-científica-(graduando-em-engenharia-de-software)---universidade-de-brasília"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-5448c1df-ddfd-41e5-8b08-81c025d2622b">
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:autor>Tarrataca, Luís </ns1:autor>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</ns1:ano>
+    <ns1:autor> SANTOS, ANDRÉ C. </ns1:autor>
+    <ns1:autor> CARDOSO, JOÃO M. P.</ns1:autor>
+    <ns1:titulo>The current feasibility of gesture recognition for a smartphone using J2ME</ns1:titulo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#ende_prof-luís-domingues-tomé-jardim-tarrataca">
+    <ns1:logradouro></ns1:logradouro>
+    <ns1:latitude>0</ns1:latitude>
+    <ns1:uf></ns1:uf>
+    <ns1:cidade></ns1:cidade>
+    <ns1:pais></ns1:pais>
+    <ns1:longitude>0</ns1:longitude>
+    <ns1:cep></ns1:cep>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#EnderecoProfissional"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-93938e82-259e-4aca-b4e4-2f30f8f399e4">
+    <ns1:titulo>Aplicação de Controle Estatístico de Processo (CEP) no contexto do MR-MPS em uma Fábrica de Software</ns1:titulo>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</ns1:ano>
+    <ns1:autor> RIBEIRO JUNIOR, L. C. M.</ns1:autor>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:autor> Ramos, Cristiane Soares </ns1:autor>
+    <ns1:autor>Nascimento, Thercio Rodrigues </ns1:autor>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-93938e82-259e-4aca-b4e4-2f30f8f399e4">
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_93938e82-259e-4aca-b4e4-2f30f8f399e4"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-93938e82-259e-4aca-b4e4-2f30f8f399e4"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-93938e82-259e-4aca-b4e4-2f30f8f399e4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-3cbec45a-dce1-4709-82f2-425ee3660c18">
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+    <ns1:titulo>Teaching Software Quality in an Interdisciplinary Course of Engineering</ns1:titulo>
+    <ns1:autor>FIGUEIREDO, R.M.C </ns1:autor>
+    <ns1:autor> LARANJEIRA, L. A.F. </ns1:autor>
+    <ns1:autor> SALES, A.B. </ns1:autor>
+    <ns1:autor> ROCHA, A.</ns1:autor>
+    <ns1:autor> RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#form-acad747deab7-5720-4373-95d4-0c43a555834a-luiz-carlos-miyadaira-ribeiro-junior">
+    <ns1:tituloDaDissertacaoTese>Uma Arquitetura de Sistemas Espaço-Temporais baseados na Web para Agricultura de Precisão</ns1:tituloDaDissertacaoTese>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#Doutorado"/>
+    <ns1:nomeDoOrientador>Antonio Mauro Saraiva</ns1:nomeDoOrientador>
+    <ns1:nivel>Doutorado em Engenharia Elétrica</ns1:nivel>
+    <ns1:anoDeConclusao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</ns1:anoDeConclusao>
+    <ns1:anoDeObtencaoDoTitulo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</ns1:anoDeObtencaoDoTitulo>
+    <ns1:anoDeInicio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</ns1:anoDeInicio>
+    <ns1:realizadoNaInstituicao rdf:resource="http://www.ime.usp.br/ontolattes#inst-universidade-de-são-paulo,-usp,-brasil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-9c7931b0-89f6-4636-aade-ed094368dbba">
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:temRelevancia>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:titulo>AN INFRASTRUCTURE FOR THE DEVELOPMENT OF DISTRIBUTED SERVICE-ORIENTED INFORMATION SYSTEMS FOR PRECISION AGRICULTURE</ns1:titulo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_8e9b1858-ccd0-46ed-b0f0-7bac72a4ec9d">
+    <ns2:ehEdicaoDoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_periodico_8e9b1858-ccd0-46ed-b0f0-7bac72a4ec9d"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#EdicaoPeriodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#dba-detalhes-6a5e08c5-0689-4a59-9417-dde114056b26">
+    <ns1:nomeDoOrientado>Rodrigo Siqueira Melo</ns1:nomeDoOrientado>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDaOrientacaoEmAndamentoDeIniciacaoCientifica"/>
+    <ns1:realizadoNaInstituicao rdf:resource="http://www.ime.usp.br/ontolattes#inst-iniciação-científica-(graduando-em-engenharia-de-software)---universidade-de-brasília"/>
+    <ns1:tipoDeOrientacao>Orientador</ns1:tipoDeOrientacao>
+    <ns1:financiadoPelaAgencia rdf:resource="http://www.ime.usp.br/ontolattes#agencia-fundação-universidade-de-brasília"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#dg-luís-domingues-tomé-jardim-tarrataca">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosGerais"/>
+    <ns1:sexo>Masculino</ns1:sexo>
+    <ns1:temFormacaoAcademicaTitulacao rdf:resource="http://www.ime.usp.br/ontolattes#form-acaded453594-016e-4860-bb5d-8751996d9093-luís-domingues-tomé-jardim-tarrataca"/>
+    <ns1:nomeEmCitacoesBibliograficas>TARRATACA, L.;TARRATACA, LUÍS;TARRATACA, LUIS;TARRATACA, L;Tarrataca, Luís</ns1:nomeEmCitacoesBibliograficas>
+    <ns1:temEndereco rdf:resource="http://www.ime.usp.br/ontolattes#ende_prof-luís-domingues-tomé-jardim-tarrataca"/>
+    <ns1:temFormacaoAcademicaTitulacao rdf:resource="http://www.ime.usp.br/ontolattes#form-acad0114c395-9b58-407b-8855-87f6847145f6-luís-domingues-tomé-jardim-tarrataca"/>
+    <ns1:temFormacaoAcademicaTitulacao rdf:resource="http://www.ime.usp.br/ontolattes#form-acad52c1e669-b3c3-4703-b09c-37581721962e-luís-domingues-tomé-jardim-tarrataca"/>
+    <ns1:idLattes>3170909452575755</ns1:idLattes>
+    <ns1:temFormacaoAcademicaTitulacao rdf:resource="http://www.ime.usp.br/ontolattes#form-acad19b02289-9b26-42c7-9ca7-685546fc7c79-luís-domingues-tomé-jardim-tarrataca"/>
+    <ns1:nomeDoArquivoDeFoto>http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&amp;id=K8743474A5</ns1:nomeDoArquivoDeFoto>
+    <ns1:nomeCompleto>Luís Domingues Tomé Jardim Tarrataca</ns1:nomeCompleto>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#form-acad0114c395-9b58-407b-8855-87f6847145f6-luís-domingues-tomé-jardim-tarrataca">
+    <ns1:nomeDoOrientador>Andreas Miroslaus Wichert</ns1:nomeDoOrientador>
+    <ns1:financiadoPelaAgencia rdf:resource="http://www.ime.usp.br/ontolattes#agencia-fundação-para-a-ciência-e-tecnologia."/>
+    <ns1:realizadoNaInstituicao rdf:resource="http://www.ime.usp.br/ontolattes#inst-instituto-superior-técnico---universidade-de-lisboa"/>
+    <ns1:anoDeObtencaoDoTitulo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</ns1:anoDeObtencaoDoTitulo>
+    <ns1:nivel>Doutorado em PhD in Information Systems Computer Engineering</ns1:nivel>
+    <ns1:tituloDaDissertacaoTese>The Quantum Production System</ns1:tituloDaDissertacaoTese>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#Doutorado"/>
+    <ns1:anoDeConclusao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</ns1:anoDeConclusao>
+    <ns1:anoDeInicio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</ns1:anoDeInicio>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_orientacao_f5325cff-36a0-4b90-9bc2-ea2fe9c9d626">
+    <ns2:temTrabalho rdf:resource="http://www.semanticlattes.com.br/curriculo#_trabalho_f5325cff-36a0-4b90-9bc2-ea2fe9c9d626"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Orientacao"/>
+    <ns2:temOrientado rdf:resource="http://www.semanticlattes.com.br/curriculo#_estudante_f5325cff-36a0-4b90-9bc2-ea2fe9c9d626"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-8de016a4-471a-46c9-915e-a1b3549dce42">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</ns1:ano>
+    <ns1:titulo>A quantum production model. Quantum Information Processing (Dordrecht</ns1:titulo>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#inst-faculdade-de-informática-de-lins">
+    <ns1:nomeInstituicaoEmpresa>Faculdade de Informática de Lins</ns1:nomeInstituicaoEmpresa>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#InstituicaoEmpresa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_85e0a876-0ebf-4665-97f5-f24d7311dfa0">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-5448c1df-ddfd-41e5-8b08-81c025d2622b">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_5448c1df-ddfd-41e5-8b08-81c025d2622b"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-5448c1df-ddfd-41e5-8b08-81c025d2622b"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-5448c1df-ddfd-41e5-8b08-81c025d2622b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-d3067e14-e483-4ff6-8459-376bec5d1fe9">
+    <ns1:paginaInicial rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">475</ns1:paginaInicial>
+    <ns1:volume>10</ns1:volume>
+    <ns1:fasciculo></ns1:fasciculo>
+    <ns1:tituloDoLivro>Tree search and quantum computation. Quantum Information Processing (Dordrecht</ns1:tituloDoLivro>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoArtigo"/>
+    <ns1:tituloDoPeriodicoOuRevista>Online)</ns1:tituloDoPeriodicoOuRevista>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#dbo-060ca266-6d7f-4132-bc21-62acf6d3e2e0">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicosDaOrientacaoEmAndamentoDeIniciacaoCientifica"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+    <ns1:tituloDoTrabalho>Desenvolvimento de uma Ferramenta de Gestão de Requisitos</ns1:tituloDoTrabalho>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-3cbec45a-dce1-4709-82f2-425ee3660c18">
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-3cbec45a-dce1-4709-82f2-425ee3660c18"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-3cbec45a-dce1-4709-82f2-425ee3660c18"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_3cbec45a-dce1-4709-82f2-425ee3660c18"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#oam-f5325cff-36a0-4b90-9bc2-ea2fe9c9d626">
+    <ns1:temDadosBasicosDeOrientacoes rdf:resource="http://www.ime.usp.br/ontolattes#dbo-f5325cff-36a0-4b90-9bc2-ea2fe9c9d626"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_orientacao_f5325cff-36a0-4b90-9bc2-ea2fe9c9d626"/>
+    <ns1:temDetalhamento rdf:resource="http://www.ime.usp.br/ontolattes#dba-detalhes-f5325cff-36a0-4b90-9bc2-ea2fe9c9d626"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#OrientacaoEmAndamentoDeIniciacaoCientifica"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#agencia-fundação-universidade-de-brasília">
+    <ns1:nomeAgencia>Fundação Universidade de Brasília</ns1:nomeAgencia>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#AgenciaFinanciadora"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_3cbec45a-dce1-4709-82f2-425ee3660c18">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-3cbec45a-dce1-4709-82f2-425ee3660c18">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-d3067e14-e483-4ff6-8459-376bec5d1fe9">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</ns1:ano>
+    <ns1:titulo>Tree search and quantum computation. Quantum Information Processing (Dordrecht</ns1:titulo>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:temRelevancia>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-e8042783-f0eb-45a1-a1d0-3ed525abe35e">
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-e8042783-f0eb-45a1-a1d0-3ed525abe35e"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-e8042783-f0eb-45a1-a1d0-3ed525abe35e"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_e8042783-f0eb-45a1-a1d0-3ed525abe35e"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#lvrpub-f635685e-b2c6-40fe-a4b0-2578f79b56a1">
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-lvrpub-f635685e-b2c6-40fe-a4b0-2578f79b56a1"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#LivrosPublicadosOuOrganizados"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_f635685e-b2c6-40fe-a4b0-2578f79b56a1"/>
+    <ns1:temDetalhamentoDoLivro rdf:resource="http://www.ime.usp.br/ontolattes#db-lvrpub-detalhes-f635685e-b2c6-40fe-a4b0-2578f79b56a1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-92e270df-05ea-4099-b683-d137fdb33258">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:autor> MURAKAMI, E.</ns1:autor>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</ns1:ano>
+    <ns1:autor> Antonio Mauro Saraiva </ns1:autor>
+    <ns1:titulo>jSTF: A J2EE-BASED SPATIO-TEMPORAL FRAMEWORK FOR PRECISION AGRICULTURE INFORMATION SYSTEMS</ns1:titulo>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns1:temRelevancia>
+    <ns1:autor>RIBEIRO JUNIOR, L. C. M. </ns1:autor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#dbo-f5325cff-36a0-4b90-9bc2-ea2fe9c9d626">
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicosDaOrientacaoEmAndamentoDeIniciacaoCientifica"/>
+    <ns1:tituloDoTrabalho>Definição de Processos de Software baseado em uma Arquitetura de Componentes de Processo</ns1:tituloDoTrabalho>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-2f32e826-a08f-44f4-9894-88c99af244a4">
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_orientacao_b99438c8-2138-4a62-b17b-902651915ae3">
+    <ns2:temOrientado rdf:resource="http://www.semanticlattes.com.br/curriculo#_estudante_b99438c8-2138-4a62-b17b-902651915ae3"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Orientacao"/>
+    <ns2:temTrabalho rdf:resource="http://www.semanticlattes.com.br/curriculo#_trabalho_b99438c8-2138-4a62-b17b-902651915ae3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-eb1e5d6f-4588-47a5-ad1b-c79ccf6c6731">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-eb1e5d6f-4588-47a5-ad1b-c79ccf6c6731"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_eb1e5d6f-4588-47a5-ad1b-c79ccf6c6731"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-eb1e5d6f-4588-47a5-ad1b-c79ccf6c6731"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-5ed20e11-7331-4d7b-bcaf-3471ed50d4ec">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:titulo>Problem-solving and Quantum Computation</ns1:titulo>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_c5c7318d-9210-4c8e-91b8-103e980dbb02">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#EdicaoPeriodico"/>
+    <ns2:ehEdicaoDoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_periodico_c5c7318d-9210-4c8e-91b8-103e980dbb02"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgresex-1d84340a-d089-42fd-88b9-7718fdbba975">
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgresex-1d84340a-d089-42fd-88b9-7718fdbba975"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_1d84340a-d089-42fd-88b9-7718fdbba975"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgresex-detalhes-1d84340a-d089-42fd-88b9-7718fdbba975"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#artpub-b0b74ac2-7dd8-4311-8c6c-0fbb278abb8d">
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_b0b74ac2-7dd8-4311-8c6c-0fbb278abb8d"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-b0b74ac2-7dd8-4311-8c6c-0fbb278abb8d"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#ArtigosPublicados"/>
+    <ns1:temDetalhamentoDoArtigo rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-b0b74ac2-7dd8-4311-8c6c-0fbb278abb8d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_07694bc6-023b-49f5-bb60-0101426284f9">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_f635685e-b2c6-40fe-a4b0-2578f79b56a1">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Livro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-2021be82-2dd5-45be-bfbb-3a9f6c031263">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-2021be82-2dd5-45be-bfbb-3a9f6c031263"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_2021be82-2dd5-45be-bfbb-3a9f6c031263"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-2021be82-2dd5-45be-bfbb-3a9f6c031263"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgresex-3272e2e8-9d5e-4631-b3f3-47cf1c1ddeea">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_3272e2e8-9d5e-4631-b3f3-47cf1c1ddeea"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgresex-detalhes-3272e2e8-9d5e-4631-b3f3-47cf1c1ddeea"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgresex-3272e2e8-9d5e-4631-b3f3-47cf1c1ddeea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_e8042783-f0eb-45a1-a1d0-3ed525abe35e">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_eb1e5d6f-4588-47a5-ad1b-c79ccf6c6731">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgresex-3272e2e8-9d5e-4631-b3f3-47cf1c1ddeea">
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</ns1:ano>
+    <ns1:autor>RIBEIRO JUNIOR, L. C. M.</ns1:autor>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:titulo>A COMPONENT BASED FRAMEWORK FOR INFORMATION SYSTEMS FOR PRECISION AGRICULTURE</ns1:titulo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-4da95df3-ec27-4371-a3e0-dce144f0e4b1">
+    <ns1:autor>RIBEIRO JUNIOR, L. C. M.</ns1:autor>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</ns1:ano>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:titulo>METADATA FOR CONTENT-BASED SEARCH ON AN MHEG-5 MULTIMEDIA OBJECTS SERVER</ns1:titulo>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_trabalho_060ca266-6d7f-4132-bc21-62acf6d3e2e0">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Trabalho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#lvrpub-063b0dcb-e4d3-42b9-8f86-37d9720367b1">
+    <ns1:temDetalhamentoDoLivro rdf:resource="http://www.ime.usp.br/ontolattes#db-lvrpub-detalhes-063b0dcb-e4d3-42b9-8f86-37d9720367b1"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#LivrosPublicadosOuOrganizados"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-lvrpub-063b0dcb-e4d3-42b9-8f86-37d9720367b1"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_063b0dcb-e4d3-42b9-8f86-37d9720367b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_estudante_6a5e08c5-0689-4a59-9417-dde114056b26">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Estudante"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-eb1e5d6f-4588-47a5-ad1b-c79ccf6c6731">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_orientacao_6a5e08c5-0689-4a59-9417-dde114056b26">
+    <ns2:temTrabalho rdf:resource="http://www.semanticlattes.com.br/curriculo#_trabalho_6a5e08c5-0689-4a59-9417-dde114056b26"/>
+    <ns2:temOrientado rdf:resource="http://www.semanticlattes.com.br/curriculo#_estudante_6a5e08c5-0689-4a59-9417-dde114056b26"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Orientacao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_dfeade45-17e4-4fbf-ae45-a7a738bfe2a1">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#EdicaoPeriodico"/>
+    <ns2:ehEdicaoDoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_periodico_dfeade45-17e4-4fbf-ae45-a7a738bfe2a1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_periodico_b0b74ac2-7dd8-4311-8c6c-0fbb278abb8d">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Periodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#agencia-conselho-nacional-de-desenvolvimento-científico-e-tecnológico.">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#AgenciaFinanciadora"/>
+    <ns1:nomeAgencia>Conselho Nacional de Desenvolvimento Científico e Tecnológico.</ns1:nomeAgencia>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_periodico_dfeade45-17e4-4fbf-ae45-a7a738bfe2a1">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Periodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_estudante_060ca266-6d7f-4132-bc21-62acf6d3e2e0">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Estudante"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-lvrpub-063b0dcb-e4d3-42b9-8f86-37d9720367b1">
+    <ns1:autor>Tarrataca, Luís </ns1:autor>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicosDoLivro"/>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</ns1:ano>
+    <ns1:autor> WICHERT, ANDREAS</ns1:autor>
+    <ns1:titulo>Lecture Notes in Computer Science</ns1:titulo>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_2021be82-2dd5-45be-bfbb-3a9f6c031263">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#agencia-fundação-de-amparo-à-pesquisa-do-estado-de-são-paulo.">
+    <ns1:nomeAgencia>Fundação de Amparo à Pesquisa do Estado de São Paulo.</ns1:nomeAgencia>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#AgenciaFinanciadora"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_5ed20e11-7331-4d7b-bcaf-3471ed50d4ec">
+    <ns2:ehEdicaoDoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_periodico_5ed20e11-7331-4d7b-bcaf-3471ed50d4ec"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#EdicaoPeriodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#dbo-6a5e08c5-0689-4a59-9417-dde114056b26">
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+    <ns1:tituloDoTrabalho>Desenvolvimento de uma Arquitetura de Software</ns1:tituloDoTrabalho>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicosDaOrientacaoEmAndamentoDeIniciacaoCientifica"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-8e9b1858-ccd0-46ed-b0f0-7bac72a4ec9d">
+    <ns1:titulo>PROPOSAL FOR A MEASUREMENT MODEL FOR SOFTWARE TESTS WITH A FOCUS ON THE MANAGEMENT OF OUTSOURCED SERVICES</ns1:titulo>
+    <ns1:temRelevancia rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns1:temRelevancia>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DadosBasicos"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_periodico_8de016a4-471a-46c9-915e-a1b3549dce42">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Periodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#artpub-9c7931b0-89f6-4636-aade-ed094368dbba">
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_9c7931b0-89f6-4636-aade-ed094368dbba"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#ArtigosPublicados"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-9c7931b0-89f6-4636-aade-ed094368dbba"/>
+    <ns1:temDetalhamentoDoArtigo rdf:resource="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-9c7931b0-89f6-4636-aade-ed094368dbba"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_periodico_d3067e14-e483-4ff6-8459-376bec5d1fe9">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Periodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-b12db091-d11c-4521-bee6-19c280b126ab">
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_8de016a4-471a-46c9-915e-a1b3549dce42">
+    <ns2:ehEdicaoDoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_periodico_8de016a4-471a-46c9-915e-a1b3549dce42"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#EdicaoPeriodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_93938e82-259e-4aca-b4e4-2f30f8f399e4">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_d3067e14-e483-4ff6-8459-376bec5d1fe9">
+    <ns2:ehPublicadoEmEdicaoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_d3067e14-e483-4ff6-8459-376bec5d1fe9"/>
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#ArtigoPeriodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_trabalho_b99438c8-2138-4a62-b17b-902651915ae3">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Trabalho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgcompl-85e0a876-0ebf-4665-97f5-f24d7311dfa0">
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-85e0a876-0ebf-4665-97f5-f24d7311dfa0"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgcompl-85e0a876-0ebf-4665-97f5-f24d7311dfa0"/>
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_85e0a876-0ebf-4665-97f5-f24d7311dfa0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-bf44ed5a-59bf-47dd-8c6f-db41d653a95f">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-2021be82-2dd5-45be-bfbb-3a9f6c031263">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_periodico_5ed20e11-7331-4d7b-bcaf-3471ed50d4ec">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Periodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgresex-detalhes-be4b2211-2b13-4868-950f-3d87ecbf8de8">
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_4c5d8b18-44d2-46ec-909f-84edf9a161b2">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#inst-universidade-federal-de-são-carlos,-ufscar,-brasil">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#InstituicaoEmpresa"/>
+    <ns1:nomeInstituicaoEmpresa>Universidade Federal de São Carlos, UFSCAR, Brasil</ns1:nomeInstituicaoEmpresa>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#inst-instituto-superior-técnico---universidade-de-lisboa">
+    <ns1:nomeInstituicaoEmpresa>Instituto Superior Técnico - Universidade de Lisboa</ns1:nomeInstituicaoEmpresa>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#InstituicaoEmpresa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_periodico_65b35509-96fc-47e5-9ac0-55e390895152">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Periodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgresex-detalhes-1d84340a-d089-42fd-88b9-7718fdbba975">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_2f32e826-a08f-44f4-9894-88c99af244a4">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_5448c1df-ddfd-41e5-8b08-81c025d2622b">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#tblgresex-b7bf7407-f559-45d5-9efe-e5fc4b01f2fa">
+    <ns1:estaRelacionadoCom rdf:resource="http://www.semanticlattes.com.br/curriculo#_b7bf7407-f559-45d5-9efe-e5fc4b01f2fa"/>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#TrabalhosEmEventos"/>
+    <ns1:temDadosBasicos rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgresex-b7bf7407-f559-45d5-9efe-e5fc4b01f2fa"/>
+    <ns1:temDetalhamentoDoTrabalho rdf:resource="http://www.ime.usp.br/ontolattes#db-tblgresex-detalhes-b7bf7407-f559-45d5-9efe-e5fc4b01f2fa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_estudante_f5325cff-36a0-4b90-9bc2-ea2fe9c9d626">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Estudante"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-artpub-detalhes-9c7931b0-89f6-4636-aade-ed094368dbba">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoArtigo"/>
+    <ns1:volume>58</ns1:volume>
+    <ns1:paginaInicial rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</ns1:paginaInicial>
+    <ns1:tituloDoLivro>AN INFRASTRUCTURE FOR THE DEVELOPMENT OF DISTRIBUTED SERVICE-ORIENTED INFORMATION SYSTEMS FOR PRECISION AGRICULTURE</ns1:tituloDoLivro>
+    <ns1:fasciculo></ns1:fasciculo>
+    <ns1:tituloDoPeriodicoOuRevista>Computers and Electronics in Agriculture</ns1:tituloDoPeriodicoOuRevista>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgresex-detalhes-3272e2e8-9d5e-4631-b3f3-47cf1c1ddeea">
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</ns1:ano>
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-07694bc6-023b-49f5-bb60-0101426284f9">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_4da95df3-ec27-4371-a3e0-dce144f0e4b1">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_c5c7318d-9210-4c8e-91b8-103e980dbb02">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#ArtigoPeriodico"/>
+    <ns2:ehPublicadoEmEdicaoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_c5c7318d-9210-4c8e-91b8-103e980dbb02"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_periodico_9c7931b0-89f6-4636-aade-ed094368dbba">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Periodico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_estudante_b99438c8-2138-4a62-b17b-902651915ae3">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Estudante"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-lvrpub-detalhes-063b0dcb-e4d3-42b9-8f86-37d9720367b1">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoLivro"/>
+    <ns1:numeroDaEdicaoRevisao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</ns1:numeroDaEdicaoRevisao>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_artigoperiodico_b0b74ac2-7dd8-4311-8c6c-0fbb278abb8d">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#ArtigoPeriodico"/>
+    <ns2:ehPublicadoEmEdicaoPeriodico rdf:resource="http://www.semanticlattes.com.br/curriculo#_edicaoperiodico_b0b74ac2-7dd8-4311-8c6c-0fbb278abb8d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#db-tblgcompl-detalhes-8cfbc847-1a39-4ffe-9d30-6b093576634a">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#DetalhamentoDoTrabalho"/>
+    <ns1:ano rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</ns1:ano>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_8cfbc847-1a39-4ffe-9d30-6b093576634a">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_b7bf7407-f559-45d5-9efe-e5fc4b01f2fa">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_cv-luís-domingues-tomé-jardim-tarrataca">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Pessoa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ime.usp.br/ontolattes#inst-laboratório-nacional-de-computação-científica">
+    <rdf:type rdf:resource="http://www.ime.usp.br/ontolattes#InstituicaoEmpresa"/>
+    <ns1:nomeInstituicaoEmpresa>Laboratório Nacional de Computação Científica</ns1:nomeInstituicaoEmpresa>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_063b0dcb-e4d3-42b9-8f86-37d9720367b1">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Livro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_trabalho_f5325cff-36a0-4b90-9bc2-ea2fe9c9d626">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Trabalho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_3272e2e8-9d5e-4631-b3f3-47cf1c1ddeea">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_92e270df-05ea-4099-b683-d137fdb33258">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_trabalho_6a5e08c5-0689-4a59-9417-dde114056b26">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Trabalho"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_be4b2211-2b13-4868-950f-3d87ecbf8de8">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Conferencia"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticlattes.com.br/curriculo#_periodico_8e9b1858-ccd0-46ed-b0f0-7bac72a4ec9d">
+    <rdf:type rdf:resource="http://www.semanticlattes.com.br/curriculo#Periodico"/>
+  </rdf:Description>
+</rdf:RDF>

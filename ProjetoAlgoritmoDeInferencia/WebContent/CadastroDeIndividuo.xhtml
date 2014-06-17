@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:p="http://primefaces.prime.com.tr/ui"
+	  xmlns:f="http://java.sun.com/jsf/core">
+	  
+	<link rel="stylesheet" href="format.css" type="text/css" />
+	<div id="principal"/>
+	  
+	  <h:head>
+	  	<title>..:: Gerenciamento de Individuos Lattes ::..</title>
+	  </h:head>
+
+<div class="ui-widget ui-widget-header" align="center">
+			<div id="logo" >
+				<h1>Olá, Seja Bem Vindo!!!</h1>
+			</div>
+		</div>
+	  <h:body style="background-color: #AEE0F0; margin-top: 20px; width: 1256px; margin-right: 90px; position: absolute; left: 115px; font-size: 12px;">
+<!-- <p:themeSwitcher initialText="Mudar thema: " buttonPreText="Tema: "/> -->
+	
+	  	<h:form id="cadastro">
+	  	
+	  	<p:tabView effect="opacity" effectDuration="normal">  
+                      
+    <p:tab title="Cadastro de Individuos">  
+         <h:panelGrid columns="3"> 
+             
+	  		<h:inputHidden value="#{individuoBean.individuo.idIndividuo}"></h:inputHidden>
+	  		
+	  		    <h:panelGroup>
+	  			<h:outputLabel value="Id Lattes " for="idLattes" />
+		  			<p:inputText id="idLattes" label="IdLattes" value="#{individuoBean.individuo.idLattes}" size="35"
+		  			maxlength="45" required="true" requiredMessage="Por favor, digite o ID do Lattes!!" 
+		  			validatorMessage="O id deve conter entre 16 caracteres!!" style="margin-left:20px">
+		  			<f:validateLength minimum="7" maximum="45" />
+		  			</p:inputText>
+		  			</h:panelGroup>
+	  			<p:message for="idLattes"/>	<br/>
+	  		
+	  			<h:panelGroup>
+	  			<h:outputLabel value="Nome: " for="nome" />
+		  			<p:inputText id="nome" label="Nome" value="#{individuoBean.individuo.nome}" size="35"
+		  			maxlength="45" required="true" requiredMessage="Por favor, digite o nome!!" 
+		  			validatorMessage="O nome deve conter entre 5 e 45 caracteres!!" style="margin-left:20px">
+		  			<f:validateLength minimum="5" maximum="45" />
+		  			</p:inputText>
+		  			</h:panelGroup>
+	  			<p:message for="nome"/>	<br/>
+	  			
+
+	  		
+	  		<p:commandButton action="#{individuoBean.salvar}" value="Salvar" ajax="false" style="font-size:13px"/><br/>
+         </h:panelGrid> 
+         <p:panel header="Opções">
+	            <h:outputLink value="entrada.jsf">Voltar </h:outputLink> <br/>
+	            <h:outputLink value="listagem.jsf">Editar</h:outputLink><br/>
+            </p:panel>
+    </p:tab>  
+      
+    <p:tab title="Edição de Individuos">  
+	  		<p:dataTable id="tbl" value="#{individuoBean.listaIndividuo}" var="individuo" rules="rows" cellpadding="7"
+	  		paginator="true" rows="10" >
+	  			<f:facet name="caption">
+	  				Aplicação utilizando JSF 2.0
+	  			</f:facet>
+	  			<f:facet name="header"> Listagem de Indivíduos Cadastrados</f:facet>
+	  			<f:facet name="footer"> Final da Listagem </f:facet>
+	  					
+	  			<p:column>
+	  				<f:facet name="header"> Identificador</f:facet>
+	  				#{individuo.idIndividuo}
+	  			</p:column>
+	  			
+	  			<p:column>
+	  				<f:facet name="header"> Id Lattes </f:facet>
+	  				#{individuo.idLattes}
+	  			</p:column>
+	  			
+	  			<p:column>
+	  				<f:facet name="header"> Nome </f:facet>
+	  				#{individuo.nome}
+	  			</p:column>
+	  			
+	  			<p:column>
+	  				<f:facet name="header">Editar</f:facet>
+	  				<h:commandLink action="#{individuoBean.editar}">
+	  					<h:graphicImage library="img" name="edit.png" style="border:0"></h:graphicImage>
+	  					<f:setPropertyActionListener target="#{individuoBean.individuo}" value="#{individuo}" />
+	
+	  				</h:commandLink>
+	  			</p:column>
+	  		</p:dataTable>
+	  				
+    </p:tab>  
+    
+      
+    <p:tab title="Deleção de Indivíduo">  
+    
+	  		<p:dataTable value="#{individuoBean.listaIndividuo}" var="invividuo" rules="rows" cellpadding="7">
+	  			<f:facet name="caption">
+	  				Aplicação utilizando JSF 2.0
+	  			</f:facet>
+	  			<f:facet name="header"> Listagem de Individuos Cadastrados</f:facet>
+	  			<f:facet name="footer"> Final da Listagem </f:facet>
+	  					
+	  			<p:column>
+	  				<f:facet name="header"> Identificador</f:facet>
+	  				#{individuo.idIndividuo}
+	  			</p:column>
+	  			
+	  			<p:column>
+	  				<f:facet name="header"> Id Lattes </f:facet>
+	  				#{individuo.idLattes}
+	  			</p:column>
+	  			
+	  			<p:column>
+	  				<f:facet name="header"> Nome </f:facet>
+	  				#{individuo.nome}
+	  			</p:column>
+	  			
+	  			<p:column>
+	  			<f:facet name="header">Deletar</f:facet>
+	  				<h:commandLink action="#{individuoBean.delete}">
+	  					<h:graphicImage library="img" name="delete.png" style="border:0"></h:graphicImage>
+	  					<f:setPropertyActionListener target="#{individuoBean.individuo}" value="#{individuo}"></f:setPropertyActionListener>
+	  				</h:commandLink>
+	  			</p:column>
+	  		</p:dataTable>
+    </p:tab>
+    <p:tab title="Teste com o themeSwitcher">
+    
+    <p:themeSwitcher initialText="Mudar tema: " buttonPreText="Temas: " /><br/>
+    <h:outputText value="Calendário: "/><p:calendar effect="explode" /> <br/> <br/>
+     <h:outputText value="Calendário: " /><p:calendar mode="inline" /><br/><br/>
+      <h:outputText value="Calendário: " /><p:calendar showOn="button" size="31" /><br/><br/>
+    <h:outputText value="Máscara para datas: " /> <p:inputMask mask="99/99/99" size="23"/><br/><br/>
+     <h:outputText value="Máscara para CPF: " /> <p:inputMask mask="999.999.999-99" size="24"/><br/><br/>
+      <h:outputText value="Máscara para Telefone: " /> <p:inputMask mask="(99)9999-9999" /><br/><br/>
+      <h:outputText value="Teclado Virtual: " /><p:keyboard size="27"/><br/><br/>
+    
+    
+    <p:commandButton value="Button" /><br/><br/>
+      
+    <p:panel header="Panel">  
+        Panel Content  
+    </p:panel>  <br/><br/>
+  
+    <p:tabView>  
+        <p:tab title="Tab1">Tab1 Content</p:tab>  
+        <p:tab title="Tab2">Tab2 Content</p:tab>  
+        <p:tab title="Tab3">Tab3 Content</p:tab>  
+    </p:tabView>  
+    </p:tab>             
+</p:tabView>  
+	  	       
+	  	</h:form>
+	  </h:body>
+</html>
