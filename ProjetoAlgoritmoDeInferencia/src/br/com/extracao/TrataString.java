@@ -199,9 +199,9 @@ public class TrataString {
 	    for (int i = 0; i<listaStrSelecionadas.size(); i++){
 	    	//System.out.println(str.selecionarStr(str.tratarStr(strASerTratadaBase)).get(i));
 	    	tbase.sendRequest(listaStrSelecionadas.get(i), language, key, output);
-	    	if(SinonimosEn.listaSinonimos.size() > 0)
+	    	if(SinonimosEn.listaSinonimosEn.size() > 0)
 	    		listaCompararBase.add(listaStrSelecionadas.get(i).toUpperCase());
-	    	listaCompararBase.addAll(SinonimosEn.listaSinonimos);
+	    	listaCompararBase.addAll(SinonimosEn.listaSinonimosEn);
 	    	//listaCompararBase.add("/");//caractere para separar os nomes raizes com seus sinonimos
 	    	
 	    }
@@ -217,9 +217,9 @@ public class TrataString {
 	    for (int i = 0; i<listaStrSelecionadas.size(); i++){
 	    	//System.out.println(str.selecionarStr(str.tratarStr(strASerTratadaDestino)).get(i));
 	    	tdestino.sendRequest(listaStrSelecionadas.get(i), language, key, output);
-	    	if(SinonimosEn.listaSinonimos.size() > 0)
+	    	if(SinonimosEn.listaSinonimosEn.size() > 0)
 	    		listaCompararDestino.add(listaStrSelecionadas.get(i).toUpperCase());
-	    	listaCompararDestino.addAll(SinonimosEn.listaSinonimos);
+	    	listaCompararDestino.addAll(SinonimosEn.listaSinonimosEn);
 	    	//listaCompararDestino.add("/");//caractere para separar os nomes raizes com seus sinonimos
 	    }
 	    

@@ -13,7 +13,7 @@ public class SinonimosEn {
         private static String search = "SOFTWARE";
         private static String language = "en_US";
         private static String output = "json";*/
-        public static ArrayList<String> listaSinonimos;
+        public static ArrayList<String> listaSinonimosEn;
 
       /*  public static void main(String[] args) {
                sendRequest(search, language, key, output);
@@ -21,7 +21,7 @@ public class SinonimosEn {
 
 		public void sendRequest(String search, String language, String key, String output){
                 final String endpoint = "http://thesaurus.altervista.org/thesaurus/v1";
-                listaSinonimos = new ArrayList<String>();
+                listaSinonimosEn = new ArrayList<String>();
                 try {
                         URL serverAddress = new URL(endpoint + "?word="+URLEncoder.encode(search, "UTF-8")+"&language="+language+"&key="+key+"&output="+output);
                         HttpURLConnection connection = (HttpURLConnection)serverAddress.openConnection();
@@ -38,7 +38,7 @@ public class SinonimosEn {
                                 for (int i=0; i < array.size(); i++) {
                                         JSONObject list = (JSONObject) ((JSONObject)array.get(i)).get("list");    
                                         //list.get("synonyms").toString().replace("|", ",");
-                                        listaSinonimos.add(list.get("synonyms").toString().replace("|", ", "));
+                                        listaSinonimosEn.add(list.get("synonyms").toString().replace("|", ", "));
                                         //System.out.println(list.get("category")+":"+list.get("synonyms"));
                                 }
                         } //else System.out.println("HTTP error:"+rc);
