@@ -264,7 +264,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 					+ "						?fasciculoDetalheArtigo1 ?volumeDetalheArtigo1 ?realizadoNaInstituicao1 ?nomeInstituicaoEmpresa1 " 
 					+ "						?nomeCurso1 "
 					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad6561ffc2-2b7d-4125-9d96-74b1066fbd76-luís-domingues-tomé-jardim-tarrataca> onto:nivel ?nomeCurso1 ."
+					+ "		<http://www.ime.usp.br/ontolattes#form-acad199ab2e7-2050-4825-8492-2a0d7c140651-luís-domingues-tomé-jardim-tarrataca> onto:nivel ?nomeCurso1 ."
 					+ "		<http://www.ime.usp.br/ontolattes#inst-instituto-superior-técnico---universidade-de-lisboa> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa1 ."
 					+ "			?realizadoNaInstituicao1 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa1 ."
 					+ "		 <http://www.ime.usp.br/ontolattes#cv-luís-domingues-tomé-jardim-tarrataca> onto:temProducaoBibliografica ?temProducaoBibliografica1 ."
