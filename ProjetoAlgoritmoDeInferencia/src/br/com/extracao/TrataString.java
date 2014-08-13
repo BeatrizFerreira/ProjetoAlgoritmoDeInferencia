@@ -17,36 +17,44 @@ public class TrataString {
     private static ArrayList<String> listaSinonimoDestino;
     private static ArrayList<String> listaStrSelecionadas;
     private static int valorTotalSomado = 0;
+    private static double valorPercentualAderende = 0.0;
 	
 	public static void main (String args []) {
 		ParserOwlJava t = new ParserOwlJava();
 		t.consultaBase();
 		t.consultaDestino1();
+		
 		int controlePosicaoVetorBase = 0;
 		int controlePosicaoVetorDestino = 0;
 		TrataString trata = new TrataString();
 		
-		System.out.println("LISTA BASE: "+ParserOwlJava.listaBase.get(0));
-		System.out.println("LISTA DESTINO: "+ParserOwlJava.listaDestino.get(0));
-		trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(0).toUpperCase(), ParserOwlJava.listaDestino.get(0).toUpperCase());
-		trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(1).toUpperCase(), ParserOwlJava.listaDestino.get(1).toUpperCase());
+		if (ParserOwlJava.listaDestino.isEmpty()){
+			System.out.println("O indivíduo não possui publicação para ser comparada.");
+			return;
+		}
 		
-/*		//trata.tratarString("PROPOSAL FOR A MEASUREMENT MODEL FOR SOFTWARE TESTS WITH A FOCUS ON THE MANAGEMENT OF OUTSOURCED SERVICES", 
-				"Intricacies of quantum computational paths");*/
-		//System.out.println(Teste2.listaBase);
-		//System.out.println("--------------Tamanho de possibilidade: " +ParserOwlJava.tamanhoListaBase * ParserOwlJava.tamanhoListaDestino +" --------------");
+		System.err.println("INDIVÍDUO BASE: "+ParserOwlJava.listaBase.get(0));
+		System.err.println("INDIVÍDUO DESTINO 1: "+ParserOwlJava.listaDestino.get(0));
+		System.err.println("TAMANHO DA LISTA BASE: "+ParserOwlJava.tamanhoListaBase);
+		System.err.println("TAMANHO DA LISTA DESTINO: "+ParserOwlJava.tamanhoListaDestino);
+		
+		System.out.println("LISTA BASE: "+ParserOwlJava.listaBase.get(1));
+		System.out.println("LISTA DESTINO: "+ParserOwlJava.listaDestino.get(1));
+		trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(1).toUpperCase(), ParserOwlJava.listaDestino.get(1).toUpperCase());
+		trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(2).toUpperCase(), ParserOwlJava.listaDestino.get(2).toUpperCase());
+
 		for (int i = 0; i< ParserOwlJava.tamanhoListaBase; i++){
 			//System.out.println(Teste2.listaBase.get(2+controlePosicaoVetorBase));
 			//System.out.println(t.consultaBase().get(controlePosicaoVetorBase+2));
 			//System.out.println("CONTROLE VETOR BASE: "+controlePosicaoVetorBase+2);
 			for (int j = 0; j< ParserOwlJava.tamanhoListaDestino; j++){
-				//System.out.println(Teste2.listaDestino.get(2+controlePosicaoVetorBase));
-				trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(2+controlePosicaoVetorBase).toUpperCase(), ParserOwlJava.listaDestino.get(2+controlePosicaoVetorDestino).toUpperCase());
+				//System.out.println(ParserOwlJava.listaBase.get(3+controlePosicaoVetorBase));
+				trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(3+controlePosicaoVetorBase).toUpperCase(), ParserOwlJava.listaDestino.get(3+controlePosicaoVetorDestino).toUpperCase());
 				//System.out.println(Teste2.listaBase.get(2+controlePosicaoVetorBase));
-				controlePosicaoVetorDestino = controlePosicaoVetorDestino + 8;
+				controlePosicaoVetorDestino = controlePosicaoVetorDestino + 9;
 			}
 			controlePosicaoVetorDestino = 0;
-			controlePosicaoVetorBase = controlePosicaoVetorBase + 8;
+			controlePosicaoVetorBase = controlePosicaoVetorBase + 9;
 		}
 		 controlePosicaoVetorDestino = 0;
 /*		for (int i = 1; i<=Teste2.tamanhoListaDestino; i++){
@@ -60,7 +68,14 @@ public class TrataString {
 			controlePosicaoVetorBase = 0;
 			controlePosicaoVetorDestino = controlePosicaoVetorDestino + 8;
 		}*/
-		 System.out.println("VALOR TOTAL SOMADO: "+valorTotalSomado);
+		 System.err.println("---------------------------------------------------------------------------");
+		 System.err.println("VALOR TOTAL SOMADO: "+valorTotalSomado);
+		 System.err.println("-------------------------VALOR PERCENTUAL ADERENTE-------------------------");
+		 System.err.println("-------------------------INDIVÍDUO BASE: "+ParserOwlJava.listaBase.get(0));
+		 System.err.println("-------------------------INDIVÍDUO DESTINO 1: "+ParserOwlJava.listaDestino.get(0));
+		 valorPercentualAderende = (((double)ParserOwlJava.tamanhoListaBase * (double)ParserOwlJava.tamanhoListaDestino) / ((double)valorTotalSomado)) * 100;
+		 System.err.println("-------------------------VALOR: " + valorPercentualAderende);
+		 System.err.println("---------------------------------------------------------------------------");
 	}
 	/**
 	 * Limpar a string do nome do artigo, para a retirada de elementos semanticamente inuteis;
@@ -71,7 +86,7 @@ public class TrataString {
 		 //System.out.println("Antes: "+str);
 		 String strAux = "";
 		 str = str.replace("-", " ");
-		 String[] prep = {"TO", "AND", "BSC", "MSC", "DR", "FOR", "AT", "E", "DA", "DE", "NA", "A", "AN", "OS", "ON", "IN", "THE", "DO", "OF", "WITH", "AS", "PARA", "COM", "NO", "EM"}; //Lista de termos para serem retirados da string original do titulo do artigo
+		 String[] prep = {"CURSO", "UNIVERSIDADE", "GRADUAÇÃO", "AU", "TO", "AND", "BSC", "MSC", "DR", "UM", "DOS", "FOR", "AT", "E", "A", "O", "DA", "DE", "NA", "A", "AN", "OS", "ON", "IN", "THE", "DO", "OF", "WITH", "AS", "PARA", "COM", "NO", "EM"}; //Lista de termos para serem retirados da string original do titulo do artigo
 
 		 for (int i = 0; i < prep.length; i++) {
 			 
@@ -81,13 +96,14 @@ public class TrataString {
 		    	 strAux = prep[i].toString();
 		    	  if(str.contains(strAux)){
 		    		    str = " "+str;
-			  	    	str = str.replaceAll(" "+prep[i].toString()+ " ", "");
+			  	    	str = str.replaceAll(" "+prep[i].toString()+ " ", " ");
+			  			
 			  	    	}
 		          }
 		     str = str.replaceAll(" " +prep[i].toString()+ " ", " ");
 		     }
 	    //System.out.println("Depois: "+str);
-		return str;
+		return str.trim();
 	}
 	/**
 	 * A string eh quebrada para facilitar o calculo randomico das palavras que vao compor a lista de sinonimos
@@ -142,7 +158,7 @@ public class TrataString {
 		 ArrayList<String> listaStrTmpSelecionadas = new ArrayList<String>();
 		 ArrayList<Integer> listaTmp = new ArrayList<Integer>();
 		str = Normalizer.normalize(str, Normalizer.Form.NFD);
-		str = str.replaceAll("[^\\p{ASCII}]", "");
+		str = str.replaceAll("[^\\p{ASCII}]", "").replace(":", "").replace(".", "");
 		 StringTokenizer token = new StringTokenizer(str, " ");
 	     while(token.hasMoreTokens()) {  
 	            String local = token.nextToken(); 
@@ -171,19 +187,18 @@ public class TrataString {
 	public void compararListaSinonimos (ArrayList<String> listaSinonimosBase, ArrayList<String> listaSinonimosDestino){
 
 		int valorObtidoNaComparacao = 0;
-		int qtdSinonimosEncontrados = 0;
+
 		if(listaSinonimosBase.size() > 0 && listaSinonimosDestino.size() > 0){
 			for (int i = 0; i< listaSinonimosBase.size(); i++){
 				for (int j = 0; j< listaSinonimosDestino.size(); j++){
 					if(listaSinonimosBase.get(i).toUpperCase().contains(listaSinonimosDestino.get(j).toUpperCase())){
 						System.out.println(listaSinonimosBase.get(i) + " = " + listaSinonimosDestino.get(j));
 						valorObtidoNaComparacao = 5;
+						System.out.println("Valor Adquirido: "+valorObtidoNaComparacao);
+						valorTotalSomado = valorTotalSomado + valorObtidoNaComparacao;
 					}
-					qtdSinonimosEncontrados = qtdSinonimosEncontrados + 1;
-					valorTotalSomado = valorTotalSomado + qtdSinonimosEncontrados;
 				}
 			}
-			System.out.println("Quantidade de SINONIMOS IGUAIS encontrados: " +qtdSinonimosEncontrados);
 /*			for (int i = 0; i< listaSinonimosDestino.size(); i++){
 				for (int j = 0; j< listaSinonimosBase.size(); j++){
 					if(listaSinonimosDestino.get(i).toUpperCase().contains(listaSinonimosBase.get(j).toUpperCase())){
@@ -195,7 +210,6 @@ public class TrataString {
 		}else{
 			return;
 		}
-		System.out.println("Valor Adquirido: "+valorObtidoNaComparacao);
 	}
 	/**
 	 * Metodo que retorna a lista de sinonimos do Thesauros em Ingles.
