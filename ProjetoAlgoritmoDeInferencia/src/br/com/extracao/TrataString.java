@@ -99,7 +99,7 @@ public class TrataString {
 			  	    	str = str.replaceAll(" "+prep[i].toString()+ " ", " ");
 			  			
 			  	    	}
-		          }
+		          } 
 		     str = str.replaceAll(" " +prep[i].toString()+ " ", " ");
 		     }
 	    //System.out.println("Depois: "+str);
