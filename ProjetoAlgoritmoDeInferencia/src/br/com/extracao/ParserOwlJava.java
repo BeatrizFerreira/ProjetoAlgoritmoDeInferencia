@@ -23,7 +23,9 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 	public static void main(String args[]) throws OntologyLoadException {
 
 		new ParserOwlJava().consultaBase();
-		new ParserOwlJava().consultaDestino1();
+		new ParserOwlJava().consultaDestino3();
+/*		new ParserOwlJava().consultaDestino2();
+		new ParserOwlJava().consultaDestino3();*/
 		//new Teste2().consultaDestino2();
 		//new Teste2().consultaDestino3();
 		//System.out.println("Artigo(s) publicados destino 3: " +listaDestino.get(2));
@@ -178,7 +180,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste2.owl"));
+			in = new FileInputStream(new File("Teste5.owl"));
 			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
 			model.read(in, null); 
 
@@ -191,9 +193,10 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 					+ "	PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>"
 					+ "		SELECT DISTINCT ?temProducaoBibliografica ?temDadosBasicos ?temDetalhamentoDoArtigo ?tituloDadosBasicos " 
 					+		"?anoDadosBasicos ?tituloDoLivroDetalheArtigo ?tituloDoPeriodicoOuRevistaDetalheArtigo ?fasciculoDetalheArtigo "
-					+   	"?volumeDetalheArtigo ?realizadoNaInstituicao ?nomeInstituicaoEmpresa ?nomeCurso "
+					+   	"?volumeDetalheArtigo ?realizadoNaInstituicao ?nomeInstituicaoEmpresa ?nomeCurso ?nomeCompleto "
 					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad99e1ac12-40e1-4266-b6b3-1565bfd121bb-luiz-carlos-miyadaira-ribeiro-junior> onto:nivel ?nomeCurso ."
+					+ "		<http://www.ime.usp.br/ontolattes#dg-luiz-carlos-miyadaira-ribeiro-junior> onto:nomeCompleto ?nomeCompleto ."
+					+ "		<http://www.ime.usp.br/ontolattes#form-acad7184a2fa-ac3a-4abe-9d37-c7cf4b887623-luiz-carlos-miyadaira-ribeiro-junior> onto:nivel ?nomeCurso ."
 					+ "		<http://www.ime.usp.br/ontolattes#inst-faculdade-de-informática-de-lins> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa ."
 					+ "			?realizadoNaInstituicao1 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa ."
 					+ "		<http://www.ime.usp.br/ontolattes#cv-luiz-carlos-miyadaira-ribeiro-junior> onto:temProducaoBibliografica ?temProducaoBibliografica ."
@@ -212,12 +215,14 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 			results = qe.execSelect();
 			listaBase = new ArrayList<String>();
 			tamanhoListaBase = 0;
-			String strNomeCurso = null, strNomeInstituicaoEmpresa = null, strTituloDadosBasicos = null, strAnoDadosBasicos = null, 
+			String strNomeCompleto = null, strNomeCurso = null, strNomeInstituicaoEmpresa = null, strTituloDadosBasicos = null, strAnoDadosBasicos = null, 
 				   strTituloDoLivroDetalheArtigo = null, strTituloDoPeriodicoOuRevistaDetalheArtigo = null, strFasciculoDetalheArtigo = null, 
 				   strVolumeDetalheArtigo = null;
+			//System.out.println("RESULTADO: "+query);
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 				
+				strNomeCompleto = soln.getLiteral("nomeCompleto").toString();
 				strNomeCurso = soln.getLiteral("nomeCurso").toString();
 				strNomeInstituicaoEmpresa = soln.getLiteral("nomeInstituicaoEmpresa").toString();
 				strTituloDadosBasicos = soln.getLiteral("tituloDadosBasicos").toString();
@@ -227,6 +232,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 				strFasciculoDetalheArtigo = soln.getLiteral("fasciculoDetalheArtigo").toString();
 				strVolumeDetalheArtigo = soln.getLiteral("volumeDetalheArtigo").toString();
 
+				listaBase.add(strNomeCompleto);
 				listaBase.add(strNomeCurso);
 				listaBase.add(strNomeInstituicaoEmpresa);
 				listaBase.add(strTituloDadosBasicos);
@@ -248,7 +254,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste2.owl"));
+			in = new FileInputStream(new File("Teste5.owl"));
 			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
 			model.read(in, null); 
 
@@ -262,12 +268,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 					+ "		SELECT DISTINCT ?temProducaoBibliografica1 ?temDadosBasicos1 ?temDetalhamentoDoArtigo1 ?tituloDadosBasicos1 " 
 					+ "						?anoDadosBasicos1 ?tituloDoLivroDetalheArtigo1 ?tituloDoPeriodicoOuRevistaDetalheArtigo1 " 
 					+ "						?fasciculoDetalheArtigo1 ?volumeDetalheArtigo1 ?realizadoNaInstituicao1 ?nomeInstituicaoEmpresa1 " 
-					+ "						?nomeCurso1 "
+					+ "						?nomeCurso1 ?nomeCompleto1 "
 					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad199ab2e7-2050-4825-8492-2a0d7c140651-luís-domingues-tomé-jardim-tarrataca> onto:nivel ?nomeCurso1 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-instituto-superior-técnico---universidade-de-lisboa> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa1 ."
+					+ "		<http://www.ime.usp.br/ontolattes#dg-rejane-maria-da-costa-figueiredo> onto:nomeCompleto ?nomeCompleto1 ."	
+					+ "		<http://www.ime.usp.br/ontolattes#form-acadd45224c3-9bf1-4602-825b-192e3ea3029b-rejane-maria-da-costa-figueiredo> onto:nivel ?nomeCurso1 ."
+					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-ribeirão-preto,-unaerp,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa1 ."
 					+ "			?realizadoNaInstituicao1 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa1 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-luís-domingues-tomé-jardim-tarrataca> onto:temProducaoBibliografica ?temProducaoBibliografica1 ."
+					+ "		 <http://www.ime.usp.br/ontolattes#cv-rejane-maria-da-costa-figueiredo> onto:temProducaoBibliografica ?temProducaoBibliografica1 ."
 					+ "			 ?temProducaoBibliografica1 onto:temDadosBasicos ?temDadosBasicos1 ."
 					+ "			 ?temProducaoBibliografica1 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo1 ."
 					+ "			 ?temDadosBasicos1 onto:titulo ?tituloDadosBasicos1 ."
@@ -282,12 +289,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 			results = qe.execSelect();
 			listaDestino = new ArrayList<String>();
 			tamanhoListaDestino = 0;
-			String strNomeCurso1 = null, strNomeInstituicaoEmpresa1 = null, strTituloDadosBasicos1 = null, strAnoDadosBasicos1 = null, 
+			String strNomeCompleto1 = null, strNomeCurso1 = null, strNomeInstituicaoEmpresa1 = null, strTituloDadosBasicos1 = null, strAnoDadosBasicos1 = null, 
 				   strTituloDoLivroDetalheArtigo1 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo1 = null, strFasciculoDetalheArtigo1 = null,
 				   strVolumeDetalheArtigo1 = null;
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 
+				strNomeCompleto1 = soln.getLiteral("nomeCompleto1").toString();
 				strNomeCurso1 = soln.getLiteral("nomeCurso1").toString();
 				strNomeInstituicaoEmpresa1 = soln.getLiteral("nomeInstituicaoEmpresa1").toString();
 				strTituloDadosBasicos1 = soln.getLiteral("tituloDadosBasicos1").toString();
@@ -297,6 +305,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 				strFasciculoDetalheArtigo1 = soln.getLiteral("fasciculoDetalheArtigo1").toString();
 				strVolumeDetalheArtigo1 = soln.getLiteral("volumeDetalheArtigo1").toString();
 
+				listaDestino.add(strNomeCompleto1);
 				listaDestino.add(strNomeCurso1);
 				listaDestino.add(strNomeInstituicaoEmpresa1);
 				listaDestino.add(strTituloDadosBasicos1);
@@ -314,11 +323,84 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 		return listaDestino;
 	}
 	
-/*	public ArrayList<String> consultaDestino1() {
+	public ArrayList<String> consultaDestino2() {
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste.owl"));
+			in = new FileInputStream(new File("Teste5.owl"));
+			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
+			model.read(in, null); 
+
+			String queryString = "	PREFIX lattes: <http://www.semanticlattes.com.br/curriculo#>"
+					+ "	PREFIX onto:   <http://www.ime.usp.br/ontolattes#>"
+					+ "	PREFIX qualis: <http://qualis.capes.gov.br/qualis-capes.owl#>"
+					+ "	PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>"
+					+ "	PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
+					+ "	PREFIX owl:     <http://www.w3.org/2002/07/owl#>"
+					+ "	PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>"
+					+ "		SELECT DISTINCT ?temProducaoBibliografica2 ?temDadosBasicos2 ?temDetalhamentoDoArtigo2 ?tituloDadosBasicos2 " 
+					+ "    					?anoDadosBasicos2 ?tituloDoLivroDetalheArtigo2 ?tituloDoPeriodicoOuRevistaDetalheArtigo2 " 
+					+ "						?fasciculoDetalheArtigo2 ?volumeDetalheArtigo2 ?realizadoNaInstituicao2 ?nomeInstituicaoEmpresa2 " 
+					+ "						?nomeCurso2 ?nomeCompleto2 "
+					+ "WHERE {	"
+					+ "		<http://www.ime.usp.br/ontolattes#dg-sergio-antônio-andrade-de-freitas> onto:nomeCompleto ?nomeCompleto2 ."	
+					+ "		<http://www.ime.usp.br/ontolattes#form-acad22043d29-b67c-48e0-8e0b-1cf8c9934930-sergio-antônio-andrade-de-freitas> onto:nivel ?nomeCurso2 ."
+					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-federal-de-uberlândia,-ufu,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa2 ."
+					+ "			?realizadoNaInstituicao2 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa2 ."
+					+ "		 <http://www.ime.usp.br/ontolattes#cv-sergio-antônio-andrade-de-freitas> onto:temProducaoBibliografica ?temProducaoBibliografica2 ."
+					+ "			 ?temProducaoBibliografica2 onto:temDadosBasicos ?temDadosBasicos2 ."
+					+ "			 ?temProducaoBibliografica2 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo2 ."
+					+ "			 ?temDadosBasicos2 onto:titulo ?tituloDadosBasicos2 ."
+					+ "			 ?temDadosBasicos2 onto:ano ?anoDadosBasicos2 ."
+					+ "          ?temDetalhamentoDoArtigo2 onto:tituloDoLivro ?tituloDoLivroDetalheArtigo2 ."
+					+ "			 ?temDetalhamentoDoArtigo2 onto:tituloDoPeriodicoOuRevista ?tituloDoPeriodicoOuRevistaDetalheArtigo2 ."
+					+ "		     ?temDetalhamentoDoArtigo2 onto:fasciculo ?fasciculoDetalheArtigo2 ."
+					+ "			 ?temDetalhamentoDoArtigo2 onto:volume ?volumeDetalheArtigo2 . } ";
+			
+			com.hp.hpl.jena.query.Query query = QueryFactory.create(queryString);
+			QueryExecution qe = QueryExecutionFactory.create(query, model);
+			results = qe.execSelect();
+			listaDestino = new ArrayList<String>();
+			tamanhoListaDestino = 0;
+			String strNomeCompleto2 = null, strNomeCurso2 = null, strNomeInstituicaoEmpresa2 = null, strTituloDadosBasicos2 = null, strAnoDadosBasicos2 = null, 
+				   strTituloDoLivroDetalheArtigo2 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo2 = null, strFasciculoDetalheArtigo2 = null,
+				   strVolumeDetalheArtigo2 = null;
+			while (results.hasNext()) {
+				QuerySolution soln = results.nextSolution();
+
+				strNomeCompleto2 = soln.getLiteral("nomeCompleto2").toString();
+				strNomeCurso2 = soln.getLiteral("nomeCurso2").toString();
+				strNomeInstituicaoEmpresa2 = soln.getLiteral("nomeInstituicaoEmpresa2").toString();
+				strTituloDadosBasicos2 = soln.getLiteral("tituloDadosBasicos2").toString();
+				strAnoDadosBasicos2 = soln.getLiteral("anoDadosBasicos2").toString();
+				strTituloDoLivroDetalheArtigo2 = soln.getLiteral("tituloDoLivroDetalheArtigo2").toString();
+				strTituloDoPeriodicoOuRevistaDetalheArtigo2 = soln.getLiteral("tituloDoPeriodicoOuRevistaDetalheArtigo2").toString();
+				strFasciculoDetalheArtigo2 = soln.getLiteral("fasciculoDetalheArtigo2").toString();
+				strVolumeDetalheArtigo2 = soln.getLiteral("volumeDetalheArtigo2").toString();
+
+				listaDestino.add(strNomeCompleto2);
+				listaDestino.add(strNomeCurso2);
+				listaDestino.add(strNomeInstituicaoEmpresa2);
+				listaDestino.add(strTituloDadosBasicos2);
+				listaDestino.add(strAnoDadosBasicos2);
+				listaDestino.add(strTituloDoLivroDetalheArtigo2);
+				listaDestino.add(strTituloDoPeriodicoOuRevistaDetalheArtigo2);
+				listaDestino.add(strFasciculoDetalheArtigo2);
+				listaDestino.add(strVolumeDetalheArtigo2);
+				tamanhoListaDestino ++;
+			}
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}
+
+		return listaDestino;
+	}
+
+	public ArrayList<String> consultaDestino3() {
+		InputStream in = null;
+		ResultSet results = null;
+		try {
+			in = new FileInputStream(new File("Teste5.owl"));
 			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
 			model.read(in, null); 
 
@@ -332,12 +414,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 					+ "		SELECT DISTINCT ?temProducaoBibliografica1 ?temDadosBasicos1 ?temDetalhamentoDoArtigo1 ?tituloDadosBasicos1 " 
 					+ "						?anoDadosBasicos1 ?tituloDoLivroDetalheArtigo1 ?tituloDoPeriodicoOuRevistaDetalheArtigo1 " 
 					+ "						?fasciculoDetalheArtigo1 ?volumeDetalheArtigo1 ?realizadoNaInstituicao1 ?nomeInstituicaoEmpresa1 " 
-					+ "						?nomeCurso1 "
+					+ "						?nomeCurso1 ?nomeCompleto1 "
 					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acadc6fc53e5-b8c1-4895-a1ec-8a08c1d43e43-andré-gustavo-de-melo-araújo> onto:nivel ?nomeCurso1 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-são-paulo,-usp,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa1 ."
+					+ "		<http://www.ime.usp.br/ontolattes#dg-edgard-costa-oliveira> onto:nomeCompleto ?nomeCompleto1 ."	
+					+ "		<http://www.ime.usp.br/ontolattes#form-acaddc594282-62c1-4583-b871-452d3471ae86-edgard-costa-oliveira> onto:nivel ?nomeCurso1 ."
+					+ "		<http://www.ime.usp.br/ontolattes#inst-centro-de-ensino-unificado-de-brasília> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa1 ."
 					+ "			?realizadoNaInstituicao1 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa1 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-andré-gustavo-de-melo-araújo> onto:temProducaoBibliografica ?temProducaoBibliografica1 ."
+					+ "		 <http://www.ime.usp.br/ontolattes#cv-edgard-costa-oliveira> onto:temProducaoBibliografica ?temProducaoBibliografica1 ."
 					+ "			 ?temProducaoBibliografica1 onto:temDadosBasicos ?temDadosBasicos1 ."
 					+ "			 ?temProducaoBibliografica1 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo1 ."
 					+ "			 ?temDadosBasicos1 onto:titulo ?tituloDadosBasicos1 ."
@@ -352,12 +435,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 			results = qe.execSelect();
 			listaDestino = new ArrayList<String>();
 			tamanhoListaDestino = 0;
-			String strNomeCurso1 = null, strNomeInstituicaoEmpresa1 = null, strTituloDadosBasicos1 = null, strAnoDadosBasicos1 = null, 
+			String strNomeCompleto1 = null, strNomeCurso1 = null, strNomeInstituicaoEmpresa1 = null, strTituloDadosBasicos1 = null, strAnoDadosBasicos1 = null, 
 				   strTituloDoLivroDetalheArtigo1 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo1 = null, strFasciculoDetalheArtigo1 = null,
 				   strVolumeDetalheArtigo1 = null;
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 
+				strNomeCompleto1 = soln.getLiteral("nomeCompleto1").toString();
 				strNomeCurso1 = soln.getLiteral("nomeCurso1").toString();
 				strNomeInstituicaoEmpresa1 = soln.getLiteral("nomeInstituicaoEmpresa1").toString();
 				strTituloDadosBasicos1 = soln.getLiteral("tituloDadosBasicos1").toString();
@@ -367,6 +451,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 				strFasciculoDetalheArtigo1 = soln.getLiteral("fasciculoDetalheArtigo1").toString();
 				strVolumeDetalheArtigo1 = soln.getLiteral("volumeDetalheArtigo1").toString();
 
+				listaDestino.add(strNomeCompleto1);
 				listaDestino.add(strNomeCurso1);
 				listaDestino.add(strNomeInstituicaoEmpresa1);
 				listaDestino.add(strTituloDadosBasicos1);
@@ -375,288 +460,6 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 				listaDestino.add(strTituloDoPeriodicoOuRevistaDetalheArtigo1);
 				listaDestino.add(strFasciculoDetalheArtigo1);
 				listaDestino.add(strVolumeDetalheArtigo1);
-				tamanhoListaDestino ++;
-			}
-		} catch (IOException ex) {
-			ex.printStackTrace();
-		}
-
-		return listaDestino;
-	}
-	*/
-/*	
-	public ArrayList<String> consultaDestino2() {
-		InputStream in = null;
-		ResultSet results = null;
-		try {
-			in = new FileInputStream(new File("Teste.owl"));
-			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
-			model.read(in, null); 
-
-			String queryString = "	PREFIX lattes: <http://www.semanticlattes.com.br/curriculo#>"
-					+ "	PREFIX onto:   <http://www.ime.usp.br/ontolattes#>"
-					+ "	PREFIX qualis: <http://qualis.capes.gov.br/qualis-capes.owl#>"
-					+ "	PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>"
-					+ "	PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
-					+ "	PREFIX owl:     <http://www.w3.org/2002/07/owl#>"
-					+ "	PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>"
-					+ "		SELECT DISTINCT ?temProducaoBibliografica2 ?temDadosBasicos2 ?temDetalhamentoDoArtigo2 ?tituloDadosBasicos2 " 
-					+ "    					?anoDadosBasicos2 ?tituloDoLivroDetalheArtigo2 ?tituloDoPeriodicoOuRevistaDetalheArtigo2 " 
-					+ "						?fasciculoDetalheArtigo2 ?volumeDetalheArtigo2 ?realizadoNaInstituicao2 ?nomeInstituicaoEmpresa2 " 
-					+ "						?nomeCurso2 "
-					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad279c2d0c-8de9-4364-9f6c-5fcccafabf1e-fabricio-ataides-braz> onto:nivel ?nomeCurso2 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-pontifícia-universidade-católica-de-goiás,-puc-goiás,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa2 ."
-					+ "			?realizadoNaInstituicao2 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa2 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-fabricio-ataides-braz> onto:temProducaoBibliografica ?temProducaoBibliografica2 ."
-					+ "			 ?temProducaoBibliografica2 onto:temDadosBasicos ?temDadosBasicos2 ."
-					+ "			 ?temProducaoBibliografica2 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo2 ."
-					+ "			 ?temDadosBasicos2 onto:titulo ?tituloDadosBasicos2 ."
-					+ "			 ?temDadosBasicos2 onto:ano ?anoDadosBasicos2 ."
-					+ "          ?temDetalhamentoDoArtigo2 onto:tituloDoLivro ?tituloDoLivroDetalheArtigo2 ."
-					+ "			 ?temDetalhamentoDoArtigo2 onto:tituloDoPeriodicoOuRevista ?tituloDoPeriodicoOuRevistaDetalheArtigo2 ."
-					+ "		     ?temDetalhamentoDoArtigo2 onto:fasciculo ?fasciculoDetalheArtigo2 ."
-					+ "			 ?temDetalhamentoDoArtigo2 onto:volume ?volumeDetalheArtigo2 . } ";
-			
-			com.hp.hpl.jena.query.Query query = QueryFactory.create(queryString);
-			QueryExecution qe = QueryExecutionFactory.create(query, model);
-			results = qe.execSelect();
-			listaDestino = new ArrayList<String>();
-			tamanhoListaDestino = 0;
-			String strNomeCurso2 = null, strNomeInstituicaoEmpresa2 = null, strTituloDadosBasicos2 = null, strAnoDadosBasicos2 = null, 
-				   strTituloDoLivroDetalheArtigo2 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo2 = null, strFasciculoDetalheArtigo2 = null,
-				   strVolumeDetalheArtigo2 = null;
-			while (results.hasNext()) {
-				QuerySolution soln = results.nextSolution();
-
-				strNomeCurso2 = soln.getLiteral("nomeCurso2").toString();
-				strNomeInstituicaoEmpresa2 = soln.getLiteral("nomeInstituicaoEmpresa2").toString();
-				strTituloDadosBasicos2 = soln.getLiteral("tituloDadosBasicos2").toString();
-				strAnoDadosBasicos2 = soln.getLiteral("anoDadosBasicos2").toString();
-				strTituloDoLivroDetalheArtigo2 = soln.getLiteral("tituloDoLivroDetalheArtigo2").toString();
-				strTituloDoPeriodicoOuRevistaDetalheArtigo2 = soln.getLiteral("tituloDoPeriodicoOuRevistaDetalheArtigo2").toString();
-				strFasciculoDetalheArtigo2 = soln.getLiteral("fasciculoDetalheArtigo2").toString();
-				strVolumeDetalheArtigo2 = soln.getLiteral("volumeDetalheArtigo2").toString();
-
-				listaDestino.add(strNomeCurso2);
-				listaDestino.add(strNomeInstituicaoEmpresa2);
-				listaDestino.add(strTituloDadosBasicos2);
-				listaDestino.add(strAnoDadosBasicos2);
-				listaDestino.add(strTituloDoLivroDetalheArtigo2);
-				listaDestino.add(strTituloDoPeriodicoOuRevistaDetalheArtigo2);
-				listaDestino.add(strFasciculoDetalheArtigo2);
-				listaDestino.add(strVolumeDetalheArtigo2);
-				tamanhoListaDestino ++;
-			}
-		} catch (IOException ex) {
-			ex.printStackTrace();
-		}
-
-		return listaDestino;
-	}
-	*/
-	
-	public ArrayList<String> consultaDestino2() {
-		InputStream in = null;
-		ResultSet results = null;
-		try {
-			in = new FileInputStream(new File("Teste2.owl"));
-			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
-			model.read(in, null); 
-
-			String queryString = "	PREFIX lattes: <http://www.semanticlattes.com.br/curriculo#>"
-					+ "	PREFIX onto:   <http://www.ime.usp.br/ontolattes#>"
-					+ "	PREFIX qualis: <http://qualis.capes.gov.br/qualis-capes.owl#>"
-					+ "	PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>"
-					+ "	PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
-					+ "	PREFIX owl:     <http://www.w3.org/2002/07/owl#>"
-					+ "	PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>"
-					+ "		SELECT DISTINCT ?temProducaoBibliografica2 ?temDadosBasicos2 ?temDetalhamentoDoArtigo2 ?tituloDadosBasicos2 " 
-					+ "    					?anoDadosBasicos2 ?tituloDoLivroDetalheArtigo2 ?tituloDoPeriodicoOuRevistaDetalheArtigo2 " 
-					+ "						?fasciculoDetalheArtigo2 ?volumeDetalheArtigo2 ?realizadoNaInstituicao2 ?nomeInstituicaoEmpresa2 " 
-					+ "						?nomeCurso2 "
-					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad35f70f31-2520-422c-8251-7924b1b97727-jan-mendonça-correa> onto:nivel ?nomeCurso2 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-brasília,-unb,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa2 ."
-					+ "			?realizadoNaInstituicao2 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa2 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-jan-mendonça-correa> onto:temProducaoBibliografica ?temProducaoBibliografica2 ."
-					+ "			 ?temProducaoBibliografica2 onto:temDadosBasicos ?temDadosBasicos2 ."
-					+ "			 ?temProducaoBibliografica2 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo2 ."
-					+ "			 ?temDadosBasicos2 onto:titulo ?tituloDadosBasicos2 ."
-					+ "			 ?temDadosBasicos2 onto:ano ?anoDadosBasicos2 ."
-					+ "          ?temDetalhamentoDoArtigo2 onto:tituloDoLivro ?tituloDoLivroDetalheArtigo2 ."
-					+ "			 ?temDetalhamentoDoArtigo2 onto:tituloDoPeriodicoOuRevista ?tituloDoPeriodicoOuRevistaDetalheArtigo2 ."
-					+ "		     ?temDetalhamentoDoArtigo2 onto:fasciculo ?fasciculoDetalheArtigo2 ."
-					+ "			 ?temDetalhamentoDoArtigo2 onto:volume ?volumeDetalheArtigo2 . } ";
-			
-			com.hp.hpl.jena.query.Query query = QueryFactory.create(queryString);
-			QueryExecution qe = QueryExecutionFactory.create(query, model);
-			results = qe.execSelect();
-			listaDestino = new ArrayList<String>();
-			tamanhoListaDestino = 0;
-			String strNomeCurso2 = null, strNomeInstituicaoEmpresa2 = null, strTituloDadosBasicos2 = null, strAnoDadosBasicos2 = null, 
-				   strTituloDoLivroDetalheArtigo2 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo2 = null, strFasciculoDetalheArtigo2 = null,
-				   strVolumeDetalheArtigo2 = null;
-			while (results.hasNext()) {
-				QuerySolution soln = results.nextSolution();
-
-				strNomeCurso2 = soln.getLiteral("nomeCurso2").toString();
-				strNomeInstituicaoEmpresa2 = soln.getLiteral("nomeInstituicaoEmpresa2").toString();
-				strTituloDadosBasicos2 = soln.getLiteral("tituloDadosBasicos2").toString();
-				strAnoDadosBasicos2 = soln.getLiteral("anoDadosBasicos2").toString();
-				strTituloDoLivroDetalheArtigo2 = soln.getLiteral("tituloDoLivroDetalheArtigo2").toString();
-				strTituloDoPeriodicoOuRevistaDetalheArtigo2 = soln.getLiteral("tituloDoPeriodicoOuRevistaDetalheArtigo2").toString();
-				strFasciculoDetalheArtigo2 = soln.getLiteral("fasciculoDetalheArtigo2").toString();
-				strVolumeDetalheArtigo2 = soln.getLiteral("volumeDetalheArtigo2").toString();
-
-				listaDestino.add(strNomeCurso2);
-				listaDestino.add(strNomeInstituicaoEmpresa2);
-				listaDestino.add(strTituloDadosBasicos2);
-				listaDestino.add(strAnoDadosBasicos2);
-				listaDestino.add(strTituloDoLivroDetalheArtigo2);
-				listaDestino.add(strTituloDoPeriodicoOuRevistaDetalheArtigo2);
-				listaDestino.add(strFasciculoDetalheArtigo2);
-				listaDestino.add(strVolumeDetalheArtigo2);
-				tamanhoListaDestino ++;
-			}
-		} catch (IOException ex) {
-			ex.printStackTrace();
-		}
-
-		return listaDestino;
-	}
-/*	
-	public ArrayList<String> consultaDestino3() {
-		InputStream in = null;
-		ResultSet results = null;
-		try {
-			in = new FileInputStream(new File("Teste.owl"));
-			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
-			model.read(in, null); 
-
-			String queryString = "	PREFIX lattes: <http://www.semanticlattes.com.br/curriculo#>"
-					+ "	PREFIX onto:   <http://www.ime.usp.br/ontolattes#>"
-					+ "	PREFIX qualis: <http://qualis.capes.gov.br/qualis-capes.owl#>"
-					+ "	PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>"
-					+ "	PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
-					+ "	PREFIX owl:     <http://www.w3.org/2002/07/owl#>"
-					+ "	PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>"
-					+ "		SELECT DISTINCT ?temProducaoBibliografica3 ?temDadosBasicos3 ?temDetalhamentoDoArtigo3 ?tituloDadosBasicos3 " 
-					+ "    					?anoDadosBasicos3 ?tituloDoLivroDetalheArtigo3 ?tituloDoPeriodicoOuRevistaDetalheArtigo3 " 
-					+ "						?fasciculoDetalheArtigo3 ?volumeDetalheArtigo3 ?realizadoNaInstituicao3 ?nomeInstituicaoEmpresa3 " 
-					+ "						?nomeCurso3 "
-					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad47093e66-625f-489f-8f4e-63b46a759bee-edson-mintsu-hung> onto:nivel ?nomeCurso3 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-brasília,-unb,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa3 ."
-					+ "			?realizadoNaInstituicao3 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa3 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-edson-mintsu-hung> onto:temProducaoBibliografica ?temProducaoBibliografica3 ."
-					+ "			 ?temProducaoBibliografica3 onto:temDadosBasicos ?temDadosBasicos3 ."
-					+ "			 ?temProducaoBibliografica3 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo3 ."
-					+ "			 ?temDadosBasicos3 onto:titulo ?tituloDadosBasicos3 ."
-					+ "			 ?temDadosBasicos3 onto:ano ?anoDadosBasicos3 ."
-					+ "          ?temDetalhamentoDoArtigo3 onto:tituloDoLivro ?tituloDoLivroDetalheArtigo3 ."
-					+ "			 ?temDetalhamentoDoArtigo3 onto:tituloDoPeriodicoOuRevista ?tituloDoPeriodicoOuRevistaDetalheArtigo3 ."
-					+ "		     ?temDetalhamentoDoArtigo3 onto:fasciculo ?fasciculoDetalheArtigo3 ."
-					+ "			 ?temDetalhamentoDoArtigo3 onto:volume ?volumeDetalheArtigo3 . } ";
-			
-			com.hp.hpl.jena.query.Query query = QueryFactory.create(queryString);
-			QueryExecution qe = QueryExecutionFactory.create(query, model);
-			results = qe.execSelect();
-			listaDestino = new ArrayList<String>();
-			tamanhoListaDestino = 0;
-			String strNomeCurso3 = null, strNomeInstituicaoEmpresa3 = null, strTituloDadosBasicos3 = null, strAnoDadosBasicos3 = null, 
-				   strTituloDoLivroDetalheArtigo3 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo3 = null, strFasciculoDetalheArtigo3 = null,
-				   strVolumeDetalheArtigo3 = null;
-			while (results.hasNext()) {
-				QuerySolution soln = results.nextSolution();
-
-				strNomeCurso3 = soln.getLiteral("nomeCurso3").toString();
-				strNomeInstituicaoEmpresa3 = soln.getLiteral("nomeInstituicaoEmpresa3").toString();
-				strTituloDadosBasicos3 = soln.getLiteral("tituloDadosBasicos3").toString();
-				strAnoDadosBasicos3 = soln.getLiteral("anoDadosBasicos3").toString();
-				strTituloDoLivroDetalheArtigo3 = soln.getLiteral("tituloDoLivroDetalheArtigo3").toString();
-				strTituloDoPeriodicoOuRevistaDetalheArtigo3 = soln.getLiteral("tituloDoPeriodicoOuRevistaDetalheArtigo3").toString();
-				strFasciculoDetalheArtigo3 = soln.getLiteral("fasciculoDetalheArtigo3").toString();
-				strVolumeDetalheArtigo3 = soln.getLiteral("volumeDetalheArtigo3").toString();
-
-				listaDestino.add(strNomeCurso3);
-				listaDestino.add(strNomeInstituicaoEmpresa3);
-				listaDestino.add(strTituloDadosBasicos3);
-				listaDestino.add(strAnoDadosBasicos3);
-				listaDestino.add(strTituloDoLivroDetalheArtigo3);
-				listaDestino.add(strTituloDoPeriodicoOuRevistaDetalheArtigo3);
-				listaDestino.add(strFasciculoDetalheArtigo3);
-				listaDestino.add(strVolumeDetalheArtigo3);
-				tamanhoListaDestino ++;
-			}
-		} catch (IOException ex) {
-			ex.printStackTrace();
-		}
-
-		return listaDestino;
-	}
-	*/
-	public ArrayList<String> consultaDestino3() {
-		InputStream in = null;
-		ResultSet results = null;
-		try {
-			in = new FileInputStream(new File("Teste.owl"));
-			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
-			model.read(in, null); 
-
-			String queryString = "	PREFIX lattes: <http://www.semanticlattes.com.br/curriculo#>"
-					+ "	PREFIX onto:   <http://www.ime.usp.br/ontolattes#>"
-					+ "	PREFIX qualis: <http://qualis.capes.gov.br/qualis-capes.owl#>"
-					+ "	PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>"
-					+ "	PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
-					+ "	PREFIX owl:     <http://www.w3.org/2002/07/owl#>"
-					+ "	PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>"
-					+ "		SELECT DISTINCT ?temProducaoBibliografica3 ?temDadosBasicos3 ?temDetalhamentoDoArtigo3 ?tituloDadosBasicos3 " 
-					+ "    					?anoDadosBasicos3 ?tituloDoLivroDetalheArtigo3 ?tituloDoPeriodicoOuRevistaDetalheArtigo3 " 
-					+ "						?fasciculoDetalheArtigo3 ?volumeDetalheArtigo3 ?realizadoNaInstituicao3 ?nomeInstituicaoEmpresa3 " 
-					+ "						?nomeCurso3 "
-					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad47093e66-625f-489f-8f4e-63b46a759bee-edson-mintsu-hung> onto:nivel ?nomeCurso3 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-brasília,-unb,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa3 ."
-					+ "			?realizadoNaInstituicao3 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa3 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-edson-mintsu-hung> onto:temProducaoBibliografica ?temProducaoBibliografica3 ."
-					+ "			 ?temProducaoBibliografica3 onto:temDadosBasicos ?temDadosBasicos3 ."
-					+ "			 ?temProducaoBibliografica3 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo3 ."
-					+ "			 ?temDadosBasicos3 onto:titulo ?tituloDadosBasicos3 ."
-					+ "			 ?temDadosBasicos3 onto:ano ?anoDadosBasicos3 ."
-					+ "          ?temDetalhamentoDoArtigo3 onto:tituloDoLivro ?tituloDoLivroDetalheArtigo3 ."
-					+ "			 ?temDetalhamentoDoArtigo3 onto:tituloDoPeriodicoOuRevista ?tituloDoPeriodicoOuRevistaDetalheArtigo3 ."
-					+ "		     ?temDetalhamentoDoArtigo3 onto:fasciculo ?fasciculoDetalheArtigo3 ."
-					+ "			 ?temDetalhamentoDoArtigo3 onto:volume ?volumeDetalheArtigo3 . } ";
-			
-			com.hp.hpl.jena.query.Query query = QueryFactory.create(queryString);
-			QueryExecution qe = QueryExecutionFactory.create(query, model);
-			results = qe.execSelect();
-			listaDestino = new ArrayList<String>();
-			tamanhoListaDestino = 0;
-			String strNomeCurso3 = null, strNomeInstituicaoEmpresa3 = null, strTituloDadosBasicos3 = null, strAnoDadosBasicos3 = null, 
-				   strTituloDoLivroDetalheArtigo3 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo3 = null, strFasciculoDetalheArtigo3 = null,
-				   strVolumeDetalheArtigo3 = null;
-			while (results.hasNext()) {
-				QuerySolution soln = results.nextSolution();
-
-				strNomeCurso3 = soln.getLiteral("nomeCurso3").toString();
-				strNomeInstituicaoEmpresa3 = soln.getLiteral("nomeInstituicaoEmpresa3").toString();
-				strTituloDadosBasicos3 = soln.getLiteral("tituloDadosBasicos3").toString();
-				strAnoDadosBasicos3 = soln.getLiteral("anoDadosBasicos3").toString();
-				strTituloDoLivroDetalheArtigo3 = soln.getLiteral("tituloDoLivroDetalheArtigo3").toString();
-				strTituloDoPeriodicoOuRevistaDetalheArtigo3 = soln.getLiteral("tituloDoPeriodicoOuRevistaDetalheArtigo3").toString();
-				strFasciculoDetalheArtigo3 = soln.getLiteral("fasciculoDetalheArtigo3").toString();
-				strVolumeDetalheArtigo3 = soln.getLiteral("volumeDetalheArtigo3").toString();
-
-				listaDestino.add(strNomeCurso3);
-				listaDestino.add(strNomeInstituicaoEmpresa3);
-				listaDestino.add(strTituloDadosBasicos3);
-				listaDestino.add(strAnoDadosBasicos3);
-				listaDestino.add(strTituloDoLivroDetalheArtigo3);
-				listaDestino.add(strTituloDoPeriodicoOuRevistaDetalheArtigo3);
-				listaDestino.add(strFasciculoDetalheArtigo3);
-				listaDestino.add(strVolumeDetalheArtigo3);
 				tamanhoListaDestino ++;
 			}
 		} catch (IOException ex) {
@@ -670,7 +473,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste2.owl"));
+			in = new FileInputStream(new File("Teste5.owl"));
 			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
 			model.read(in, null); 
 
@@ -684,12 +487,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 					+ "		SELECT DISTINCT ?temProducaoBibliografica4 ?temDadosBasicos4 ?temDetalhamentoDoArtigo4 ?tituloDadosBasicos4 " 
 					+ "    					?anoDadosBasicos4 ?tituloDoLivroDetalheArtigo4 ?tituloDoPeriodicoOuRevistaDetalheArtigo4 " 
 					+ "						?fasciculoDetalheArtigo4 ?volumeDetalheArtigo4 ?realizadoNaInstituicao4 ?nomeInstituicaoEmpresa4 " 
-					+ "						?nomeCurso4 "
+					+ "						?nomeCurso4 ?nomeCompleto4 "
 					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad77dfae12-1794-4b78-99ca-351a9385e3aa-andré-gustavo-de-melo-araújo> onto:nivel ?nomeCurso4 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-são-paulo,-usp,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa4 ."
+					+ "		<http://www.ime.usp.br/ontolattes#dg-adson-ferreira-da-rocha> onto:nomeCompleto ?nomeCompleto4 ."	
+					+ "		<http://www.ime.usp.br/ontolattes#form-acadc88aa5ad-8e8e-459b-9011-2e301a7a14e9-adson-ferreira-da-rocha> onto:nivel ?nomeCurso4 ."
+					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-brasília,-unb,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa4 ."
 					+ "			?realizadoNaInstituicao4 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa4 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-andré-gustavo-de-melo-araújo> onto:temProducaoBibliografica ?temProducaoBibliografica4 ."
+					+ "		 <http://www.ime.usp.br/ontolattes#cv-adson-ferreira-da-rocha> onto:temProducaoBibliografica ?temProducaoBibliografica4 ."
 					+ "			 ?temProducaoBibliografica4 onto:temDadosBasicos ?temDadosBasicos4 ."
 					+ "			 ?temProducaoBibliografica4 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo4 ."
 					+ "			 ?temDadosBasicos4 onto:titulo ?tituloDadosBasicos4 ."
@@ -704,12 +508,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 			results = qe.execSelect();
 			listaDestino = new ArrayList<String>();
 			tamanhoListaDestino = 0;
-			String strNomeCurso4 = null, strNomeInstituicaoEmpresa4 = null, strTituloDadosBasicos4 = null, strAnoDadosBasicos4 = null, 
+			String strNomeCompleto4 = null, strNomeCurso4 = null, strNomeInstituicaoEmpresa4 = null, strTituloDadosBasicos4 = null, strAnoDadosBasicos4 = null, 
 				   strTituloDoLivroDetalheArtigo4 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo4 = null, strFasciculoDetalheArtigo4 = null,
 				   strVolumeDetalheArtigo4 = null;
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 
+				strNomeCompleto4 = soln.getLiteral("nomeCompleto4").toString();
 				strNomeCurso4 = soln.getLiteral("nomeCurso4").toString();
 				strNomeInstituicaoEmpresa4 = soln.getLiteral("nomeInstituicaoEmpresa4").toString();
 				strTituloDadosBasicos4 = soln.getLiteral("tituloDadosBasicos4").toString();
@@ -719,6 +524,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 				strFasciculoDetalheArtigo4 = soln.getLiteral("fasciculoDetalheArtigo4").toString();
 				strVolumeDetalheArtigo4 = soln.getLiteral("volumeDetalheArtigo4").toString();
 
+				listaDestino.add(strNomeCompleto4);
 				listaDestino.add(strNomeCurso4);
 				listaDestino.add(strNomeInstituicaoEmpresa4);
 				listaDestino.add(strTituloDadosBasicos4);
@@ -740,7 +546,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste.owl"));
+			in = new FileInputStream(new File("Teste5.owl"));
 			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
 			model.read(in, null); 
 
@@ -752,34 +558,36 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 					+ "	PREFIX owl:     <http://www.w3.org/2002/07/owl#>"
 					+ "	PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>"
 					+ "		SELECT DISTINCT ?temProducaoBibliografica5 ?temDadosBasicos5 ?temDetalhamentoDoArtigo5 ?tituloDadosBasicos5 " 
-					+ "    					?anoDadosBasicos5 ?tituloDoLivroDetalheArtigo5 ?tituloDoPeriodicoOuRevistaDetalheArtigo5 " 
+					+ "						?anoDadosBasicos5 ?tituloDoLivroDetalheArtigo5 ?tituloDoPeriodicoOuRevistaDetalheArtigo5 " 
 					+ "						?fasciculoDetalheArtigo5 ?volumeDetalheArtigo5 ?realizadoNaInstituicao5 ?nomeInstituicaoEmpresa5 " 
-					+ "						?nomeCurso5 "
+					+ "						?nomeCurso5 ?nomeCompleto5 "
 					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acadb4cfbd34-775c-4a6e-8895-cc3a7b22b34e-paolo-gessini> onto:nivel ?nomeCurso5 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-università-degli-studi-di-roma-la-sapienza,-urs,-itália> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa5 ."
+					+ "		<http://www.ime.usp.br/ontolattes#dg-edson-mintsu-hung> onto:nomeCompleto ?nomeCompleto5 ."	
+					+ "		<http://www.ime.usp.br/ontolattes#form-acad210912f6-d690-4a65-b9ef-76bfba7ef0be-edson-mintsu-hung> onto:nivel ?nomeCurso5 ."
+					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-brasília,-unb,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa5 ."
 					+ "			?realizadoNaInstituicao5 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa5 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-paolo-gessini> onto:temProducaoBibliografica ?temProducaoBibliografica5 ."
+					+ "		 <http://www.ime.usp.br/ontolattes#cv-edson-mintsu-hung> onto:temProducaoBibliografica ?temProducaoBibliografica5 ."
 					+ "			 ?temProducaoBibliografica5 onto:temDadosBasicos ?temDadosBasicos5 ."
 					+ "			 ?temProducaoBibliografica5 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo5 ."
 					+ "			 ?temDadosBasicos5 onto:titulo ?tituloDadosBasicos5 ."
-					+ "			 ?temDadosBasicos5 onto:ano ?anoDadosBasicos5 ."
+					+ "			 ?temDadosBasicos5 onto:ano ?anoDadosBasicos5. "
 					+ "          ?temDetalhamentoDoArtigo5 onto:tituloDoLivro ?tituloDoLivroDetalheArtigo5 ."
 					+ "			 ?temDetalhamentoDoArtigo5 onto:tituloDoPeriodicoOuRevista ?tituloDoPeriodicoOuRevistaDetalheArtigo5 ."
 					+ "		     ?temDetalhamentoDoArtigo5 onto:fasciculo ?fasciculoDetalheArtigo5 ."
-					+ "			 ?temDetalhamentoDoArtigo5 onto:volume ?volumeDetalheArtigo5 . } ";
+					+ "			 ?temDetalhamentoDoArtigo5 onto:volume ?volumeDetalheArtigo5.}";
 			
 			com.hp.hpl.jena.query.Query query = QueryFactory.create(queryString);
 			QueryExecution qe = QueryExecutionFactory.create(query, model);
 			results = qe.execSelect();
 			listaDestino = new ArrayList<String>();
 			tamanhoListaDestino = 0;
-			String strNomeCurso5 = null, strNomeInstituicaoEmpresa5 = null, strTituloDadosBasicos5 = null, strAnoDadosBasicos5 = null, 
+			String strNomeCompleto5 = null, strNomeCurso5 = null, strNomeInstituicaoEmpresa5 = null, strTituloDadosBasicos5 = null, strAnoDadosBasicos5 = null, 
 				   strTituloDoLivroDetalheArtigo5 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo5 = null, strFasciculoDetalheArtigo5 = null,
 				   strVolumeDetalheArtigo5 = null;
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 
+				strNomeCompleto5 = soln.getLiteral("nomeCompleto5").toString();
 				strNomeCurso5 = soln.getLiteral("nomeCurso5").toString();
 				strNomeInstituicaoEmpresa5 = soln.getLiteral("nomeInstituicaoEmpresa5").toString();
 				strTituloDadosBasicos5 = soln.getLiteral("tituloDadosBasicos5").toString();
@@ -789,6 +597,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 				strFasciculoDetalheArtigo5 = soln.getLiteral("fasciculoDetalheArtigo5").toString();
 				strVolumeDetalheArtigo5 = soln.getLiteral("volumeDetalheArtigo5").toString();
 
+				listaDestino.add(strNomeCompleto5);
 				listaDestino.add(strNomeCurso5);
 				listaDestino.add(strNomeInstituicaoEmpresa5);
 				listaDestino.add(strTituloDadosBasicos5);
@@ -810,7 +619,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste.owl"));
+			in = new FileInputStream(new File("Teste5.owl"));
 			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
 			model.read(in, null); 
 
@@ -824,12 +633,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 					+ "		SELECT DISTINCT ?temProducaoBibliografica6 ?temDadosBasicos6 ?temDetalhamentoDoArtigo6 ?tituloDadosBasicos6 " 
 					+ "    					?anoDadosBasicos6 ?tituloDoLivroDetalheArtigo6 ?tituloDoPeriodicoOuRevistaDetalheArtigo6 " 
 					+ "						?fasciculoDetalheArtigo6 ?volumeDetalheArtigo6 ?realizadoNaInstituicao6 ?nomeInstituicaoEmpresa6 " 
-					+ "						?nomeCurso6 "
+					+ "						?nomeCurso6 ?nomeCompleto6 "
 					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acadb4cfbd34-775c-4a6e-8895-cc3a7b22b34e-paolo-gessini> onto:nivel ?nomeCurso6 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-università-degli-studi-di-roma-la-sapienza,-urs,-itália> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa6 ."
+					+ "		<http://www.ime.usp.br/ontolattes#dg-edson-alves-da-costa-júnior> onto:nomeCompleto ?nomeCompleto6 ."	
+					+ "		<http://www.ime.usp.br/ontolattes#form-acad9f219c08-c304-4d0a-8d0e-3b72a0d1ad3b-edson-alves-da-costa-júnior> onto:nivel ?nomeCurso6 ."
+					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-brasília,-unb,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa6 ."
 					+ "			?realizadoNaInstituicao6 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa6 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-fábio-macêdo-mendes> onto:temProducaoBibliografica ?temProducaoBibliografica6 ."
+					+ "		 <http://www.ime.usp.br/ontolattes#cv-edson-alves-da-costa-júnior> onto:temProducaoBibliografica ?temProducaoBibliografica6 ."
 					+ "			 ?temProducaoBibliografica6 onto:temDadosBasicos ?temDadosBasicos6 ."
 					+ "			 ?temProducaoBibliografica6 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo6 ."
 					+ "			 ?temDadosBasicos6 onto:titulo ?tituloDadosBasicos6 ."
@@ -844,12 +654,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 			results = qe.execSelect();
 			listaDestino = new ArrayList<String>();
 			tamanhoListaDestino = 0;
-			String strNomeCurso6 = null, strNomeInstituicaoEmpresa6 = null, strTituloDadosBasicos6 = null, strAnoDadosBasicos6 = null, 
+			String strNomeCompleto6 = null, strNomeCurso6 = null, strNomeInstituicaoEmpresa6 = null, strTituloDadosBasicos6 = null, strAnoDadosBasicos6 = null, 
 				   strTituloDoLivroDetalheArtigo6 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo6 = null, strFasciculoDetalheArtigo6 = null,
 				   strVolumeDetalheArtigo6 = null;
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 
+				strNomeCompleto6 = soln.getLiteral("nomeCompleto6").toString();
 				strNomeCurso6 = soln.getLiteral("nomeCurso6").toString();
 				strNomeInstituicaoEmpresa6 = soln.getLiteral("nomeInstituicaoEmpresa6").toString();
 				strTituloDadosBasicos6 = soln.getLiteral("tituloDadosBasicos6").toString();
@@ -859,6 +670,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 				strFasciculoDetalheArtigo6 = soln.getLiteral("fasciculoDetalheArtigo6").toString();
 				strVolumeDetalheArtigo6 = soln.getLiteral("volumeDetalheArtigo6").toString();
 
+				listaDestino.add(strNomeCompleto6);
 				listaDestino.add(strNomeCurso6);
 				listaDestino.add(strNomeInstituicaoEmpresa6);
 				listaDestino.add(strTituloDadosBasicos6);
@@ -880,7 +692,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste.owl"));
+			in = new FileInputStream(new File("Teste5.owl"));
 			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
 			model.read(in, null); 
 
@@ -891,52 +703,55 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 					+ "	PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
 					+ "	PREFIX owl:     <http://www.w3.org/2002/07/owl#>"
 					+ "	PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>"
-					+ "		SELECT DISTINCT ?temProducaoBibliografica7 ?temDadosBasicos7 ?temDetalhamentoDoArtigo7 ?tituloDadosBasicos7 " 
-					+ "    					?anoDadosBasicos7 ?tituloDoLivroDetalheArtigo7 ?tituloDoPeriodicoOuRevistaDetalheArtigo7 " 
-					+ "						?fasciculoDetalheArtigo7 ?volumeDetalheArtigo7 ?realizadoNaInstituicao7 ?nomeInstituicaoEmpresa7 " 
-					+ "						?nomeCurso7 "
+					+ "		SELECT DISTINCT ?temProducaoBibliografica1 ?temDadosBasicos1 ?temDetalhamentoDoArtigo1 ?tituloDadosBasicos1 " 
+					+ "						?anoDadosBasicos1 ?tituloDoLivroDetalheArtigo1 ?tituloDoPeriodicoOuRevistaDetalheArtigo1 " 
+					+ "						?fasciculoDetalheArtigo1 ?volumeDetalheArtigo1 ?realizadoNaInstituicao1 ?nomeInstituicaoEmpresa1 " 
+					+ "						?nomeCurso1 ?nomeCompleto1 "
 					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad4f171eb8-0cbb-4e7a-a029-a63975eff948-gilmar-silva-beserra> onto:nivel ?nomeCurso7 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-brasília,-unb,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa7 ."
-					+ "			?realizadoNaInstituicao7 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa7 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-gilmar-silva-beserra> onto:temProducaoBibliografica ?temProducaoBibliografica7 ."
-					+ "			 ?temProducaoBibliografica7 onto:temDadosBasicos ?temDadosBasicos7 ."
-					+ "			 ?temProducaoBibliografica7 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo7 ."
-					+ "			 ?temDadosBasicos7 onto:titulo ?tituloDadosBasicos7 ."
-					+ "			 ?temDadosBasicos7 onto:ano ?anoDadosBasicos7 ."
-					+ "          ?temDetalhamentoDoArtigo7 onto:tituloDoLivro ?tituloDoLivroDetalheArtigo7 ."
-					+ "			 ?temDetalhamentoDoArtigo7 onto:tituloDoPeriodicoOuRevista ?tituloDoPeriodicoOuRevistaDetalheArtigo7 ."
-					+ "		     ?temDetalhamentoDoArtigo7 onto:fasciculo ?fasciculoDetalheArtigo7 ."
-					+ "			 ?temDetalhamentoDoArtigo7 onto:volume ?volumeDetalheArtigo7 . } ";
+					+ "		<http://www.ime.usp.br/ontolattes#dg-alessandro-borges-de-sousa-oliveira> onto:nomeCompleto ?nomeCompleto1 ."	
+					+ "		<http://www.ime.usp.br/ontolattes#form-acad583c871a-09aa-429f-875e-5f8f18dbe52a-alessandro-borges-de-sousa-oliveira> onto:nivel ?nomeCurso1 ."
+					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-brasília,-unb,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa1 ."
+					+ "			?realizadoNaInstituicao1 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa1 ."
+					+ "		 <http://www.ime.usp.br/ontolattes#cv-alessandro-borges-de-sousa-oliveira> onto:temProducaoBibliografica ?temProducaoBibliografica1 ."
+					+ "			 ?temProducaoBibliografica1 onto:temDadosBasicos ?temDadosBasicos1 ."
+					+ "			 ?temProducaoBibliografica1 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo1 ."
+					+ "			 ?temDadosBasicos1 onto:titulo ?tituloDadosBasicos1 ."
+					+ "			 ?temDadosBasicos1 onto:ano ?anoDadosBasicos1. "
+					+ "          ?temDetalhamentoDoArtigo1 onto:tituloDoLivro ?tituloDoLivroDetalheArtigo1 ."
+					+ "			 ?temDetalhamentoDoArtigo1 onto:tituloDoPeriodicoOuRevista ?tituloDoPeriodicoOuRevistaDetalheArtigo1 ."
+					+ "		     ?temDetalhamentoDoArtigo1 onto:fasciculo ?fasciculoDetalheArtigo1 ."
+					+ "			 ?temDetalhamentoDoArtigo1 onto:volume ?volumeDetalheArtigo1.}";
 			
 			com.hp.hpl.jena.query.Query query = QueryFactory.create(queryString);
 			QueryExecution qe = QueryExecutionFactory.create(query, model);
 			results = qe.execSelect();
 			listaDestino = new ArrayList<String>();
 			tamanhoListaDestino = 0;
-			String strNomeCurso7 = null, strNomeInstituicaoEmpresa7 = null, strTituloDadosBasicos7 = null, strAnoDadosBasicos7 = null, 
-				   strTituloDoLivroDetalheArtigo7 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo7 = null, strFasciculoDetalheArtigo7 = null,
-				   strVolumeDetalheArtigo7 = null;
+			String strNomeCompleto1 = null, strNomeCurso1 = null, strNomeInstituicaoEmpresa1 = null, strTituloDadosBasicos1 = null, strAnoDadosBasicos1 = null, 
+				   strTituloDoLivroDetalheArtigo1 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo1 = null, strFasciculoDetalheArtigo1 = null,
+				   strVolumeDetalheArtigo1 = null;
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 
-				strNomeCurso7 = soln.getLiteral("nomeCurso7").toString();
-				strNomeInstituicaoEmpresa7 = soln.getLiteral("nomeInstituicaoEmpresa7").toString();
-				strTituloDadosBasicos7 = soln.getLiteral("tituloDadosBasicos7").toString();
-				strAnoDadosBasicos7 = soln.getLiteral("anoDadosBasicos7").toString();
-				strTituloDoLivroDetalheArtigo7 = soln.getLiteral("tituloDoLivroDetalheArtigo7").toString();
-				strTituloDoPeriodicoOuRevistaDetalheArtigo7 = soln.getLiteral("tituloDoPeriodicoOuRevistaDetalheArtigo7").toString();
-				strFasciculoDetalheArtigo7 = soln.getLiteral("fasciculoDetalheArtigo7").toString();
-				strVolumeDetalheArtigo7 = soln.getLiteral("volumeDetalheArtigo7").toString();
+				strNomeCompleto1 = soln.getLiteral("nomeCompleto1").toString();
+				strNomeCurso1 = soln.getLiteral("nomeCurso1").toString();
+				strNomeInstituicaoEmpresa1 = soln.getLiteral("nomeInstituicaoEmpresa1").toString();
+				strTituloDadosBasicos1 = soln.getLiteral("tituloDadosBasicos1").toString();
+				strAnoDadosBasicos1 = soln.getLiteral("anoDadosBasicos1").toString();
+				strTituloDoLivroDetalheArtigo1 = soln.getLiteral("tituloDoLivroDetalheArtigo1").toString();
+				strTituloDoPeriodicoOuRevistaDetalheArtigo1 = soln.getLiteral("tituloDoPeriodicoOuRevistaDetalheArtigo1").toString();
+				strFasciculoDetalheArtigo1 = soln.getLiteral("fasciculoDetalheArtigo1").toString();
+				strVolumeDetalheArtigo1 = soln.getLiteral("volumeDetalheArtigo1").toString();
 
-				listaDestino.add(strNomeCurso7);
-				listaDestino.add(strNomeInstituicaoEmpresa7);
-				listaDestino.add(strTituloDadosBasicos7);
-				listaDestino.add(strAnoDadosBasicos7);
-				listaDestino.add(strTituloDoLivroDetalheArtigo7);
-				listaDestino.add(strTituloDoPeriodicoOuRevistaDetalheArtigo7);
-				listaDestino.add(strFasciculoDetalheArtigo7);
-				listaDestino.add(strVolumeDetalheArtigo7);
+				listaDestino.add(strNomeCompleto1);
+				listaDestino.add(strNomeCurso1);
+				listaDestino.add(strNomeInstituicaoEmpresa1);
+				listaDestino.add(strTituloDadosBasicos1);
+				listaDestino.add(strAnoDadosBasicos1);
+				listaDestino.add(strTituloDoLivroDetalheArtigo1);
+				listaDestino.add(strTituloDoPeriodicoOuRevistaDetalheArtigo1);
+				listaDestino.add(strFasciculoDetalheArtigo1);
+				listaDestino.add(strVolumeDetalheArtigo1);
 				tamanhoListaDestino ++;
 			}
 		} catch (IOException ex) {
@@ -950,7 +765,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste.owl"));
+			in = new FileInputStream(new File("Teste5.owl"));
 			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
 			model.read(in, null); 
 
@@ -964,12 +779,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 					+ "		SELECT DISTINCT ?temProducaoBibliografica8 ?temDadosBasicos8 ?temDetalhamentoDoArtigo8 ?tituloDadosBasicos8 " 
 					+ "    					?anoDadosBasicos8 ?tituloDoLivroDetalheArtigo8 ?tituloDoPeriodicoOuRevistaDetalheArtigo8 " 
 					+ "						?fasciculoDetalheArtigo8 ?volumeDetalheArtigo8 ?realizadoNaInstituicao8 ?nomeInstituicaoEmpresa8 " 
-					+ "						?nomeCurso8 "
+					+ "						?nomeCurso8 ?nomeCompleto8 "
 					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad88a0c106-0b75-4596-afa9-1db70f91dfd1-alexandre-sérgio-de-araújo-bezerra> onto:nivel ?nomeCurso8 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-brasília,-unb,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa8 ."
+					+ "		<http://www.ime.usp.br/ontolattes#dg-suélia-de-siqueira-rodrigues-fleury-rosa> onto:nomeCompleto ?nomeCompleto8 ."	
+					+ "		<http://www.ime.usp.br/ontolattes#form-acad716e5537-6ae2-40fe-8ab4-acffda730a40-suélia-de-siqueira-rodrigues-fleury-rosa> onto:nivel ?nomeCurso8 ."
+					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-estadual-paulista-júlio-de-mesquita-filho,-unesp,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa8 ."
 					+ "			?realizadoNaInstituicao8 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa8 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-alexandre-sérgio-de-araújo-bezerra> onto:temProducaoBibliografica ?temProducaoBibliografica8 ."
+					+ "		 <http://www.ime.usp.br/ontolattes#cv-suélia-de-siqueira-rodrigues-fleury-rosa> onto:temProducaoBibliografica ?temProducaoBibliografica8 ."
 					+ "			 ?temProducaoBibliografica8 onto:temDadosBasicos ?temDadosBasicos8 ."
 					+ "			 ?temProducaoBibliografica8 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo8 ."
 					+ "			 ?temDadosBasicos8 onto:titulo ?tituloDadosBasicos8 ."
@@ -984,12 +800,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 			results = qe.execSelect();
 			listaDestino = new ArrayList<String>();
 			tamanhoListaDestino = 0;
-			String strNomeCurso8 = null, strNomeInstituicaoEmpresa8 = null, strTituloDadosBasicos8 = null, strAnoDadosBasicos8 = null, 
+			String strNomeCompleto8 = null, strNomeCurso8 = null, strNomeInstituicaoEmpresa8 = null, strTituloDadosBasicos8 = null, strAnoDadosBasicos8 = null, 
 				   strTituloDoLivroDetalheArtigo8 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo8 = null, strFasciculoDetalheArtigo8 = null,
 				   strVolumeDetalheArtigo8 = null;
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 
+				strNomeCompleto8= soln.getLiteral("nomeCompleto8").toString();
 				strNomeCurso8 = soln.getLiteral("nomeCurso8").toString();
 				strNomeInstituicaoEmpresa8 = soln.getLiteral("nomeInstituicaoEmpresa8").toString();
 				strTituloDadosBasicos8 = soln.getLiteral("tituloDadosBasicos8").toString();
@@ -999,6 +816,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 				strFasciculoDetalheArtigo8 = soln.getLiteral("fasciculoDetalheArtigo8").toString();
 				strVolumeDetalheArtigo8 = soln.getLiteral("volumeDetalheArtigo8").toString();
 
+				listaDestino.add(strNomeCompleto8);
 				listaDestino.add(strNomeCurso8);
 				listaDestino.add(strNomeInstituicaoEmpresa8);
 				listaDestino.add(strTituloDadosBasicos8);
@@ -1020,7 +838,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste.owl"));
+			in = new FileInputStream(new File("Teste5.owl"));
 			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
 			model.read(in, null); 
 
@@ -1034,12 +852,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 					+ "		SELECT DISTINCT ?temProducaoBibliografica9 ?temDadosBasicos9 ?temDetalhamentoDoArtigo9 ?tituloDadosBasicos9 " 
 					+ "    					?anoDadosBasicos9 ?tituloDoLivroDetalheArtigo9 ?tituloDoPeriodicoOuRevistaDetalheArtigo9 " 
 					+ "						?fasciculoDetalheArtigo9 ?volumeDetalheArtigo9 ?realizadoNaInstituicao9 ?nomeInstituicaoEmpresa9 " 
-					+ "						?nomeCurso9 "
+					+ "						?nomeCurso9 ?nomeCompleto9 "
 					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad190023a3-ac8d-48c6-b4da-f6759ecc00fa-eduardo-stockler-tognetti> onto:nivel ?nomeCurso9 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-são-paulo,-usp,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa9 ."
+					+ "		<http://www.ime.usp.br/ontolattes#dg-andré-barros-de-sales> onto:nomeCompleto ?nomeCompleto9 ."
+					+ "		<http://www.ime.usp.br/ontolattes#form-acadd4e48b85-e40c-4caa-b5e2-00091b4e1cf3-andré-barros-de-sales> onto:nivel ?nomeCurso9 ."
+					+ "		<http://www.ime.usp.br/ontolattes#inst-em-tecnologia-em-processamento-de-dados> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa9 ."
 					+ "			?realizadoNaInstituicao9 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa9 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-eduardo-stockler-tognett> onto:temProducaoBibliografica ?temProducaoBibliografica9 ."
+					+ "		 <http://www.ime.usp.br/ontolattes#cv-andré-barros-de-sales> onto:temProducaoBibliografica ?temProducaoBibliografica9 ."
 					+ "			 ?temProducaoBibliografica9 onto:temDadosBasicos ?temDadosBasicos9 ."
 					+ "			 ?temProducaoBibliografica9 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo9 ."
 					+ "			 ?temDadosBasicos9 onto:titulo ?tituloDadosBasicos9 ."
@@ -1054,12 +873,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 			results = qe.execSelect();
 			listaDestino = new ArrayList<String>();
 			tamanhoListaDestino = 0;
-			String strNomeCurso9 = null, strNomeInstituicaoEmpresa9 = null, strTituloDadosBasicos9 = null, strAnoDadosBasicos9 = null, 
+			String strNomeCompleto9 = null, strNomeCurso9 = null, strNomeInstituicaoEmpresa9 = null, strTituloDadosBasicos9 = null, strAnoDadosBasicos9 = null, 
 				   strTituloDoLivroDetalheArtigo9 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo9 = null, strFasciculoDetalheArtigo9 = null,
 				   strVolumeDetalheArtigo9 = null;
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 
+				strNomeCompleto9 = soln.getLiteral("nomeCompleto9").toString();
 				strNomeCurso9 = soln.getLiteral("nomeCurso9").toString();
 				strNomeInstituicaoEmpresa9 = soln.getLiteral("nomeInstituicaoEmpresa9").toString();
 				strTituloDadosBasicos9 = soln.getLiteral("tituloDadosBasicos9").toString();
@@ -1069,6 +889,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 				strFasciculoDetalheArtigo9 = soln.getLiteral("fasciculoDetalheArtigo9").toString();
 				strVolumeDetalheArtigo9 = soln.getLiteral("volumeDetalheArtigo9").toString();
 
+				listaDestino.add(strNomeCompleto9);
 				listaDestino.add(strNomeCurso9);
 				listaDestino.add(strNomeInstituicaoEmpresa9);
 				listaDestino.add(strTituloDadosBasicos9);
@@ -1090,7 +911,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste.owl"));
+			in = new FileInputStream(new File("Teste5.owl"));
 			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
 			model.read(in, null); 
 
@@ -1104,12 +925,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 					+ "		SELECT DISTINCT ?temProducaoBibliografica10 ?temDadosBasicos10 ?temDetalhamentoDoArtigo10 ?tituloDadosBasicos10 " 
 					+ "    					?anoDadosBasicos10 ?tituloDoLivroDetalheArtigo10 ?tituloDoPeriodicoOuRevistaDetalheArtigo10 " 
 					+ "						?fasciculoDetalheArtigo10 ?volumeDetalheArtigo10 ?realizadoNaInstituicao10 ?nomeInstituicaoEmpresa10 " 
-					+ "						?nomeCurso10 "
+					+ "						?nomeCurso10 ?nomeCompleto10 "
 					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad811eb2f9-db42-4940-a463-b95d8223f1d8-jan-mendonça-correa> onto:nivel ?nomeCurso10 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-brasília,-unb,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa10 ."
+					+ "		<http://www.ime.usp.br/ontolattes#dg-andré-gustavo-de-melo-araújo> onto:nomeCompleto ?nomeCompleto10 ."
+					+ "		<http://www.ime.usp.br/ontolattes#form-acad4aa0e193-e73c-4a51-b21e-d6373d5b678a-andré-gustavo-de-melo-araújo> onto:nivel ?nomeCurso10 ."
+					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-são-paulo,-usp,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa10 ."
 					+ "			?realizadoNaInstituicao10 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa10 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-jan-mendonça-correa> onto:temProducaoBibliografica ?temProducaoBibliografica10 ."
+					+ "		 <http://www.ime.usp.br/ontolattes#cv-andré-gustavo-de-melo-araújo> onto:temProducaoBibliografica ?temProducaoBibliografica10 ."
 					+ "			 ?temProducaoBibliografica10 onto:temDadosBasicos ?temDadosBasicos10 ."
 					+ "			 ?temProducaoBibliografica10 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo10 ."
 					+ "			 ?temDadosBasicos10 onto:titulo ?tituloDadosBasicos10 ."
@@ -1124,12 +946,13 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 			results = qe.execSelect();
 			listaDestino = new ArrayList<String>();
 			tamanhoListaDestino = 0;
-			String strNomeCurso10 = null, strNomeInstituicaoEmpresa10 = null, strTituloDadosBasicos10 = null, strAnoDadosBasicos10 = null, 
+			String strNomeCompleto10 = null, strNomeCurso10 = null, strNomeInstituicaoEmpresa10 = null, strTituloDadosBasicos10 = null, strAnoDadosBasicos10 = null, 
 				   strTituloDoLivroDetalheArtigo10 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo10 = null, strFasciculoDetalheArtigo10 = null,
 				   strVolumeDetalheArtigo10 = null;
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 
+				strNomeCompleto10 = soln.getLiteral("nomeCompleto10").toString();
 				strNomeCurso10 = soln.getLiteral("nomeCurso10").toString();
 				strNomeInstituicaoEmpresa10 = soln.getLiteral("nomeInstituicaoEmpresa10").toString();
 				strTituloDadosBasicos10 = soln.getLiteral("tituloDadosBasicos10").toString();
@@ -1139,6 +962,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 				strFasciculoDetalheArtigo10 = soln.getLiteral("fasciculoDetalheArtigo10").toString();
 				strVolumeDetalheArtigo10 = soln.getLiteral("volumeDetalheArtigo10").toString();
 
+				listaDestino.add(strNomeCompleto10);
 				listaDestino.add(strNomeCurso10);
 				listaDestino.add(strNomeInstituicaoEmpresa10);
 				listaDestino.add(strTituloDadosBasicos10);
