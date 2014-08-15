@@ -23,7 +23,7 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 	public static void main(String args[]) throws OntologyLoadException {
 
 		new ParserOwlJava().consultaBase();
-		new ParserOwlJava().consultaDestino3();
+		//new ParserOwlJava().consultaDestino3();
 /*		new ParserOwlJava().consultaDestino2();
 		new ParserOwlJava().consultaDestino3();*/
 		//new Teste2().consultaDestino2();
@@ -184,63 +184,30 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
 			model.read(in, null); 
 
-			String queryString = "	PREFIX lattes: <http://www.semanticlattes.com.br/curriculo#>"
-					+ "	PREFIX onto:   <http://www.ime.usp.br/ontolattes#>"
-					+ "	PREFIX qualis: <http://qualis.capes.gov.br/qualis-capes.owl#>"
-					+ "	PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>"
-					+ "	PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
-					+ "	PREFIX owl:     <http://www.w3.org/2002/07/owl#>"
-					+ "	PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>"
-					+ "		SELECT DISTINCT ?temProducaoBibliografica ?temDadosBasicos ?temDetalhamentoDoArtigo ?tituloDadosBasicos " 
-					+		"?anoDadosBasicos ?tituloDoLivroDetalheArtigo ?tituloDoPeriodicoOuRevistaDetalheArtigo ?fasciculoDetalheArtigo "
-					+   	"?volumeDetalheArtigo ?realizadoNaInstituicao ?nomeInstituicaoEmpresa ?nomeCurso ?nomeCompleto "
-					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#dg-luiz-carlos-miyadaira-ribeiro-junior> onto:nomeCompleto ?nomeCompleto ."
-					+ "		<http://www.ime.usp.br/ontolattes#form-acad7184a2fa-ac3a-4abe-9d37-c7cf4b887623-luiz-carlos-miyadaira-ribeiro-junior> onto:nivel ?nomeCurso ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-faculdade-de-informática-de-lins> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa ."
-					+ "			?realizadoNaInstituicao1 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa ."
-					+ "		<http://www.ime.usp.br/ontolattes#cv-luiz-carlos-miyadaira-ribeiro-junior> onto:temProducaoBibliografica ?temProducaoBibliografica ."
-					+ "		 	 ?temProducaoBibliografica onto:temDadosBasicos ?temDadosBasicos ."
-					+ "			 ?temProducaoBibliografica onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo ."
-					+ "		     ?temDadosBasicos onto:titulo ?tituloDadosBasicos ."
-					+ "			 ?temDadosBasicos onto:ano ?anoDadosBasicos ."
-					+ "			 ?temDetalhamentoDoArtigo onto:tituloDoLivro ?tituloDoLivroDetalheArtigo ."
-					+ "			 ?temDetalhamentoDoArtigo onto:tituloDoPeriodicoOuRevista ?tituloDoPeriodicoOuRevistaDetalheArtigo ."
-					+ "  		 ?temDetalhamentoDoArtigo onto:fasciculo ?fasciculoDetalheArtigo ."
-					+ "	   		 ?temDetalhamentoDoArtigo onto:volume ?volumeDetalheArtigo ."
-					+ "	        		 } ";
+			String queryString = " PREFIX  onto: <http://www.ime.usp.br/ontolattes#> "
+			+ "	SELECT DISTINCT ?tituloDadosBasicos "
+			+   	"WHERE "
+			+   	"  { "
+			+   	"   <http://www.ime.usp.br/ontolattes#cv-luiz-carlos-miyadaira-ribeiro-junior> onto:temProducaoBibliografica ?temProducaoBibliografica ."
+			+   	"    ?temProducaoBibliografica onto:temDadosBasicos  ?temDadosBasicos ."
+			+   	"    ?temDadosBasicos onto:titulo ?tituloDadosBasicos ."
+			+   	"  } ";
 
 			com.hp.hpl.jena.query.Query query = QueryFactory.create(queryString);
+			System.out.println("QUERY: "+query);
 			QueryExecution qe = QueryExecutionFactory.create(query, model);
 			results = qe.execSelect();
 			listaBase = new ArrayList<String>();
 			tamanhoListaBase = 0;
-			String strNomeCompleto = null, strNomeCurso = null, strNomeInstituicaoEmpresa = null, strTituloDadosBasicos = null, strAnoDadosBasicos = null, 
-				   strTituloDoLivroDetalheArtigo = null, strTituloDoPeriodicoOuRevistaDetalheArtigo = null, strFasciculoDetalheArtigo = null, 
-				   strVolumeDetalheArtigo = null;
-			//System.out.println("RESULTADO: "+query);
+			String strTituloDadosBasicos = null;
+			System.out.println("RESULTADO: "+query);
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 				
-				strNomeCompleto = soln.getLiteral("nomeCompleto").toString();
-				strNomeCurso = soln.getLiteral("nomeCurso").toString();
-				strNomeInstituicaoEmpresa = soln.getLiteral("nomeInstituicaoEmpresa").toString();
 				strTituloDadosBasicos = soln.getLiteral("tituloDadosBasicos").toString();
-				strAnoDadosBasicos = soln.getLiteral("anoDadosBasicos").toString();
-				strTituloDoLivroDetalheArtigo = soln.getLiteral("tituloDoLivroDetalheArtigo").toString();
-				strTituloDoPeriodicoOuRevistaDetalheArtigo = soln.getLiteral("tituloDoPeriodicoOuRevistaDetalheArtigo").toString();
-				strFasciculoDetalheArtigo = soln.getLiteral("fasciculoDetalheArtigo").toString();
-				strVolumeDetalheArtigo = soln.getLiteral("volumeDetalheArtigo").toString();
 
-				listaBase.add(strNomeCompleto);
-				listaBase.add(strNomeCurso);
-				listaBase.add(strNomeInstituicaoEmpresa);
 				listaBase.add(strTituloDadosBasicos);
-				listaBase.add(strAnoDadosBasicos);
-				listaBase.add(strTituloDoLivroDetalheArtigo);
-				listaBase.add(strTituloDoPeriodicoOuRevistaDetalheArtigo);
-				listaBase.add(strFasciculoDetalheArtigo);
-				listaBase.add(strVolumeDetalheArtigo);
+
 				tamanhoListaBase ++;
 			}
 		} catch (IOException ex) {
@@ -258,62 +225,29 @@ import edu.stanford.smi.protege.exception.OntologyLoadException;
 			Model model = ModelFactory.createMemModelMaker().createDefaultModel();
 			model.read(in, null); 
 
-			String queryString = "	PREFIX lattes: <http://www.semanticlattes.com.br/curriculo#>"
-					+ "	PREFIX onto:   <http://www.ime.usp.br/ontolattes#>"
-					+ "	PREFIX qualis: <http://qualis.capes.gov.br/qualis-capes.owl#>"
-					+ "	PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>"
-					+ "	PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
-					+ "	PREFIX owl:     <http://www.w3.org/2002/07/owl#>"
-					+ "	PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>"
-					+ "		SELECT DISTINCT ?temProducaoBibliografica1 ?temDadosBasicos1 ?temDetalhamentoDoArtigo1 ?tituloDadosBasicos1 " 
-					+ "						?anoDadosBasicos1 ?tituloDoLivroDetalheArtigo1 ?tituloDoPeriodicoOuRevistaDetalheArtigo1 " 
-					+ "						?fasciculoDetalheArtigo1 ?volumeDetalheArtigo1 ?realizadoNaInstituicao1 ?nomeInstituicaoEmpresa1 " 
-					+ "						?nomeCurso1 ?nomeCompleto1 "
-					+ "WHERE {	"
-					+ "		<http://www.ime.usp.br/ontolattes#dg-rejane-maria-da-costa-figueiredo> onto:nomeCompleto ?nomeCompleto1 ."	
-					+ "		<http://www.ime.usp.br/ontolattes#form-acadd45224c3-9bf1-4602-825b-192e3ea3029b-rejane-maria-da-costa-figueiredo> onto:nivel ?nomeCurso1 ."
-					+ "		<http://www.ime.usp.br/ontolattes#inst-universidade-de-ribeirão-preto,-unaerp,-brasil> onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa1 ."
-					+ "			?realizadoNaInstituicao1 onto:nomeInstituicaoEmpresa ?nomeInstituicaoEmpresa1 ."
-					+ "		 <http://www.ime.usp.br/ontolattes#cv-rejane-maria-da-costa-figueiredo> onto:temProducaoBibliografica ?temProducaoBibliografica1 ."
-					+ "			 ?temProducaoBibliografica1 onto:temDadosBasicos ?temDadosBasicos1 ."
-					+ "			 ?temProducaoBibliografica1 onto:temDetalhamentoDoArtigo ?temDetalhamentoDoArtigo1 ."
-					+ "			 ?temDadosBasicos1 onto:titulo ?tituloDadosBasicos1 ."
-					+ "			 ?temDadosBasicos1 onto:ano ?anoDadosBasicos1. "
-					+ "          ?temDetalhamentoDoArtigo1 onto:tituloDoLivro ?tituloDoLivroDetalheArtigo1 ."
-					+ "			 ?temDetalhamentoDoArtigo1 onto:tituloDoPeriodicoOuRevista ?tituloDoPeriodicoOuRevistaDetalheArtigo1 ."
-					+ "		     ?temDetalhamentoDoArtigo1 onto:fasciculo ?fasciculoDetalheArtigo1 ."
-					+ "			 ?temDetalhamentoDoArtigo1 onto:volume ?volumeDetalheArtigo1.}";
+			String queryString = " PREFIX  onto: <http://www.ime.usp.br/ontolattes#> "
+			+ "	SELECT DISTINCT ?tituloDadosBasicos "
+			+   	"WHERE "
+			+   	"  { "
+			+   	"   <http://www.ime.usp.br/ontolattes#cv-sergio-antônio-andrade-de-freitas> onto:temProducaoBibliografica ?temProducaoBibliografica ."
+			+   	"    ?temProducaoBibliografica onto:temDadosBasicos  ?temDadosBasicos ."
+			+   	"    ?temDadosBasicos onto:titulo ?tituloDadosBasicos ."
+			+   	"  } ";
 			
 			com.hp.hpl.jena.query.Query query = QueryFactory.create(queryString);
 			QueryExecution qe = QueryExecutionFactory.create(query, model);
 			results = qe.execSelect();
 			listaDestino = new ArrayList<String>();
 			tamanhoListaDestino = 0;
-			String strNomeCompleto1 = null, strNomeCurso1 = null, strNomeInstituicaoEmpresa1 = null, strTituloDadosBasicos1 = null, strAnoDadosBasicos1 = null, 
-				   strTituloDoLivroDetalheArtigo1 = null, strTituloDoPeriodicoOuRevistaDetalheArtigo1 = null, strFasciculoDetalheArtigo1 = null,
-				   strVolumeDetalheArtigo1 = null;
+			String strTituloDadosBasicos = null;
+			
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 
-				strNomeCompleto1 = soln.getLiteral("nomeCompleto1").toString();
-				strNomeCurso1 = soln.getLiteral("nomeCurso1").toString();
-				strNomeInstituicaoEmpresa1 = soln.getLiteral("nomeInstituicaoEmpresa1").toString();
-				strTituloDadosBasicos1 = soln.getLiteral("tituloDadosBasicos1").toString();
-				strAnoDadosBasicos1 = soln.getLiteral("anoDadosBasicos1").toString();
-				strTituloDoLivroDetalheArtigo1 = soln.getLiteral("tituloDoLivroDetalheArtigo1").toString();
-				strTituloDoPeriodicoOuRevistaDetalheArtigo1 = soln.getLiteral("tituloDoPeriodicoOuRevistaDetalheArtigo1").toString();
-				strFasciculoDetalheArtigo1 = soln.getLiteral("fasciculoDetalheArtigo1").toString();
-				strVolumeDetalheArtigo1 = soln.getLiteral("volumeDetalheArtigo1").toString();
+				strTituloDadosBasicos = soln.getLiteral("tituloDadosBasicos").toString();
 
-				listaDestino.add(strNomeCompleto1);
-				listaDestino.add(strNomeCurso1);
-				listaDestino.add(strNomeInstituicaoEmpresa1);
-				listaDestino.add(strTituloDadosBasicos1);
-				listaDestino.add(strAnoDadosBasicos1);
-				listaDestino.add(strTituloDoLivroDetalheArtigo1);
-				listaDestino.add(strTituloDoPeriodicoOuRevistaDetalheArtigo1);
-				listaDestino.add(strFasciculoDetalheArtigo1);
-				listaDestino.add(strVolumeDetalheArtigo1);
+				listaDestino.add(strTituloDadosBasicos);
+				
 				tamanhoListaDestino ++;
 			}
 		} catch (IOException ex) {

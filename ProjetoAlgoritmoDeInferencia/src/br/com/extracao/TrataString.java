@@ -18,14 +18,17 @@ public class TrataString {
     private static ArrayList<String> listaStrSelecionadas;
     private static int valorTotalSomado = 0;
     private static double valorPercentualAderende = 0.0;
+	static StopWords carrega = new StopWords();
 	
-	public static void main (String args []) {
+	public static void main (String args []) throws IOException {
 		ParserOwlJava t = new ParserOwlJava();
 		t.consultaBase();
-		t.consultaDestino1();
 		
-		int controlePosicaoVetorBase = 0;
-		int controlePosicaoVetorDestino = 0;
+		t.consultaDestino1();
+		carrega.carregaStopWords();
+		
+/*		int controlePosicaoVetorBase = 0;
+		int controlePosicaoVetorDestino = 0;*/
 		TrataString trata = new TrataString();
 		
 		if (ParserOwlJava.listaDestino.isEmpty()){
@@ -33,30 +36,31 @@ public class TrataString {
 			return;
 		}
 		
-		System.err.println("INDIVÍDUO BASE: "+ParserOwlJava.listaBase.get(0));
-		System.err.println("INDIVÍDUO DESTINO 1: "+ParserOwlJava.listaDestino.get(0));
+		/*System.err.println("INDIVÍDUO BASE: "+ParserOwlJava.listaBase.get(0));
+		System.err.println("INDIVÍDUO DESTINO 1: "+ParserOwlJava.listaDestino.get(0));*/
 		System.err.println("TAMANHO DA LISTA BASE: "+ParserOwlJava.tamanhoListaBase);
 		System.err.println("TAMANHO DA LISTA DESTINO: "+ParserOwlJava.tamanhoListaDestino);
 		
 		System.out.println("LISTA BASE: "+ParserOwlJava.listaBase.get(1));
 		System.out.println("LISTA DESTINO: "+ParserOwlJava.listaDestino.get(1));
-		trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(1).toUpperCase(), ParserOwlJava.listaDestino.get(1).toUpperCase());
-		trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(2).toUpperCase(), ParserOwlJava.listaDestino.get(2).toUpperCase());
+		//trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(1).toUpperCase(), ParserOwlJava.listaDestino.get(1).toUpperCase());
+		//trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(2).toUpperCase(), ParserOwlJava.listaDestino.get(2).toUpperCase());
 
 		for (int i = 0; i< ParserOwlJava.tamanhoListaBase; i++){
-			//System.out.println(Teste2.listaBase.get(2+controlePosicaoVetorBase));
 			//System.out.println(t.consultaBase().get(controlePosicaoVetorBase+2));
 			//System.out.println("CONTROLE VETOR BASE: "+controlePosicaoVetorBase+2);
 			for (int j = 0; j< ParserOwlJava.tamanhoListaDestino; j++){
+				System.out.println("ITEM: "+i+" LISTA BASE -- "+ ParserOwlJava.listaBase.get(i) +"");
+				System.out.println("ITEM: "+j+" LISTA DESTINO -- "+ ParserOwlJava.listaDestino.get(j) +"");
 				//System.out.println(ParserOwlJava.listaBase.get(3+controlePosicaoVetorBase));
-				trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(3+controlePosicaoVetorBase).toUpperCase(), ParserOwlJava.listaDestino.get(3+controlePosicaoVetorDestino).toUpperCase());
+				trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(i).toUpperCase(), ParserOwlJava.listaDestino.get(j).toUpperCase());
 				//System.out.println(Teste2.listaBase.get(2+controlePosicaoVetorBase));
-				controlePosicaoVetorDestino = controlePosicaoVetorDestino + 9;
+				//controlePosicaoVetorDestino = controlePosicaoVetorDestino + 9;
 			}
-			controlePosicaoVetorDestino = 0;
-			controlePosicaoVetorBase = controlePosicaoVetorBase + 9;
+			//controlePosicaoVetorDestino = 0;
+			//controlePosicaoVetorBase = controlePosicaoVetorBase + 9;
 		}
-		 controlePosicaoVetorDestino = 0;
+		 //controlePosicaoVetorDestino = 0;
 /*		for (int i = 1; i<=Teste2.tamanhoListaDestino; i++){
 //			/System.out.println(t.consultaDestino1().get(controlePosicaoVetorDestino+2));
 			for (int j = 1; j<=Teste2.tamanhoListaBase; j++){
@@ -208,6 +212,7 @@ public class TrataString {
 					}
 				}*/
 		}else{
+			System.out.println("NENHUMA CORRESPONDENCIA ENCONTRADA! VALOR 0!");
 			return;
 		}
 	}
@@ -228,7 +233,7 @@ public class TrataString {
 	    List<String> listaCompararDestinoBr = new ArrayList<String>();
 	    listaCompararBase = new ArrayList<String>();
 	    listaCompararDestino = new ArrayList<String>();
-	    strBase.selecionarStr(strBase.tratarStr(strASerTratadaBase.toUpperCase()));
+	    strBase.selecionarStr(carrega.tratarStr(strASerTratadaBase.toLowerCase()));
 			
 /*			for (int i = 0; i<listaStrSelecionadas.size(); i++){
 		    	//System.out.println(str.selecionarStr(str.tratarStr(strASerTratadaBase)).get(i));
@@ -275,7 +280,7 @@ public class TrataString {
 	    SinonimosEn tdestino = new SinonimosEn();
 	    SinonimosBr lisBrDestino= new SinonimosBr();
 	    TrataString strDestino = new TrataString();
-	    strDestino.selecionarStr(strDestino.tratarStr(strASerTratadaDestino.toUpperCase()));
+	    strDestino.selecionarStr(carrega.tratarStr(strASerTratadaDestino.toLowerCase()));
 	    //System.out.println(listaStrSelecionadas.size());
 	    System.out.println("lista de strings SELECIONADAS destino: " +listaStrSelecionadas);
 	    for (int i = 0; i<listaStrSelecionadas.size(); i++){
