@@ -1,3 +1,4 @@
+package br.com.algoritmo.aplicacao;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
