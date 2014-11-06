@@ -25,7 +25,7 @@ public class ParserOwlJava {
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste6.owl"));
+			in = new FileInputStream(new File("Ontologias/Teste6.owl"));
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
 			model.read(in, null);
@@ -69,7 +69,7 @@ public class ParserOwlJava {
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste6.owl"));
+			in = new FileInputStream(new File("Ontologias/Teste6.owl"));
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
 			model.read(in, null);
@@ -112,7 +112,7 @@ public class ParserOwlJava {
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste6.owl"));
+			in = new FileInputStream(new File("Ontologias/Teste6.owl"));
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
 			model.read(in, null);
@@ -155,7 +155,7 @@ public class ParserOwlJava {
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste6.owl"));
+			in = new FileInputStream(new File("Ontologias/Teste6.owl"));
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
 			model.read(in, null);
@@ -198,7 +198,7 @@ public class ParserOwlJava {
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste6.owl"));
+			in = new FileInputStream(new File("Ontologias/Teste6.owl"));
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
 			model.read(in, null);
@@ -241,7 +241,7 @@ public class ParserOwlJava {
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste6.owl"));
+			in = new FileInputStream(new File("Ontologias/Teste6.owl"));
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
 			model.read(in, null);
@@ -284,7 +284,7 @@ public class ParserOwlJava {
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste6.owl"));
+			in = new FileInputStream(new File("Ontologias/Teste6.owl"));
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
 			model.read(in, null);
@@ -327,7 +327,7 @@ public class ParserOwlJava {
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste6.owl"));
+			in = new FileInputStream(new File("Ontologias/Teste6.owl"));
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
 			model.read(in, null);
@@ -370,7 +370,7 @@ public class ParserOwlJava {
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste6.owl"));
+			in = new FileInputStream(new File("Ontologias/Teste6.owl"));
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
 			model.read(in, null);
@@ -413,7 +413,7 @@ public class ParserOwlJava {
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste6.owl"));
+			in = new FileInputStream(new File("Ontologias/Teste6.owl"));
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
 			model.read(in, null);
@@ -456,7 +456,7 @@ public class ParserOwlJava {
 		InputStream in = null;
 		ResultSet results = null;
 		try {
-			in = new FileInputStream(new File("Teste6.owl"));
+			in = new FileInputStream(new File("Ontologias/Teste6.owl"));
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
 			model.read(in, null);

@@ -8,7 +8,7 @@ public class StopWords {
 	public static List<String> listaStopWords = new ArrayList<String>();
 
 	public void carregaStopWords() throws IOException {
-		File texto = new File("stopwords");
+		File texto = new File("StopWords/stopwords");
 
 		// criar arquivo
 		texto.createNewFile();
