@@ -29,15 +29,47 @@ public class TrataString {
     private static int auxIListaBase;
     private static int auxJListaDestino;
     private static double valorPercentualAderende = 0.0;
+    private static ArrayList<Double> listaDeClassificacaoDoPercentualDeAderencia = new ArrayList<Double>();
 	private static StopWords carrega = new StopWords();
 	
 	public static void main (String args []) throws IOException {
 		ParserOwlJava t = new ParserOwlJava();
 		t.consultaBase();
-		t.consultaDestino10();
-		
-		
 		carrega.carregaStopWords();
+		int iControlaCase;
+		for (iControlaCase=1; iControlaCase<=10;){
+			switch(iControlaCase){
+			case 1: iControlaCase = 1;
+				t.consultaDestino1();
+				break;
+			case 2: iControlaCase = 2;
+				t.consultaDestino2();
+				break;
+			case 3: iControlaCase = 3;
+				t.consultaDestino3();
+				break;
+			case 4: iControlaCase = 4;
+				t.consultaDestino4();
+			case 5: iControlaCase = 5;
+				t.consultaDestino5();
+				break;
+			case 6: iControlaCase = 6;
+				t.consultaDestino6();
+				break;
+			case 7: iControlaCase = 7;
+				t.consultaDestino7();
+				break;
+			case 8: iControlaCase = 8;
+				t.consultaDestino8();
+				break;
+			case 9: iControlaCase = 9;
+				t.consultaDestino9();
+				break;
+			case 10: iControlaCase = 10;
+				t.consultaDestino10();
+				break;
+				
+			}
 
 		TrataString trata = new TrataString();
 		
@@ -61,16 +93,20 @@ public class TrataString {
 			}
 
 		}
+		
 
 		 System.err.println("---------------------------------------------------------------------------");
 		 System.err.println("VALOR TOTAL SOMADO: "+valorTotalSomado+"-----------------------------------");
 		 System.err.println("-------------------------VALOR PERCENTUAL ADERENTE-------------------------");
 		 valorPercentualAderende = ((double)valorTotalSomado) / (((double)ParserOwlJava.tamanhoListaBase * (double)ParserOwlJava.tamanhoListaDestino)*5) * 100;
 		 DecimalFormat df = new DecimalFormat("0.00");  
-		 String str = df.format(valorPercentualAderende); 
-		 System.err.println("-------------------------VALOR: "+str+ " ----------------------------------");
+		 String valorPercentualFormatado = df.format(valorPercentualAderende); 
+		 System.err.println("-------------------------VALOR: "+valorPercentualFormatado+ " ----------------------------------");
 		 System.err.println("---------------------------------------------------------------------------");
-		
+		 trata.classificarPercentualDeSimilaridade(valorPercentualAderende);
+		}
+		iControlaCase ++;
+		System.out.println("LISTA DE CLASSIFICAÇÃO DO PERCENTUAL DE SIMILARIDADE: "+listaDeClassificacaoDoPercentualDeAderencia);
 	}
 
 	/**
@@ -326,5 +362,8 @@ public class TrataString {
         }  
 	     
 	    compararListaSinonimos(listaCompararBase, listaCompararDestino);
+	}
+	public void classificarPercentualDeSimilaridade(double valorIndividual){
+			listaDeClassificacaoDoPercentualDeAderencia.add(valorIndividual);
 	}
 }

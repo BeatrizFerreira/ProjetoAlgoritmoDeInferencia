@@ -29,9 +29,9 @@ public class ThesaurusEnUS {
 			data = new RandomAccessFile(dataFile, "r");
 			br.close();
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 		} catch (IOException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 	}
 
@@ -64,7 +64,11 @@ public class ThesaurusEnUS {
 
 		// find the word in the data
 		try {
+			if (data == null){
+				return null;	
+			}
 			data.seek(offset);
+			data.getChannel();
 			String line = data.readLine();
 			String[] segments = line.split("\\|");
 			int meaningCount = Integer.parseInt(segments[1]);
@@ -74,7 +78,7 @@ public class ThesaurusEnUS {
 			for (int i = 0; i < meaningCount; i++) {
 				word.addMeaning(data.readLine());
 			}
-			data.close();
+			
 			return word;
 		} catch (IOException e) {
 			e.getMessage();
