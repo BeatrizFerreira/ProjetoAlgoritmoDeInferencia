@@ -52,7 +52,8 @@ public class MeaningPtBR {
 			texto = Normalizer.normalize(texto, Normalizer.Form.NFD);
 			texto = texto.replaceAll("Ã§", "ç").replaceAll("Ã£", "ã")
 					.replaceAll("Ã¢", "â").replaceAll("Ãª", "ê")
-					.replaceAll("Ã³", "ó");
+					.replaceAll("Ã³", "ó").replaceAll("Ã¡", "á")
+					.replaceAll("Ã­", "í").replaceAll("Ã©", "é");
 			listaSinonimosThesaurusPtBR.add(texto);
 		}
 	}

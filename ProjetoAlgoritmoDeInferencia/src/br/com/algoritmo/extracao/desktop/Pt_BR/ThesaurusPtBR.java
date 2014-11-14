@@ -31,12 +31,19 @@ public class ThesaurusPtBR {
 			br = new BufferedReader(new FileReader(indexFile));
 			loadIndex(br);
 			data = new RandomAccessFile(dataFile, "r");
-			br.close();
+			//br.close();
 		} catch (FileNotFoundException e) {
-			//e.printStackTrace();
+			e.printStackTrace();
 
 		} catch (IOException e) {
-			//e.printStackTrace();
+			e.printStackTrace();
+		} finally{
+			try {
+				br.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 
@@ -63,7 +70,6 @@ public class ThesaurusPtBR {
 		if (offset == null) {
 			// the word does not exist in the thesaurus
 			// throw new WordNotFoundException(w);
-			@SuppressWarnings("unused")
 			MeaningPtBR meaningPtBR = new MeaningPtBR();
 			return null;
 		}
