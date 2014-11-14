@@ -12,7 +12,7 @@ import java.util.*;
  */
 public class ThesaurusEnUS {
 	private HashMap<String, Integer> index;
-	private RandomAccessFile data;
+	private RandomAccessFile data = null;
 
 	public ThesaurusEnUS() {
 		this("resources/th_en_US_new.idx", "resources/th_en_US_new.dat");
@@ -20,18 +20,27 @@ public class ThesaurusEnUS {
 
 	public ThesaurusEnUS(String indexFile, String dataFile) {
 		index = new HashMap<String, Integer>();
-
+		
 		// open the files
 		BufferedReader br = null;
 		try {
 			br = new BufferedReader(new FileReader(indexFile));
 			loadIndex(br);
 			data = new RandomAccessFile(dataFile, "r");
-			br.close();
+			
+			
+			//br.close();
 		} catch (FileNotFoundException e) {
-			//e.printStackTrace();
+			e.printStackTrace();
 		} catch (IOException e) {
-			//e.printStackTrace();
+			e.printStackTrace();
+		} finally{
+			try {
+				br.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 
@@ -57,18 +66,13 @@ public class ThesaurusEnUS {
 		Integer offset = index.get(w);
 		if (offset == null) {
 			// the word does not exist in the thesaurus
-			@SuppressWarnings("unused")
 			MeaningEnUS meaningEnUS = new MeaningEnUS();
 			return null;
 		}
 
 		// find the word in the data
 		try {
-			if (data == null){
-				return null;	
-			}
 			data.seek(offset);
-			data.getChannel();
 			String line = data.readLine();
 			String[] segments = line.split("\\|");
 			int meaningCount = Integer.parseInt(segments[1]);
@@ -78,7 +82,7 @@ public class ThesaurusEnUS {
 			for (int i = 0; i < meaningCount; i++) {
 				word.addMeaning(data.readLine());
 			}
-			
+			data.close();
 			return word;
 		} catch (IOException e) {
 			e.getMessage();
