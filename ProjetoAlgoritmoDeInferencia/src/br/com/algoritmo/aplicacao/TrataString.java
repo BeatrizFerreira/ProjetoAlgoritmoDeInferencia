@@ -129,11 +129,6 @@ public class TrataString {
 		System.err.println("TAMANHO DA LISTA BASE: "+ParserOwlJava.tamanhoListaBase);
 		System.err.println("TAMANHO DA LISTA DESTINO: "+ParserOwlJava.tamanhoListaDestino);
 		
-/*		System.out.println("LISTA BASE: "+ParserOwlJava.listaBase.get(1));
-		System.out.println("LISTA DESTINO: "+ParserOwlJava.listaDestino.get(1));*/
-		//trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(1).toUpperCase(), ParserOwlJava.listaDestino.get(1).toUpperCase());
-		//trata.selecionarSinonimosThesaurosEn(ParserOwlJava.listaBase.get(2).toUpperCase(), ParserOwlJava.listaDestino.get(2).toUpperCase());
-
 		for (int i = 0; i< ParserOwlJava.tamanhoListaBase; i++){
 			//System.out.println(t.consultaBase().get(controlePosicaoVetorBase+2));
 			//System.out.println("CONTROLE VETOR BASE: "+controlePosicaoVetorBase+2);
