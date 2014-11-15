@@ -593,7 +593,7 @@ public class ParserOwlJava {
 					+ "	SELECT DISTINCT ?tituloDadosBasicos "
 					+ "WHERE "
 					+ "  { "
-					+ "   <http://www.ime.usp.br/ontolattes#cv-fabiana-freitas-mendes> onto:temProducaoBibliografica ?temProducaoBibliografica ."
+					+ "   <http://www.ime.usp.br/ontolattes#cv-rejane-maria-da-costa-figueiredo> onto:temProducaoBibliografica ?temProducaoBibliografica ."
 					+ "    ?temProducaoBibliografica onto:temDadosBasicos  ?temDadosBasicos ."
 					+ "    ?temDadosBasicos onto:titulo ?tituloDadosBasicos ."
 					+ "  } ";
