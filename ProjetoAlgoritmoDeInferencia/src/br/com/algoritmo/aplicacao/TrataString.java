@@ -35,7 +35,7 @@ public class TrataString {
 	public static void main (String args []) throws IOException {
 		ParserOwlJava t = new ParserOwlJava();
 		t.consultaBase();
-		t.consultaDestino13();
+		t.consultaDestino15();
 		
 		
 		carrega.carregaStopWords();
