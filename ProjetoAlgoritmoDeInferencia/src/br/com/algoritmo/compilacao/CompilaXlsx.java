@@ -23,6 +23,8 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Set;
+import java.util.TreeMap;
 import java.io.FileOutputStream;
 
 /**
@@ -47,13 +49,29 @@ public class CompilaXlsx {
  	"Indivíduos Destinos Originais", "Indivíduos Destinos", null, null, null, null, null
  };
 
- private static Object[][] sample_data = {
-         {"Luiz Carlos Miyadaira Ribeiro Junior", "Base", "0468265522433921", "SOFTWARE", 20.0, null, null},
-//         {"Gisella Bronzetti", "GB", 4.0, 3.0, 1.0, 3.5, null},
- };
+ 
+
 
  public static void main(String[] args) throws Exception {
      Workbook wb;
+     Map<Integer, Object[]> data = new TreeMap<Integer, Object[]>();
+     data.put(0, new Object[] {0, "Luiz Carlos Miyadaira Ribeiro Junior", "Base", "0468265522433921", "SOFTWARE", null, null, null});
+     data.put(1, new Object[] {1, "Sergio Antônio Andrade de Freitas", "Destino 1", "0395549254894676", "SOFTWARE", null, null, null});
+     data.put(2, new Object[] {2, "Andre Luiz Aquere de Cerqueira e Souza", "Destino 2", "8424412648258970", "CIVIL", null, null, null});
+     data.put(3, new Object[] {3, "Edson Mintsu Hung Destino", "Destino 3", "6753551743147880", "ELETRÔNICA", null, null, null});
+     data.put(4, new Object[] {4, "Edgard Costa Oliveira", "Destino 4", "1196380808351110", "SOFTWARE", null, null, null});
+     data.put(5, new Object[] {5, "Edson Alves da Costa Júnior", "Destino 5", "2105379147123450", "SOFTWARE", null, null, null});
+     data.put(6, new Object[] {6, "André Barros de Sales", "Destino 6", "7610669796869660", "SOFTWARE", null, null, null});
+     data.put(7, new Object[] {7, "Giovanni Almeida dos Santos", "Destino 7", "0580891429319047", "SOFTWARE", null, null, null});
+     data.put(8, new Object[] {8, "Cristiane Soares Ramos", "Destino 8", "9950213660160160", "SOFTWARE", null, null, null});
+     data.put(9, new Object[] {9, "Fabricio Ataides Braz", "Destino 9", "1700216932505000", "SOFTWARE", null, null, null});
+     data.put(10, new Object[] {10, "Alexandre Sérgio de Araújo Bezerra", "Destino 10", "0255998976169051", "MEDICINA", null, null, null});
+     data.put(11, new Object[] {11, "Eduardo Stockler Tognetti", "Destino 11", "2443108673822680", "ELÉTRICA", null, null, null});
+     data.put(12, new Object[] {12, "Jan Mendonça Correa", "Destino 12", "7844006017790570", "CIÊNCIA DA COMPUTAÇÃO", null, null, null});
+     data.put(13, new Object[] {13, "Rejane Maria da Costa Figueiredo", "Destino 13", "2187680174312042", "SOFTWARE", null, null, null});
+     data.put(14, new Object[] {14, "Augusto César de Mendonça Brasil", "Destino 14", "0571960641751286", "ENERGIA", null, null, null});
+     data.put(15, new Object[] {15, "Fábio Macêdo Mendes", "Destino 15", "8075435338067780", "FÍSICA", null, null, null});
+     
 
      if(args.length > 0 && args[0].equals("-xls")) wb = new HSSFWorkbook();
      else wb = new XSSFWorkbook();
@@ -72,33 +90,33 @@ public class CompilaXlsx {
      Cell titleCell = titleRow.createCell(0);
      titleCell.setCellValue("Resultado da aplicação do algoritmo de cálculo do percentual de similaridade entre os indivíduos");
      titleCell.setCellStyle(styles.get("title"));
-     sheet.addMergedRegion(CellRangeAddress.valueOf("$A$1:$G$1"));
+     sheet.addMergedRegion(CellRangeAddress.valueOf("$A$1:$H$1"));
 
      //header row
      Row headerRow = sheet.createRow(1);
      headerRow.setHeightInPoints(15);
      Cell headerCell;
-     for (int i = 0; i < titles.length; i++) {
+     for (int i = 1; i <= titles.length; i++) {
          headerCell = headerRow.createCell(i);
-         headerCell.setCellValue(titles[i]);
+         headerCell.setCellValue(titles[i-1]);
          headerCell.setCellStyle(styles.get("header"));
      }
      
      Row headerBase = sheet.createRow(2);
      headerBase.setHeightInPoints(15);
      Cell headerCellBase;
-     for (int i = 0; i < base.length; i++) {
+     for (int i = 1; i <= base.length; i++) {
      	headerCellBase = headerBase.createCell(i);
-     	headerCellBase.setCellValue(base[i]);
+     	headerCellBase.setCellValue(base[i-1]);
      	headerCellBase.setCellStyle(styles.get("header1"));
      }
      
      Row headerDestino = sheet.createRow(4);
      headerDestino.setHeightInPoints(15);
      Cell headerCellDestino;
-     for (int i = 0; i < destino.length; i++) {
+     for (int i = 1; i <= destino.length; i++) {
      	headerCellDestino = headerDestino.createCell(i);
-     	headerCellDestino.setCellValue(destino[i]);
+     	headerCellDestino.setCellValue(destino[i-1]);
      	headerCellDestino.setCellStyle(styles.get("header1"));
      }
      
@@ -143,23 +161,34 @@ public class CompilaXlsx {
      }
 */
      //set sample data
-     for (int i = 0; i < sample_data.length; i++) {
-         Row row = sheet.getRow(2 + i);
-         for (int j = 0; j < sample_data[i].length; j++) {
-             if(sample_data[i][j] == null) continue;
-
-             if(sample_data[i][j] instanceof String) {
-                 row.getCell(j).setCellValue((String)sample_data[i][j]);
-             } else {
-                 row.getCell(j).setCellValue((Double)sample_data[i][j]);
-             }
+   //Iterate over data and write to sheet
+     Set<Integer> keyset = data.keySet();
+     int rownum = 0;
+     for (Integer key : keyset)
+     {
+         Row row = sheet.createRow(3+rownum++);
+         Object [] objArr = data.get(key);
+         int cellnum = 0;
+         for (Object obj : objArr)
+         {
+            Cell cell = row.createCell(cellnum++);
+            if(obj instanceof String)
+                 cell.setCellValue((String)obj);
+             else if(obj instanceof Integer)
+                 cell.setCellValue((Integer)obj);
+         }
+         if (row.getRowNum() == 3){ 
+        	 rownum ++;
          }
      }
-
      //finally set column widths, the width is measured in units of 1/256th of a character width
-     sheet.setColumnWidth(0, 30*256); //30 characters wide
-     for (int i = 1; i < 9; i++) {
-         sheet.setColumnWidth(i, 20*256);  //6 characters wide
+     sheet.setColumnWidth(0, 2*256); //2 characters wide
+     sheet.setColumnWidth(1, 26*256); //26 characters wide
+     sheet.setColumnWidth(2, 20*256); //20 characters wide
+     sheet.setColumnWidth(3, 18*256); //18 characters wide
+     sheet.setColumnWidth(4, 20*256); //20 characters wide
+     for (int i = 5; i < 9; i++) {
+         sheet.setColumnWidth(i, 15*256);  //6 characters wide
      }
 
      // Write the output to a file
@@ -186,11 +215,11 @@ public class CompilaXlsx {
      styles.put("title", style);
 
      Font monthFont = wb.createFont();
-     monthFont.setFontHeightInPoints((short)11);
+     monthFont.setFontHeightInPoints((short)10);
      monthFont.setColor(IndexedColors.WHITE.getIndex());
      monthFont.setBoldweight(Font.BOLDWEIGHT_BOLD);
      style = wb.createCellStyle();
-     style.setAlignment(CellStyle.ALIGN_CENTER);
+     style.setAlignment(CellStyle.ALIGN_LEFT);
      style.setVerticalAlignment(CellStyle.VERTICAL_CENTER);
      style.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex());
      style.setFillPattern(CellStyle.SOLID_FOREGROUND);
@@ -199,11 +228,11 @@ public class CompilaXlsx {
      styles.put("header", style);
      
      Font monthFont1 = wb.createFont();
-     monthFont1.setFontHeightInPoints((short)11);
+     monthFont1.setFontHeightInPoints((short)10);
      monthFont1.setColor(IndexedColors.WHITE.getIndex());
      monthFont1.setBoldweight(Font.BOLDWEIGHT_BOLD);
      style = wb.createCellStyle();
-     style.setAlignment(CellStyle.ALIGN_CENTER);
+     style.setAlignment(CellStyle.ALIGN_LEFT);
      style.setVerticalAlignment(CellStyle.VERTICAL_CENTER);
      style.setFillForegroundColor(IndexedColors.GREY_25_PERCENT.getIndex());
      style.setFillPattern(CellStyle.SOLID_FOREGROUND);
@@ -212,7 +241,7 @@ public class CompilaXlsx {
      styles.put("header1", style);
 
      style = wb.createCellStyle();
-     style.setAlignment(CellStyle.ALIGN_CENTER);
+     style.setAlignment(CellStyle.ALIGN_LEFT);
      style.setWrapText(true);
      style.setBorderRight(CellStyle.BORDER_THIN);
      style.setRightBorderColor(IndexedColors.BLACK.getIndex());
@@ -233,7 +262,7 @@ public class CompilaXlsx {
      styles.put("formula", style);
 
      style = wb.createCellStyle();
-     style.setAlignment(CellStyle.ALIGN_CENTER);
+     style.setAlignment(CellStyle.ALIGN_LEFT);
      style.setVerticalAlignment(CellStyle.VERTICAL_CENTER);
      style.setFillForegroundColor(IndexedColors.GREY_40_PERCENT.getIndex());
      style.setFillPattern(CellStyle.SOLID_FOREGROUND);
