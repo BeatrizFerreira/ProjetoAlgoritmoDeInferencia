@@ -78,22 +78,28 @@ public class CompilaXlsx {
 
      Map<String, CellStyle> styles = createStyles(wb);
 
-     Sheet sheet = wb.createSheet("Percentual de similaridade");
-     PrintSetup printSetup = sheet.getPrintSetup();
+     Sheet aba1 = wb.createSheet("Percentual de similaridade 1");
+     PrintSetup printSetup = aba1.getPrintSetup();
      printSetup.setLandscape(true);
-     sheet.setFitToPage(true);
-     sheet.setHorizontallyCenter(true);
+     aba1.setFitToPage(true);
+     aba1.setHorizontallyCenter(true);
+     
+     Sheet aba2 = wb.createSheet("Percentual de similaridade 2");
+     PrintSetup printSetup2 = aba2.getPrintSetup();
+     printSetup2.setLandscape(true);
+     aba1.setFitToPage(true);
+     aba1.setHorizontallyCenter(true);
 
      //title row
-     Row titleRow = sheet.createRow(0);
+     Row titleRow = aba1.createRow(0);
      titleRow.setHeightInPoints(15);
      Cell titleCell = titleRow.createCell(0);
      titleCell.setCellValue("Resultado da aplicação do algoritmo de cálculo do percentual de similaridade entre os indivíduos");
      titleCell.setCellStyle(styles.get("title"));
-     sheet.addMergedRegion(CellRangeAddress.valueOf("$A$1:$H$1"));
+     aba1.addMergedRegion(CellRangeAddress.valueOf("$A$1:$H$1"));
 
      //header row
-     Row headerRow = sheet.createRow(1);
+     Row headerRow = aba1.createRow(1);
      headerRow.setHeightInPoints(15);
      Cell headerCell;
      for (int i = 1; i <= titles.length; i++) {
@@ -102,7 +108,7 @@ public class CompilaXlsx {
          headerCell.setCellStyle(styles.get("header"));
      }
      
-     Row headerBase = sheet.createRow(2);
+     Row headerBase = aba1.createRow(2);
      headerBase.setHeightInPoints(15);
      Cell headerCellBase;
      for (int i = 1; i <= base.length; i++) {
@@ -111,7 +117,7 @@ public class CompilaXlsx {
      	headerCellBase.setCellStyle(styles.get("header1"));
      }
      
-     Row headerDestino = sheet.createRow(4);
+     Row headerDestino = aba1.createRow(4);
      headerDestino.setHeightInPoints(15);
      Cell headerCellDestino;
      for (int i = 1; i <= destino.length; i++) {
@@ -166,7 +172,7 @@ public class CompilaXlsx {
      int rownum = 0;
      for (Integer key : keyset)
      {
-         Row row = sheet.createRow(3+rownum++);
+         Row row = aba1.createRow(3+rownum++);
          Object [] objArr = data.get(key);
          int cellnum = 0;
          for (Object obj : objArr)
@@ -182,13 +188,13 @@ public class CompilaXlsx {
          }
      }
      //finally set column widths, the width is measured in units of 1/256th of a character width
-     sheet.setColumnWidth(0, 2*256); //2 characters wide
-     sheet.setColumnWidth(1, 26*256); //26 characters wide
-     sheet.setColumnWidth(2, 20*256); //20 characters wide
-     sheet.setColumnWidth(3, 18*256); //18 characters wide
-     sheet.setColumnWidth(4, 20*256); //20 characters wide
+     aba1.setColumnWidth(0, 2*256); //2 characters wide
+     aba1.setColumnWidth(1, 26*256); //26 characters wide
+     aba1.setColumnWidth(2, 20*256); //20 characters wide
+     aba1.setColumnWidth(3, 18*256); //18 characters wide
+     aba1.setColumnWidth(4, 20*256); //20 characters wide
      for (int i = 5; i < 9; i++) {
-         sheet.setColumnWidth(i, 15*256);  //6 characters wide
+    	 aba1.setColumnWidth(i, 15*256);  //6 characters wide
      }
 
      // Write the output to a file

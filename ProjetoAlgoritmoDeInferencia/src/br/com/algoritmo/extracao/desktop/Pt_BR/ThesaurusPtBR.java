@@ -19,7 +19,7 @@ public class ThesaurusPtBR {
 	private RandomAccessFile data;
 
 	public ThesaurusPtBR() {
-		this("resources/th_pt_BR.idx", "resources/th_pt_BR.dat");
+		this("Resources/th_pt_BR.idx", "Resources/th_pt_BR.dat");
 	}
 
 	public ThesaurusPtBR(String indexFile, String dataFile) {

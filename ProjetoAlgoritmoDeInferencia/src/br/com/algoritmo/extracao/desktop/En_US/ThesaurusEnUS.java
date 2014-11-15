@@ -15,7 +15,7 @@ public class ThesaurusEnUS {
 	private RandomAccessFile data = null;
 
 	public ThesaurusEnUS() {
-		this("resources/th_en_US_new.idx", "resources/th_en_US_new.dat");
+		this("Resources/th_en_US_new.idx", "Resources/th_en_US_new.dat");
 	}
 
 	public ThesaurusEnUS(String indexFile, String dataFile) {
