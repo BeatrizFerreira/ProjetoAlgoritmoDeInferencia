@@ -8,10 +8,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
-	<classpathentry kind="lib" path="/home/dionlan/Downloads/ProjetoTeste/Libs/xmlbeans.jar"/>
-	<classpathentry kind="lib" path="/home/dionlan/Downloads/ProjetoTeste/Libs/poi-ooxml-schemas-3.7-beta1.jar"/>
-	<classpathentry kind="lib" path="/home/dionlan/Downloads/ProjetoTeste/Libs/poi-ooxml-3.9.jar"/>
-	<classpathentry kind="lib" path="/home/dionlan/Downloads/ProjetoTeste/Libs/poi-3.9.jar"/>
-	<classpathentry kind="lib" path="/home/dionlan/Downloads/ProjetoTeste/Libs/dom4j.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Web App Library"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
