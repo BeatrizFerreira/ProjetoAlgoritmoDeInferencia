@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>ProjetoAlgoritmoDeInferencia</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-  </welcome-file-list>
-  <servlet>
-    <servlet-name>Faces Servlet</servlet-name>
-    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
-    <load-on-startup>1</load-on-startup>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Faces Servlet</servlet-name>
-    <url-pattern>*.jsf</url-pattern>
-  </servlet-mapping>
-  <filter>
-    <filter-name>HibernateFilter</filter-name>
-    <filter-class>br.com.algoritmo.web.filter.HibernateSessionRequestFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>HibernateFilter</filter-name>
-    <url-pattern>*.jsf</url-pattern>
-  </filter-mapping>
-  <context-param>
-    <param-name>primefaces.THEME</param-name>
-    <param-value>excite-bike</param-value>
-  </context-param>
+	<servlet>
+      <servlet-name>Jersey RESTful Application</servlet-name>
+      <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+         <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>br.com.algoritmo.restful</param-value>
+         </init-param>
+      </servlet>
+   <servlet-mapping>
+   <servlet-name>Jersey RESTful Application</servlet-name>
+      <url-pattern>/*</url-pattern>
+   </servlet-mapping>
 </web-app>

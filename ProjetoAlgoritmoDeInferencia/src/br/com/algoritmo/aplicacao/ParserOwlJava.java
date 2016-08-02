@@ -21,8 +21,10 @@ public class ParserOwlJava {
 	public ArrayList<String> consultaProducaoBibliografica(String nomeIndividuo) {
 		InputStream in = null;
 		ResultSet results = null;
+		lista = new ArrayList<String>();
 		try {
 			in = new FileInputStream(new File("Ontologias/Ontologia.owl"));
+			
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
 			model.read(in, null);
@@ -43,7 +45,6 @@ public class ParserOwlJava {
 			System.out.println("QUERY: " + query);
 			QueryExecution qe = QueryExecutionFactory.create(query, model);
 			results = qe.execSelect();
-			lista = new ArrayList<String>();
 			tamanhoLista = 0;
 			String strTituloDadosBasicos = null;
 			System.out.println("RESULTADO: " + query);

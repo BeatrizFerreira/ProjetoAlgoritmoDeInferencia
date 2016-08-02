@@ -7,16 +7,13 @@ import java.util.*;
 public class StopWords {
 	public static List<String> listaStopWords = new ArrayList<String>();
 
-	public void carregaStopWords() throws IOException {
+	public void carregaStopWords() throws IOException{
 		File texto = new File("StopWords/stopwords");
 
-		// criar arquivo
 		texto.createNewFile();
-
 		FileReader fr = new FileReader(texto);
 		@SuppressWarnings("resource")
 		BufferedReader br = new BufferedReader(fr);
-
 		// equanto houver mais linhas
 		while (br.ready()) {
 

@@ -2,7 +2,9 @@ package br.com.algoritmo.aplicacao;
 import java.io.IOException;
 import java.text.Normalizer;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 import java.util.StringTokenizer;
 
@@ -16,8 +18,6 @@ import br.com.algoritmo.extracao.web.SinonimosBr;
 import br.com.algoritmo.extracao.web.SinonimosEn;
 
 public class TrataString {
-	
-    //private static String key = "LY884krlgATbK1nDgYSn";
     private static String language = "en_US";
     private static String output = "json";
     private static ArrayList<String> listaCompararBase;
@@ -28,50 +28,87 @@ public class TrataString {
     private static int valorTotalSomado = 0;
     private static int auxIListaBase;
     private static int auxJListaDestino;
-    private static double valorPercentualAderende = 0.0;
-    private static ArrayList<Double> listaValor = new ArrayList<Double>();
+    ArrayList<Double> listaValores = new ArrayList<Double>();
 	private static StopWords carrega = new StopWords();
 	private static ArrayList<String> listaBase;
 	private static ArrayList<String> listaDestino;
+	private static Map<String, ArrayList<String>> equivalencias = new HashMap<String, ArrayList<String>>();
+	private static ArrayList<String> listaEq;
 	
-	public static void main (String args []) throws IOException {
-		ParserOwlJava t = new ParserOwlJava();
-		listaBase = t.consultaProducaoBibliografica("Luiz Carlos Miyadaira Ribeiro Junior");
-		listaDestino = t.consultaProducaoBibliografica("Fábio Macêdo Mendes");
+	public TrataString(){}
+	
+	public int getQuantidadeProducoesAderentes(){
+		return valorTotalSomado;
+	}
+	
+	public ArrayList<Double> getValoresPercentuaisAderencia(){
+		return listaValores;
+	}
+	
+	public Map<String, ArrayList<String>> getEquivalencias(){
+		return equivalencias;
+	}
+
+	/**
+     * Deverá calcular o fator de aderência e 
+    	retornar pares (fator de aderencia, lista de produções bibliográficas similares).
+	 * @throws IOException 
+	 */
+	
+	public void calculaFatorAderencia(String nome_base, ArrayList<String> nome_cvs_destinos) throws IOException{
+		ParserOwlJava parse = new ParserOwlJava();
+		listaBase = parse.consultaProducaoBibliografica(nome_base);
+		// carregar lista destino em um loop com o array passado
 		
+		// carrega o array de palavras do StopWords
 		carrega.carregaStopWords();
 		
-		TrataString trata = new TrataString();
-		
-		if (listaDestino.isEmpty() || listaBase.isEmpty()){
-			System.out.println("Nao ha como realizar comparacao. Um dos invididuos nao possui publicacoes.");
+		if(listaBase.isEmpty()){
+			System.err.println("Nao ha como realizar comparacao. Lista base vazia.");
 			return;
 		}
 		
-		System.err.println("TAMANHO DA LISTA BASE: "+ listaBase.size());
-		System.err.println("TAMANHO DA LISTA DESTINO: "+ listaDestino.size());
+		if(nome_cvs_destinos.isEmpty()){
+			System.err.println("Nao ha perfis destinos para serem comparados.");
+			return;
+		}
+		
+		double valorPercentualAderende = 0.0;
+		//d de destino (cv destino)
+		for(int d = 0; d < nome_cvs_destinos.size(); d++){
+			listaDestino = parse.consultaProducaoBibliografica(nome_cvs_destinos.get(d));
+			if (listaDestino.isEmpty()){
+				System.err.println("Lista destino " + nome_cvs_destinos.get(d) + " esta vazia.");
+				continue;
+			}
+			// agora compara a lista base com a lista destino do individuo 'd'
+			comparaListasBaseDestino();
+			
+			// calcular o valor do percentual de aderencia e inserir na lista de valores 
+			valorPercentualAderende = ((double)valorTotalSomado) / (((double)listaBase.size() * (double)listaDestino.size())*5) * 100;
+			listaValores.add(valorPercentualAderende);
+		}
+	}
+	
+	
+	private static void comparaListasBaseDestino(){
+		System.out.println("TAMANHO DA LISTA BASE: "+ listaBase.size());
+		System.out.println("TAMANHO DA LISTA DESTINO: "+ listaDestino.size());
 		
 		for (int i = 0; i< listaBase.size(); i++){
 			auxIListaBase = i;
+			listaEq = new ArrayList<String>();
 			for (int j = 0; j< listaDestino.size(); j++){
 				System.out.println("ITEM: "+i+" LISTA BASE -- "+ listaBase.get(i) +"");
 				System.out.println("ITEM: "+j+" LISTA DESTINO -- "+ listaDestino.get(j) +"");
 				auxJListaDestino = j;
-				trata.carregarSinonimosDesktop(listaBase.get(i).toUpperCase(), listaDestino.get(j).toUpperCase());				
+				carregarSinonimosDesktop(listaBase.get(i).toUpperCase(), listaDestino.get(j).toUpperCase());				
 			}
+			equivalencias.put(listaBase.get(i), listaEq);
 		}
-		 System.err.println("---------------------------------------------------------------------------");
-		 System.err.println("VALOR TOTAL SOMADO: "+valorTotalSomado);
-		 System.err.println("-------------------------VALOR PERCENTUAL ADERENTE-------------------------");
-		 System.err.println("-------------------------INDIVÍDUO BASE: "+ "Luiz Carlos Miyadaira Ribeiro Junior".toLowerCase().replace(' ', '-'));
-		 System.err.println("-------------------------INDIVÍDUO DESTINO: "+ "Fábio Macêdo Mendes".toLowerCase().replace(' ', '-'));
-		 valorPercentualAderende = ((double)valorTotalSomado) / (((double)listaBase.size() * (double)listaDestino.size())*5) * 100;
-		 System.err.println("-------------------------VALOR: " + valorPercentualAderende);
-		 System.err.println("---------------------------------------------------------------------------");
-		 listaValor.add(valorPercentualAderende);
-		 System.out.println("LISTA FINAL DE VALORES: "+listaValor);
 		
 	}
+	
 	/**
 	 * Limpar a string do nome do artigo, para a retirada de elementos semanticamente inuteis;
 	 * @param str
@@ -119,7 +156,7 @@ public class TrataString {
 	public ArrayList<String> quebrarStrDestino (String str){
 		 listaSinonimoDestino = new ArrayList<String>();;
 		 StringTokenizer token = new StringTokenizer(str, " ");
-	     while(token.hasMoreTokens()) {  
+	     while(token.hasMoreTokens()) {
 	            String local = token.nextToken();  
 	            listaSinonimoDestino.add(local);  
 	    } 
@@ -161,26 +198,28 @@ public class TrataString {
 	     }
 	}
 	
-	public void compararListaSinonimos (ArrayList<String> listaSinonimosBase, ArrayList<String> listaSinonimosDestino){
+	public static boolean compararListaSinonimos (ArrayList<String> listaSinonimosBase, ArrayList<String> listaSinonimosDestino){
 
-		int valorObtidoNaComparacao = 0;
+		//int valorObtidoNaComparacao = 0;
+		boolean saoEquivalentes = false;
 
 		if(listaSinonimosBase.size() > 0 && listaSinonimosDestino.size() > 0){
 			for (int i = 0; i< listaSinonimosBase.size(); i++){
 				for (int j = 0; j< listaSinonimosDestino.size(); j++){
 					if(listaSinonimosBase.get(i).toUpperCase().equalsIgnoreCase(listaSinonimosDestino.get(j).toUpperCase())){
 						System.out.println(listaSinonimosBase.get(i) + " = " + listaSinonimosDestino.get(j));
-						valorObtidoNaComparacao = 1;
-						System.out.println("Valor Adquirido: "+valorObtidoNaComparacao);
+						//valorObtidoNaComparacao = 1;
+						//System.out.println("Valor Adquirido: "+valorObtidoNaComparacao);
 						System.err.println("EQUIVALENTE "+ listaBase.get(auxIListaBase) + " A " + listaDestino.get(auxJListaDestino) );
-						valorTotalSomado = valorTotalSomado + valorObtidoNaComparacao;
+						valorTotalSomado += 1;
+						saoEquivalentes = true;
 					}
 				}
 			}
 		}else{
 			System.out.println("NENHUMA CORRESPONDENCIA ENCONTRADA! VALOR 0!");
-			return;
 		}
+		return saoEquivalentes;
 	}
 	/**
 	 * Metodo que retorna a lista de sinonimos do Thesauros em Ingles e portugues.
@@ -271,14 +310,12 @@ public class TrataString {
 	 * @param strASerTratadaDestino
 	 * @throws IOException 
 	 */
-	public void carregarSinonimosDesktop(String strASerTratadaBase, String strASerTratadaDestino){
+	public static void carregarSinonimosDesktop(String strASerTratadaBase, String strASerTratadaDestino){
 		TrataString strBase = new TrataString();
 	    ThesaurusEnUS lisEnBase = new ThesaurusEnUS();
 	    ThesaurusPtBR lisBrBase = new ThesaurusPtBR();
 	    List<String> listaCompararBaseEn = new ArrayList<String>();
 	    List<String> listaCompararBaseBr = new ArrayList<String>();
-	    MeaningEnUS meaningEnUS = new MeaningEnUS();
-	    MeaningPtBR meaningPtBR = new MeaningPtBR();
 	    List<String> listaCompararDestinoEn = new ArrayList<String>();
 	    List<String> listaCompararDestinoBr = new ArrayList<String>();
 	    listaCompararBase = new ArrayList<String>();
@@ -367,6 +404,11 @@ public class TrataString {
 	    if (listaCompararDestino.isEmpty()){
         	System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
         }
-	    compararListaSinonimos(listaCompararBase, listaCompararDestino);
+	    
+	    if (compararListaSinonimos(listaCompararBase, listaCompararDestino)){
+	    	listaEq.add(strASerTratadaDestino);
+	    	
+	    }
+	    //compararListaSinonimos(listaCompararBase, listaCompararDestino);
 	}
 }
