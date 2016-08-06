@@ -1,0 +1,2201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pt-BR"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link href="http://buscatextual.cnpq.br/buscatextual/images/v2/fav_ico_lattes.ico" rel="Shortcut Icon">
+<meta content="Sistema de Currículos Lattes 2.0 (CNPq)" http-equiv="generator">
+<meta content="currículo,curriculo,curriculum,cv,vitae,lattes,produção,producao,científica,cientifica,Brasil" http-equiv="keywords">
+<title>Currículo do Sistema de Currículos Lattes (Luiz Carlos Miyadaira Ribeiro Junior)</title>
+<link type="text/css" rel="stylesheet" href="0468265522433921_files/import.css">
+<link type="text/css" href="0468265522433921_files/tablet-mobile.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="0468265522433921_files/jquery.css">
+<link type="text/css" rel="stylesheet" href="0468265522433921_files/style_curiculo.css">
+<link type="text/css" rel="stylesheet" href="0468265522433921_files/espelho.css">
+<script src="0468265522433921_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="0468265522433921_files/jquery_002.js"></script><script src="0468265522433921_files/jquery_003.js" type="text/javascript"></script><script src="0468265522433921_files/acessibilidade.js" type="text/javascript"></script><script type="text/javascript" src="0468265522433921_files/tooltip-position.js"></script><script type="text/javascript" src="0468265522433921_files/jquery_004.js"></script><script type="text/javascript" src="0468265522433921_files/jquery.js"></script><script type="text/javascript" src="0468265522433921_files/byOrder.js"></script><script type="text/javascript" src="0468265522433921_files/font-size.js"></script><script type="text/javascript" src="0468265522433921_files/cv_citacoes.js"></script><script type="text/javascript" src="0468265522433921_files/hint_ajax.js"></script><script type="text/javascript" src="0468265522433921_files/menuFlowScroll.js"></script><script type="text/javascript" src="0468265522433921_files/videoUtils.js"></script><script type="text/javascript">
+			
+			var menu = {
+				iniciar: function(id) {
+					jkmegamenu.definemenu("ancora-menu-" + id, "menu-" + id, "focus");
+				}
+			};
+			
+			function abreLinkHistoricoPublicacoes(codigo,nome){
+            	var j = window.open("historicoAtualizacao.jsp?id="+codigo+"&nome="+nome+"&fromBusca=1", "historico","resizable=no,menubar=no,toolbar=no,status=yes,scrollbars=yes,width=550px,height=470px,left=0,top=0");
+            	if(j){
+            		j.focus();
+            	} else {
+            		alert('Por favor, desabilite o bloqueador de popups');
+            	}
+			}
+			
+			var autores = {
+				exibir: function() {
+					$(this).hide().parent().find(".autores-et-al").show();
+				},
+				ocultar: function() {
+					$(this).parent().hide().parent().find(".autores-et-al-plus").show();
+				}
+			};
+				
+			$(document).ready(function(){
+			
+				$(".ajaxJCR").ajaxJCR();
+				
+				$(".ajaxCAPES").ajaxCAPES();
+				
+				$(".ajaxINPI").ajaxINPI();
+				
+				$("div.citacoes").verificarCitacoes();
+				
+				$(".tooltip").tipsy({gravity: 's'});
+				
+				$(".autores-et-al-plus").click(autores.exibir);
+				
+				$(".autores-et-al-minus").click(autores.ocultar);
+				
+				var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+      			var isChrome = !!window.chrome && !isOpera;
+      			
+				var filename = "css/impressao.css";
+				var fileref = document.createElement("link")
+		        fileref.setAttribute("rel", "stylesheet")
+		        fileref.setAttribute("type", "text/css")
+		        fileref.setAttribute("href", filename)
+		        
+		        if (typeof fileref!="undefined" && !isChrome)
+        			document.getElementsByTagName("head")[0].appendChild(fileref)
+        			
+      		});			  
+      		
+      		                                
+		</script><script type="text/javascript">
+					
+					  var _gaq = _gaq || [];
+					  _gaq.push(['_setAccount', 'UA-35652740-1']);
+					  _gaq.push(['_trackPageview']);
+					
+					  (function() {
+					    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+					  })();
+					
+					</script>
+<link href="0468265522433921_files/impressao.css" type="text/css" rel="stylesheet"></head>
+<body>
+<div class="page min-width">
+<div class="header">
+<div class="header-content max-width">
+<div class="identity center">
+<div class="combo">
+<h1 tabindex="0" class="escondido"> Currículo Lattes - Busca Textual - Visualização do Currículo </h1>
+<a tabindex="1" href="http://lattes.cnpq.br/" title="Currículo Lattes" target="_blank"><img title="Currículo Lattes" alt="Currículo Lattes" src="0468265522433921_files/titulo-sistema.png"></a>
+</div>
+<div style="position: absolute; top: 15px;" class="menu-header">
+<span class="tituloFlow"></span><span class="linksFlow"><a tabindex="2" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4770151H4&amp;idiomaExibicao=2" class="btn-br">English</a><a tabindex="3" title="Imprimir currículo" class="bt-menu-header titBottom  icons-top icons-top-print" href="javascript:window.print()"></a><a tabindex="4" title="Aumentar a fonte" class="bt-menu-header titBottom fontMais icons-top icons-top-fontMais" href="javascript:void(0)"></a><a tabindex="5" title="Fonte padrão" class="bt-menu-header titBottom fontMenos icons-top icons-top-fontMenos" href="javascript:void(0)"></a><a tabindex="6" title="Alto contraste" class="bt-menu-header titBottom contraste icons-top icons-top-contraste-en" href="javascript:void(0)"></a><a tabindex="7" href="http://buscatextual.cnpq.br/buscatextual/download.do?metodo=apresentar&amp;idcnpq=0468265522433921" target="_blank" class="bt-menu-header titBottom fontMenos icons-top icons-top-xml" title="Baixar Currículo em XML"></a><a tabindex="8" title="Ajuda" class="bt-menu-header titBottom icons-top icons-top-help" target="_blank" href="http://ajuda.cnpq.br/index.php"></a></span>
+</div>
+<div class="logo">
+<a tabindex="9" target="_blank" href="http://cnpq.br/">
+<h2 tabindex="0">CNPq - Conselho Nacional de Desenvolvimento Científico e Tecnológico</h2>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="navigation-wrapper">
+<div class="center navigation-wrapper-line">
+<div class="menuPrincipal">
+<div class="menuCtl menuAcesso">
+<div class="menucent"><script type="text/javascript">menu.iniciar("dados-gerais");</script>
+		
+		
+		<a _megamenupos="0pos" tabindex="10" id="ancora-menu-dados-gerais" href="javascript:void(0)" class="acessibilidade"><span></span>Dados gerais</a>
+		
+	
+		
+		
+		
+		
+	<script type="text/javascript">menu.iniciar("formacao");</script>
+		
+		
+		<a _megamenupos="1pos" tabindex="14" id="ancora-menu-formacao" href="javascript:void(0)" class="acessibilidade separador"><span></span>Formação</a>
+		
+	
+		
+		
+		
+		
+	<script type="text/javascript">menu.iniciar("atuacao");</script>
+		
+		
+		<a _megamenupos="2pos" tabindex="17" id="ancora-menu-atuacao" href="javascript:void(0)" class="acessibilidade separador"><span></span>Atuação</a>
+		
+	
+		
+		
+		
+		
+	
+		
+		
+		<a _megamenupos="3pos" tabindex="21" id="ancora-menu-projetos" href="#ProjetosPesquisa" class="acessibilidade separador"><span></span>Projetos</a>
+		
+	<script type="text/javascript">menu.iniciar("projetos");</script>
+		
+		
+		
+		
+	<script type="text/javascript">menu.iniciar("producoes");</script>
+		
+		
+		<a _megamenupos="4pos" tabindex="25" id="ancora-menu-producoes" href="#ProducoesCientificas" class="acessibilidade separador"><span></span>Produções</a>
+		
+	
+		
+		
+		
+		
+	<script type="text/javascript">menu.iniciar("eventos");</script>
+		
+		
+		<a _megamenupos="5pos" tabindex="58" id="ancora-menu-eventos" href="#Eventos" class="acessibilidade separador"><span></span>Eventos</a>
+		
+	
+		
+		
+		
+		
+	<script type="text/javascript">menu.iniciar("orientacoes");</script>
+		
+		
+		<a _megamenupos="6pos" tabindex="61" id="ancora-menu-orientacoes" href="#Orientacoes" class="acessibilidade separador"><span></span>Orientações</a>
+		
+	
+		
+		
+		
+		
+	<script type="text/javascript">menu.iniciar("bancas");</script>
+		
+		
+		<a _megamenupos="7pos" tabindex="64" id="ancora-menu-bancas" href="#Bancas" class="acessibilidade separador"><span></span>Bancas</a>
+		
+	
+		
+		
+		
+		
+	<script type="text/javascript">menu.iniciar("informacoes-complementares");</script>
+		
+		
+		<a _megamenupos="8pos" tabindex="67" id="ancora-menu-informacoes-complementares" href="javascript:void(0)" class="acessibilidade separador"><span></span>+</a>
+		
+	
+		
+		
+		
+		
+	</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-wrapper">
+<div class="main-content max-width min-width center">
+<div class="layout-cell layout-cell-12">
+<div class="layout-cell-pad-main">
+<img class="foto" src="0468265522433921_files/servletrecuperafoto.gif"><div class="infpessoa">
+<h2 tabindex="0" class="nome">Luiz Carlos Miyadaira Ribeiro Junior</h2>
+<ul class="informacoes-autor">
+<li>
+<span class="img_link icone-informacao-autor"></span>Endereço para acessar este CV: http://lattes.cnpq.br/0468265522433921</li>
+<li>
+<span class="img_cert icone-informacao-autor"></span>Última atualização do currículo em 20/04/2016</li>
+</ul>
+</div><br class="clear"><div class="title-wrapper">
+<h1 tabindex="0" class="ui-hidden"></h1>
+<hr class="separator">
+<p class="resumo">Professor Adjunto da Universidade de Brasília, é 
+graduado em Tecnologia em Processamento de Dados pela Faculdade de 
+Informática de Lins (1995), com especialização em Análise de Sistemas 
+pela Faculdade de Informática de Lins e IBM (1996), mestrado em Ciência 
+da Computação pela Universidade Federal de São Carlos (1999) e doutorado
+ em Engenharia Elétrica pela Escola Politécnica da Universidade de São 
+Paulo (2007). Possui 8 anos de experiência profissional na área de 
+desenvolvimento de software, tendo atuado em grandes empresas de 
+desenvolvimento de software exercendo papéis de Analista de Requisitos, 
+Arquiteto de Software e Gerente de Projetos. Participa de projetos de 
+melhoria de processos de software, baseado nos modelos de qualidade de 
+software CMMI e MPS.BR. Possui mais de 15 anos de experiência acadêmica 
+como professor universitário e pesquisador.<span style="font-weight: bold" class="texto"> (Texto informado pelo autor)</span>
+</p>
+</div><br class="clear"><div class="title-wrapper">
+<a tabindex="69" name="Identificacao">
+<h1 tabindex="0">Identificação</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell">
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Nome</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Luiz Carlos Miyadaira Ribeiro Junior</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Nome em citações bibliográficas</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">RIBEIRO JUNIOR, L. C. M.;RIBEIRO JUNIOR, 
+LUIZ CARLOS MIYADAIRA;RIBEIRO JR, LUIZ CARLOS MIYADAIRA;JUNIOR, LUIZ 
+CARLOS MIYADAIRA RIBEIRO</div>
+</div>
+</div>
+</div><br class="clear"><div class="title-wrapper">
+<a tabindex="70" name="Endereco">
+<h1 tabindex="0">Endereço</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell">
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Endereço Profissional</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Universidade de Brasília, Faculdade Gama. <br class="clear">Área Especial 2 Lote 14<br class="clear">Setor Central<br class="clear">72405-610 - Brasilia, DF - Brasil<br class="clear">Telefone: (61) 34843443<br class="clear">URL da Homepage: <a tabindex="71" target="blank" href="http://www.fga.unb.br/unbgama/">http://www.fga.unb.br/unbgama/</a></div>
+</div>
+</div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="72" name="FormacaoAcademicaTitulacao">
+<h1 tabindex="0">Formação acadêmica/titulação</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell">
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2002 - 2007</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Doutorado em Engenharia Elétrica<span class="ajaxCAPES" data-param="&amp;codigoCurso=33002010045P3&amp;nivelCurso=D"> (Conceito CAPES 6)</span>. <br class="clear">Universidade de São Paulo, USP, Brasil.
+		
+	<br class="clear">Título: Uma Arquitetura de Sistemas Espaço-Temporais baseados na Web para Agricultura de Precisão, Ano de obtenção: 2007. <br class="clear">Orientador: <a tabindex="73" class="icone-lattes" target="_blank" href="http://lattes.cnpq.br/0725312844547101"><img src="0468265522433921_files/logolattes.gif"></a>Antonio Mauro Saraiva. <br class="clear">Palavras-chave: Agricultura de Precisão; Banco de Dados Geoespacial; Sistemas de Informação.<br class="clear">Grande área: Ciências Exatas e da Terra<br class="clear">Grande
+ Área: Ciências Exatas e da Terra / Área: Ciência da Computação / 
+Subárea: Metodologia e Técnicas da Computação / Especialidade: 
+Engenharia de Software. <br class="clear">Grande Área: Ciências Exatas e
+ da Terra / Área: Ciência da Computação / Subárea: Metodologia e 
+Técnicas da Computação / Especialidade: Sistemas de Informação. <br class="clear">Setores de atividade: Produção Vegetal; Consultoria em Sistemas de Informática. </div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1997 - 1999</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Mestrado em Ciência da Computação<span class="ajaxCAPES" data-param="&amp;codigoCurso=33001014008P4&amp;nivelCurso=M"> (Conceito CAPES 4)</span>. <br class="clear">Universidade Federal de São Carlos, UFSCAR, Brasil.
+		
+	<br class="clear">Título: Busca baseada em Conteúdo em Documentos de Fala/Texto em um Banco de Dados MHEG-5,Ano de Obtenção: 1999.<br class="clear">Orientador: Marina Teresa Pires Vieira.<br class="clear">Bolsista do(a): Fundação de Amparo à Pesquisa do Estado de São Paulo, FAPESP, Brasil. <br class="clear">Palavras-chave: MHEG-5; Recuperação de Informação; Sistemas de Informação.<br class="clear">Grande área: Ciências Exatas e da Terra<br class="clear">Setores de atividade: Atividades de Banco de Dados. </div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1996 - 1997</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Especialização em Desenvolvimento e Gerencia de Projetos de Sistemas.  (Carga Horária: 460h). <br class="clear">Faculdade de Informática de Lins, FIL, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1993 - 1995</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Graduação em Tecnologia em Processamento de Dados. <br class="clear">Faculdade de Informática de Lins, FIL, Brasil.
+		
+	</div>
+</div>
+</div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<div class="layout-cell layout-cell-12 data-cell"></div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="74" name="FormacaoComplementar">
+<h1 tabindex="0">Formação Complementar</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell">
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2009 - 2009</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Avaliadores MR MPS.  (Carga horária: 16h). <br class="clear">Núcleo Softex Campinas, SOFTEX CAMPINAS, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2009 - 2009</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">CMMI Introduction v 1.2.  (Carga horária: 24h). <br class="clear">Knowledge Partner Quality Registrar, KPQR, Índia.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2007 - 2007</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Técnicas e Ferramentas de Automação para Geração A.  (Carga horária: 24h). <br class="clear">Microsoft Corporation, MC*, Estados Unidos.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2007 - 2007</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Implementação MPS.BR.  (Carga horária: 24h). <br class="clear">Universidade Católica de Brasília, UCB/DF, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2007 - 2007</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Gerência de Projetos.  (Carga horária: 50h). <br class="clear">Politec Informática - Matriz, POLITEC, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2007 - 2007</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Requirements Engineering.  (Carga horária: 32h). <br class="clear">Project Performance International, PPI, Austrália.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2007 - 2007</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Prova de Conhecimento para Implementadores.  (Carga horária: 1h). <br class="clear">Núcleo Softex Campinas, SOFTEX CAMPINAS, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2006 - 2006</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Introdução ao MPS.  (Carga horária: 16h). <br class="clear">Universidade Católica de Brasília, UCB/DF, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2006 - 2006</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Desenvolvimento Gerencial.  (Carga horária: 25h). <br class="clear">Politec Informática - Matriz, POLITEC, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2006 - 2006</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Prova de Introducão ao modelo MPS.BR.  (Carga horária: 1h). <br class="clear">Núcleo Softex Campinas, SOFTEX CAMPINAS, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2005 - 2005</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Requisitos de Software.  (Carga horária: 20h). <br class="clear">Politec Informática - Matriz, POLITEC, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2005 - 2005</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Ferramentas para a Qualidade (8D, MASP).  (Carga horária: 16h). <br class="clear">VTB - Consultoria e Treinamentos, VTB, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2005 - 2005</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">CEP I - Controle Estatístico do Processo.  (Carga horária: 24h). <br class="clear">VTB - Consultoria e Treinamentos, VTB, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2005 - 2005</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">SCAMPI Method V 1.1.  (Carga horária: 24h). <br class="clear">Integrated System Diagnostics, ISD, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2005 - 2005</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Gerência de Projetos.  (Carga horária: 20h). <br class="clear">Politec Informática - Matriz, POLITEC, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2004 - 2004</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Verificação e Validação.  (Carga horária: 24h). <br class="clear">Integrated System Diagnostics, ISD, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2004 - 2004</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Garantia da Qualidade do Produto e Processo - PPQA.  (Carga horária: 8h). <br class="clear">Integrated System Diagnostics, ISD, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2004 - 2004</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">CMMI Introduction v. 1.1.  (Carga horária: 24h). <br class="clear">Integrated System Diagnostics, ISD, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2004 - 2004</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Análise de Pontos de Função.  (Carga horária: 27h). <br class="clear">Politec Informática - Matriz, POLITEC, Brasil.
+		
+	</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2004 - 2004</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Gerenciamento de Configuração - CM.  (Carga horária: 8h). <br class="clear">Integrated System Diagnostics, ISD, Brasil.
+		
+	</div>
+</div>
+</div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="75" name="AtuacaoProfissional">
+<h1 tabindex="0">Atuação Profissional</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell"><br class="clear"><div class="inst_back">
+<b>Instituto OMINIS de Pesquisa, Desenvolvimento e Ensino, OMINIS, Brasil.
+		
+	</b>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Vínculo institucional</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2009 - 2009</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Vínculo: Celetista formal, Enquadramento Funcional: Pesquisador, Carga horária: 4</div>
+</div><br class="clear"><br class="clear"><div class="inst_back">
+<b>Universidade de Brasília, UnB, Brasil.
+		
+	</b>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Vínculo institucional</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2009 - Atual</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Vínculo: Servidor Público, Enquadramento Funcional: Professor Adjunto, Carga horária: 40, Regime: Dedicação exclusiva. </div>
+</div><br class="clear"><div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Atividades</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>02/2012 - Atual</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Ensino, Governança em TIC para Setor Público, Nível: Especialização</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Disciplinas ministradas<br class="clear">Modelos no contexto de Governança de TI<br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>09/2009 - Atual</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Pesquisa e desenvolvimento , Campus Gama, . </div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Linhas de pesquisa <br class="clear"><a tabindex="76" href="#LP_M%E9todos+de+desenvolvimento+de+software">Métodos de desenvolvimento de software</a><br class="clear"><a tabindex="77" href="#LP_Arquitetura%20de%20processos%20de%20software">Arquitetura de processos de software</a><br class="clear"><a tabindex="78" href="#LP_M%E9tricas+de+software">Métricas de software</a><br class="clear"><a tabindex="79" href="#LP_Qualidade%20de%20Software">Qualidade de Software</a><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>09/2009 - Atual</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Ensino, Engenharia de Software, Nível: Graduação</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Disciplinas ministradas<br class="clear">Verificação e Validação de Software<br class="clear">Requisitos de Software<br class="clear">Métodos de Desenvolvimento de Software<br class="clear">Introdução a Ciência da Computação<br class="clear">Tópicos Especiais em Engenharia de Software<br class="clear"></div>
+</div><br class="clear"><div class="inst_back">
+<b>Faculdades Alvorada, FA, Brasil.
+		
+	</b>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Vínculo institucional</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2007 - 2009</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Vínculo: Celetista formal, Enquadramento Funcional: Professor Doutor, Carga horária: 8</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Outras informações</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Disciplinas ministradas: Estrutura de 
+Dados Laboratório de Linguagens e Técnicas de Programação I Linguagem e 
+Técnica de Programação I Linguagem de Programação II Linguagem de 
+Programação III</div>
+</div><br class="clear"><br class="clear"><div class="inst_back">
+<b>Politec Informática - Matriz, POLITEC, Brasil.
+		
+	</b>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Vínculo institucional</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2003 - 2009</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Vínculo: Colaborador, Enquadramento Funcional: Gerente de Projetos, Carga horária: 40</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Outras informações</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Gerenciamento de projetos de software 
+Definição e Implantação de processos de gestão de projetos Definição e 
+implantação de técnicas e métodos de Engenharia de Software</div>
+</div><br class="clear"><div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Atividades</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>03/2004 - 09/2009</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Serviços técnicos especializados , Diretoria de Fábricas, Fábrica de Projetos. </div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Serviço realizado<br class="clear">Gerente de Projetos de desenvolvimento e manutenção de software. </div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>07/2003 - 09/2009</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Serviços técnicos especializados , Diretoria de Fábricas, . </div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Serviço realizado<br class="clear">Definição
+ e implantação de processos de gestão de projetos, gestão quantitativa 
+de projetos e métodos de controle estatístico de processos. </div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>06/2005 - 02/2007</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Serviços técnicos especializados , Diretoria de Fábricas, . </div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Serviço realizado<br class="clear">Engenheiro de Processos: Definição e implantação de métodos e técnicas de Engenharia de Software. </div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>07/2003 - 03/2004</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Serviços técnicos especializados , Diretoria de Fábricas, Fábrica de Projetos. </div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Serviço realizado<br class="clear">Arquiteto de Software. </div>
+</div><br class="clear"><div class="inst_back">
+<b>Vesta Technologies, VESTA, Brasil.
+		
+	</b>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Vínculo institucional</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2002 - 2003</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Vínculo: Prestador de Serviços, Enquadramento Funcional: Analista de Sistemas, Carga horária: 40</div>
+</div><br class="clear"><br class="clear"><div class="inst_back">
+<b>CastMeta Informática, CASTMETA, Brasil.
+		
+	</b>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Vínculo institucional</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2001 - 2002</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Vínculo: Celetista, Enquadramento Funcional: Analista de Sistemas, Carga horária: 40, Regime: Dedicação exclusiva. </div>
+</div><br class="clear"><br class="clear"><div class="inst_back">
+<b>Pontifícia Universidade Católica de Minas Gerais, PUC Minas, Brasil.
+		
+	</b>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Vínculo institucional</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1999 - 2001</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Vínculo: Celetista, Enquadramento Funcional: Professor Assistente III, Carga horária: 40, Regime: Dedicação exclusiva. </div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Outras informações</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Disciplina Ministradas Banco de Dados Análise e Projeto de Sistemas Programação Orientada a Objetos</div>
+</div><br class="clear"><br class="clear"><div class="inst_back">
+<b>Universidade Paulista, UNIP, Brasil.
+		
+	</b>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Vínculo institucional</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1998 - 2000</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Vínculo: Celetista, Enquadramento Funcional: Professor Assistente II, Carga horária: 12</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Outras informações</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Disciplinas Ministradas Linguagens de Programação I e II</div>
+</div><br class="clear"><br class="clear"><div class="inst_back">
+<b>Faculdade de Tecnologia de Birigui, FATEB, Brasil.
+		
+	</b>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Vínculo institucional</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1997 - 2000</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Vínculo: Celetista, Enquadramento Funcional: Professor Mestre, Carga horária: 16</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Outras informações</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Disciplinas Ministradas Banco de Dados Análise e Projeto de Sistemas</div>
+</div><br class="clear"><br class="clear"><div class="inst_back">
+<b>Empresa Brasileira de Serviços Hospitalares, EBSERH/HUB, Brasil.
+		
+	</b>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Vínculo institucional</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2013 - 2015</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Vínculo: Servidor Público, Enquadramento Funcional: Chefe do Setor de Tecnologia da Informação, Carga horária: 40</div>
+</div><br class="clear"><br class="clear"><div class="inst_back">
+<b>Ministério das Comunicações, MC, Brasil.
+		
+	</b>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right subtit-1">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Vínculo institucional</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5"><br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2015 - Atual</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Vínculo: , Enquadramento Funcional: Coordenador Geral de Tecnologia da Informação, Carga horária: 40</div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Outras informações</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Docente UNB/FGA cedido ao MINISTÉRIO DAS COMUNICAÇÕES para atuar como CGTI - Coordenação Geral e Tecnologia da Informação</div>
+</div><br class="clear"></div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="80" name="LinhaPesquisa">
+<h1 tabindex="0">Linhas de pesquisa</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell"><a tabindex="81" name="LP_Métodos de desenvolvimento de software"></a><div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Métodos de desenvolvimento de software</div>
+</div><a tabindex="82" name="LP_Arquitetura de processos de software"></a><div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Arquitetura de processos de software</div>
+</div><a tabindex="83" name="LP_Métricas de software"></a><div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>3. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Métricas de software</div>
+</div><a tabindex="84" name="LP_Qualidade de Software"></a><div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>4. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Qualidade de Software</div>
+</div>
+</div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="85" name="ProjetosPesquisa">
+<h1 tabindex="0">Projetos de pesquisa</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell"><a tabindex="86" name="PP_Prospecção e Desenvolvimento de Soluções Inovadoras Aplicadas a Tablets Positivo"></a><div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2012 - 2013</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Prospecção e Desenvolvimento de Soluções Inovadoras Aplicadas a Tablets Positivo<br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Descrição: A adoção da computação móvel, 
+particularmente com o uso de Tablets, vem acompanhada de um impacto 
+significativo na sociedade, não apenas na área de ensino, em que 
+universidades e escolas de primeiro e segundo grau passaram a adotar 
+essa forma de computação para tornar o processo de ensino e aprendizagem
+ mais efetivo; como também nas áreas de saúde, entretenimento e turismo.
+ 
+Com isso, a formação de recursos humanos para o desenvolvimento de 
+soluções inovadoras baseadas em computação móvel torna-se 
+imprescindível, ainda mais com o incentivo da instalação de empresas no 
+Brasil para a fabricação e montagem de dispositivos como tablets e smart
+ phones. É importante observar que o desenvolvimento de aplicações para 
+essa plataforma é distinto do desenvolvimento de aplicações 
+convencionais, uma vez que se caracteriza por um curto ciclo de 
+desenvolvimento aliado a exigências significativas de usabilidade, 
+qualidade, personalização, localização e customização (uma vez que as 
+aplicações podem ser usadas por milhares de usuários, em diferentes 
+países e possivelmente disponibilizadas em dispositivos com as mais 
+variadas características).
+Este projeto objetiva a prospecção de idéias inovadoras e o 
+desenvolvimento de aplicações Android para Tablets da Positivo, 
+incentivando o espírito inovador e a competência técnica dos envolvidos e
+ possibilitando a investigação e aplicação de técnicas ágeis e avançadas
+ de desenvolvimento.. <br class="clear">Situação: Em andamento; Natureza: Pesquisa. <br class="clear">Alunos envolvidos: Graduação: (25) . <br class="clear"><br class="clear">Integrantes:
+ Luiz Carlos Miyadaira Ribeiro Junior - Integrante / Luiz A Laranjeira -
+ Integrante / Hilmer R Neri - Coordenador / Vander Ramos Alves - 
+Integrante / Rodrigo Bonifacio de Almeida - Integrante.<br class="clear">Financiador(es): Positivo Informática - Matriz - Cooperação.</div>
+</div>
+</div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="87" name="ProjetosExtensao">
+<h1 tabindex="0">Projetos de extensão</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell"><a tabindex="88" name="PP_Lato Sensu - GOVERNANÇA EM TECNOLOGIA DE INFORMAÇÃO E COMUNICAÇÃO PARA O SETOR PÚBLICO"></a><div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2011 - Atual</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Lato Sensu - GOVERNANÇA EM TECNOLOGIA DE INFORMAÇÃO E COMUNICAÇÃO PARA O SETOR PÚBLICO<br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Descrição: Lato Sensu Governança em 
+Tecnologia da Informação e Comunicação para o Setor Público, destinado 
+aos servidores do Tribunal de Contas da União TCU, turma de 2011, 
+ministrado pelo Departamento de Administração da Faculdade de Faculdade 
+de Administração, Contabilidade e Economia (FACE) e pela Faculdade do 
+Gama (FGA), sob gestão da profa Rejane Maria da Costa Figueiredo, 
+lotação Faculdade do Gama (FGA), Campus Gama, e do professor Prof. 
+Sérgio Antônio Andrade de Freitas, lotação Faculdade do Gama (FGA), 
+Campus Gama, como gestor substituto.. <br class="clear">Situação: Em andamento; Natureza: Extensão. <br class="clear"><br class="clear">Integrantes:
+ Luiz Carlos Miyadaira Ribeiro Junior - Integrante / Rejane - 
+Coordenador / Sergio Antonio Andrade de Freitas - Integrante / Rildo 
+Ribeiro dos Santos - Integrante / Carlos Denner dos Santos Junior - 
+Integrante / José Carneiro da Cunha - Integrante / Wesley Vaz Silva - 
+Integrante / Carlos Renato Araújo Braga - Integrante / Daniel Costa 
+Andrade - Integrante / Cláudio Silva da Cruz - Integrante.<br class="clear">Financiador(es): Tribunal de Contas da União - Remuneração.</div>
+</div>
+</div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="89" name="ProjetosDesenvolvimento">
+<h1 tabindex="0">Projetos de desenvolvimento</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell"><a tabindex="90" name="PP_Projeto Fábrica de Software da FGA"></a><div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2013 - Atual</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Projeto Fábrica de Software da FGA<br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Descrição: Descrição: Criação de um 
+espaço de produção de software alicerçado na tripé: produção, ensino e 
+pesquisa em engenharia de software. Neste contexto o projeto contempla 
+diversos subprojetos que são equalizados de forma a desenvolver produtos
+ inovadores em engenharia de software através das pesquisas realizadas 
+no âmbito da fábrica.. <br class="clear">Situação: Em andamento; Natureza: Desenvolvimento. <br class="clear"><br class="clear">Integrantes:
+ Luiz Carlos Miyadaira Ribeiro Junior - Integrante / Sergio Antonio 
+Andrade de Freitas - Coordenador / Elaine Venson - Integrante / JORGE 
+HENRIQUE CABRAL FERNANDES - Integrante / Fabiana Freitas - Integrante / 
+Rejane Maria da Costa Figueiredo - Integrante.<br class="clear">Financiador(es): Centro Brasileiro de Pesquisa em Avaliação e Seleção e de Promoção Eventos- - Remuneração.</div>
+</div><a tabindex="91" name="PP_FRAMEWORK de Soluções de TI para o Ministério das Comunicações"></a><div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2012 - 2015</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">FRAMEWORK de Soluções de TI para o Ministério das Comunicações<br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Descrição: O objetivo deste Projeto de 
+Cooperação Técnica entre a Faculdade do Gama da Universidade de Brasília
+ (FGA-UNB) e o Ministério das Comunicações (MC) é produzir 
+conhecimentos, assentados em bases acadêmico-científicas, que possam 
+viabilizar a elaboração e a implantação de um framework de soluções de 
+Tecnologia da Informação (TI) para o MC, de forma a proporcionar um 
+alinhamento entre as suas estratégias e ações de gerenciamento de TI com
+ a estratégia de governança em TI do MC. Como escopo de um primeiro 
+projeto de cooperação com o MC foram definidos objetivos específicos de 
+gerenciamento de TI no contexto de governança, com foco na estratégia de
+ gerenciamento de TI, processos de contratações de serviços de TI, 
+gestão de projetos e portfólios, gerenciamento de serviços de TI 
+(infraestrutura), e qualidade de software produto (processo de 
+desenvolvimento de software, arquitetura de software), que são definidos
+ como: Diagnosticar e propor melhorias do gerenciamento da TI no 
+contexto de Governança em Ti (COBIT 5) do MC; Análise de conformidade 
+legal do processo de contratações de serviços de TI do MC; Apoio na 
+implantação/capacitação do modelo de Gestão de Projetos do MC 
+(Referência Metodologia de Gerenciamento de Projetos do SISP/MC); 
+Diagnóstico da situação atual e proposta de melhorias da Infraestrutura 
+de TI; Definição de um Processo de Desenvolvimento de software do MC, 
+com foco em qualidade de software produto e no contexto de terceirização
+ por Fábrica de Software. Melhoria da arquitetura de software do MC.. <br class="clear">Situação: Concluído; Natureza: Desenvolvimento. <br class="clear">Alunos envolvidos: Graduação: (16) . <br class="clear"><br class="clear">Integrantes:
+ Luiz Carlos Miyadaira Ribeiro Junior - Coordenador / Sergio Antonio 
+Andrade de Freitas - Integrante / Ricardo Ajax Dias Kosloski - 
+Integrante / Milene Serrano - Integrante / Mauricio Serrano - Integrante
+ / Wander Pereira da Silva - Integrante / George Marsicano - Integrante /
+ Elaine Venson - Integrante / Rejane Maria da Costa Figueiredo - 
+Integrante.<br class="clear">Financiador(es): Ministério das Comunicações - Cooperação.</div>
+</div><a tabindex="92" name="PP_Centro de Qualidade e Testes de Software"></a><div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2012 - 2014</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Centro de Qualidade e Testes de Software<br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Descrição: O objetivo da proposta é a 
+criação e manutenção do Centro de Qualidade e Testes de Software (CQTS) 
+especializado em software instalados em dispositivos fabricados pela 
+Positivo Informática e seus parceiros. O Centro deverá atuar em pesquisa
+ e inovação em qualidade de software, especializada em criar, 
+experimentar e implantar processos, métodos e ferramentas para testes de
+ soluções diversas da Positivo Informática.. <br class="clear">Situação: Concluído; Natureza: Desenvolvimento. <br class="clear">Alunos envolvidos: Graduação: (12) . <br class="clear"><br class="clear">Integrantes: Luiz Carlos Miyadaira Ribeiro Junior - Coordenador / Kamilla Holanda Crozara - Integrante.<br class="clear">Financiador(es): Positivo Informática - Matriz - Cooperação.</div>
+</div><a tabindex="93" name="PP_Definição de uma Arquitetura de Processos de Desenvolvimento de Software baseada no Capability Maturity Model Integration ? CMMI"></a><div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2011 - 2012</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Definição de uma Arquitetura de Processos de Desenvolvimento de Software baseada no Capability Maturity Model Integration ? CMMI<br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b><br class="clear"></b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Descrição: Atualmente, organizações de 
+desenvolvimento de software atendem a uma grande gama de clientes, cujas
+ especialidades ou áreas de atuação diferem muito uma das outras. Este 
+fato cria a necessidade dessas organizações em se adequarem a diferentes
+ tipos de soluções de software, o que fatalmente interfere no processo 
+de desenvolvimento da empresa.
+O processo de desenvolvimento de software pode ser afetado em itens 
+como: 
+?	Diferentes tecnologias de desenvolvimento podem interferir nas 
+técnicas e métodos de desenvolvimento de software.
+?	Controles de gestão de projetos específicos
+?	Exigências diferentes níveis de qualidade de software
+?	Diferentes ferramentas de desenvolvimento podem ser adotadas (ex, 
+CASE, IDE)
+?	Ciclo de vida de desenvolvimento pode ser específico para cada um dos 
+clientes.
+
+Nesse contexto, tais organizações possuem a necessidade de adequar seus 
+processos de desenvolvimento de software e também de desenvolvimento 
+pessoal para atender adequadamente as diferentes necessidades de cada um
+ dos clientes. Ao mesmo tempo, o processo deverá atender padrões 
+internacionais de qualidade, garantindo a aceitação tanto nacional 
+quanto internacional dos produtos desenvolvidos pela empresa.. <br class="clear">Situação: Concluído; Natureza: Desenvolvimento. <br class="clear">Alunos envolvidos: Graduação: (2) . <br class="clear"><br class="clear">Integrantes:
+ Luiz Carlos Miyadaira Ribeiro Junior - Coordenador / Kamilla Holanda 
+Crozara - Integrante / Eduardo Barbosa - Integrante.<br class="clear">Financiador(es): Poliedro Informática Consultoria e Serviços - Cooperação.<br class="clear">Número de produções C, T &amp; A: 1</div>
+</div>
+</div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="94" name="AreasAtuacao">
+<h1 tabindex="0">Áreas de atuação</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell">
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Grande área: Ciências Exatas e da Terra /
+ Área: Ciência da Computação / Subárea: Metodologia e Técnicas da 
+Computação/Especialidade: Engenharia de Software. <br class="clear"></div>
+</div>
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Grande área: Ciências Exatas e da Terra /
+ Área: Ciência da Computação / Subárea: Metodologia e Técnicas da 
+Computação/Especialidade: Sistemas de Informação. <br class="clear"></div>
+</div>
+</div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="95" name="Idiomas">
+<h1 tabindex="0">Idiomas</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell">
+<div class="layout-cell layout-cell-3 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>Inglês</b>
+</div>
+</div>
+<div class="layout-cell layout-cell-9">
+<div class="layout-cell-pad-5">Compreende Razoavelmente, Fala Razoavelmente, Lê Bem, Escreve Razoavelmente. </div>
+</div>
+</div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="96" name="ProducoesCientificas">
+<h1 tabindex="0">Produções</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell">
+<a tabindex="97" name="ProducaoBibliografica"></a><br class="clear"><div class="inst_back">
+<b>Produção bibliográfica</b>
+</div>
+<a tabindex="98" name="Citacoes"></a>
+<div id="artigos-completos">
+<div class="cita-artigos">
+<b><a tabindex="99" name="ArtigosCompletos"></a>Artigos completos publicados em periódicos</b>
+</div><br class="clear"><div class="layout-cell-6">
+<div class="sub_tit_form">
+<label for="combo-ordenacao-citacao">Ordenar por</label><select class="input-text input-login-select" id="combo-ordenacao-citacao"><option selected="selected" value="1"> Ordem Cronológica </option><option value="2"> Número de citações Web of science </option><option value="3"> Número de citações Scopus </option><option value="4"> Numero de citações Scielo </option><option value="5"> Primeiro autor </option><option value="6"> Impacto JCR </option><option value="7"> Ordem de Importância </option></select>
+</div>
+</div>
+<script type="text/javascript">
+			
+				var ordenacao = {
+					engine: {
+						textual: function(seletor) {
+						
+							$("#artigos-completos").find(".artigo-completo").sortElements(function(a, b){
+								var v1 = $(a).find(seletor).text();
+								var v2 = $(b).find(seletor).text();
+								return (v1 > v2) ? 1 : -1;
+							});
+						},
+						numerico: function(seletor) {
+						
+							$("#artigos-completos").find(".artigo-completo").sortElements(function(a, b){
+								var v1 = parseInt($(a).find(seletor).text(), 10);
+								var v2 = parseInt($(b).find(seletor).text(), 10);
+								if (isNaN(v1)) v1 = 0;
+								if (isNaN(v1)) v2 = 0;
+								return (v1 < v2) ? 1 : -1;
+							});
+						},
+						numerico_crescente: function(seletor) {
+						
+							$("#artigos-completos").find(".artigo-completo").sortElements(function(a, b){
+								var v1 = parseInt($(a).find(seletor).text(), 10);
+								var v2 = parseInt($(b).find(seletor).text(), 10);
+								if (isNaN(v1)) v1 = 0;
+								if (isNaN(v1)) v2 = 0;
+								return (v1 > v2) ? 1 : -1;
+							});
+						}
+					},
+					change: function(e) {
+					
+						var combo = $(e.target),
+							valor = combo.val();
+							
+						if (valor == 1) ordenacao.engine.numerico("span[data-tipo-ordenacao='ano']");
+						if (valor == 2) ordenacao.engine.numerico("span[data-tipo-ordenacao='1']");
+						if (valor == 3) ordenacao.engine.numerico("span[data-tipo-ordenacao='3']");						
+						if (valor == 4) ordenacao.engine.numerico("span[data-tipo-ordenacao='2']");
+						if (valor == 5) ordenacao.engine.textual("span[data-tipo-ordenacao='autor']");
+						if (valor == 6) ordenacao.engine.numerico("span[data-tipo-ordenacao='jcr']");
+						if (valor == 7) ordenacao.engine.numerico_crescente("span[data-tipo-ordenacao='importancia']");
+							
+					}
+				};
+			
+				$("#combo-ordenacao-citacao").bind("change", ordenacao.change);
+			
+			</script>
+<div class="artigo-completo">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5"><span class="informacao-artigo" data-tipo-ordenacao="importancia"></span><span class="informacao-artigo" data-tipo-ordenacao="autor">CALAZANS, ANGELICA TOFFANO SEIDEL</span><span class="informacao-artigo" data-tipo-ordenacao="ano">2012</span><a tabindex="100" class="icone-producao icone-doi" href="http://dx.doi.org/10.4301/s1807-17752012000200004" target="_blank"></a>CALAZANS, ANGELICA TOFFANO SEIDEL ; KOSLOSKI, RICARDO AJAX DIAS ; <b>RIBEIRO JUNIOR, LUIZ CARLOS MIYADAIRA</b>
+ . PROPOSAL FOR A MEASUREMENT MODEL FOR SOFTWARE TESTS WITH A FOCUS ON 
+THE MANAGEMENT OF OUTSOURCED SERVICES. Revista de Gestão da Tecnologia e
+ Sistemas de Informação (Online)<sup></sup>, v. 9, p. 265-284, 2012. <div class="citado" cvuri="/buscatextual/servletcitacoes?doi=10.4301/s1807-17752012000200004&amp;issn=18071775&amp;volume=9&amp;issue=&amp;paginaInicial=265&amp;titulo=PROPOSAL FOR A MEASUREMENT MODEL FOR SOFTWARE TESTS WITH A FOCUS ON THE MANAGEMENT OF OUTSOURCED SERVICES&amp;sequencial=1&amp;nomePeriodico=Revista de Gestão da Tecnologia e Sistemas de Informação (Online)" tooltip="Citações a partir de 1996"></div></div>
+</div>
+<br class="clear">
+</div>
+<div class="artigo-completo">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5"><span class="informacao-artigo" data-tipo-ordenacao="jcr">1.761</span><span class="informacao-artigo" data-tipo-ordenacao="importancia"></span><span class="informacao-artigo" data-tipo-ordenacao="autor">MURAKAMI, E.</span><span class="informacao-artigo" data-tipo-ordenacao="ano">2006</span>
+		<img src="0468265522433921_files/ico_relevante.gif" style="icone-relevancia">
+		MURAKAMI, E. ; <a tabindex="101" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0725312844547101" target="_blank">Antonio Mauro Saraiva</a> ; <b><a tabindex="102" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>
+ ; CUGNASCA, E. ; HIRAKAWA, A. R. ; CORREA, P. L. P. . AN INFRASTRUCTURE
+ FOR THE DEVELOPMENT OF DISTRIBUTED SERVICE-ORIENTED INFORMATION SYSTEMS
+ FOR PRECISION AGRICULTURE. Computers and Electronics in Agriculture<sup><img original-title="COMPUT ELECTRON AGR (0168-1699)&lt;br /&gt;Fator de impacto (JCR 2014): 1.761" id="01681699_2" src="0468265522433921_files/jcr.gif" class="ajaxJCR jcrTip" data-issn="01681699"></sup>, v. 58, p. 37-48, 2006. <div class="citado" cvuri="/buscatextual/servletcitacoes?doi=&amp;issn=01681699&amp;volume=58&amp;issue=&amp;paginaInicial=37&amp;titulo=AN INFRASTRUCTURE FOR THE DEVELOPMENT OF DISTRIBUTED SERVICE-ORIENTED INFORMATION SYSTEMS FOR PRECISION AGRICULTURE&amp;sequencial=2&amp;nomePeriodico=Computers and Electronics in Agriculture" tooltip="Citações a partir de 1996"><b class="label-citacoes">Citações:</b><a original-title="Citações a partir de 1996" class="citacaoTip" target="_blank" href="http://gateway.webofknowledge.com/gateway/Gateway.cgi?GWVersion=2&amp;SrcApp=PARTNER_APP&amp;SrcAuth=LinksAMR&amp;KeyUT=WOS:000247360600005&amp;DestLinkType=CitingArticles&amp;DestApp=ALL_WOS&amp;UsrCustomerID=83e8e710a8e621f095e069bfe7c1e2bd"><img src="0468265522433921_files/isi.gif"><span data-tipo-ordenacao="1" class="numero-citacao">29</span></a><a original-title="Citações a partir de 1996" class="citacaoTip" target="_blank" href="http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&amp;rel=R6.0.0&amp;doi=10.1016/j.compag.2006.12.010&amp;md5=d7b1f3d712291c5a20fa97ce5007aede"><span class="separador-citacoes">|</span><img src="0468265522433921_files/scopus.png"><span data-tipo-ordenacao="3" class="numero-citacao">41</span></a></div></div>
+</div>
+<br class="clear">
+</div>
+</div>
+<div class="cita-artigos">
+<b><a tabindex="103" name="TrabalhosPublicadosAnaisCongresso"></a>Trabalhos completos publicados em anais de congressos</b>
+</div>
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">
+		<img src="0468265522433921_files/ico_relevante.gif" style="icone-relevancia">
+		<a tabindex="104" class="icone-producao icone-doi" href="http://dx.doi.org/10.1109/hicss.2016.672" target="_blank"></a>SOUSA, THATIANY LIMA DE ; VENSON, ELAINE ; FIGUEIREDO, REJANE MARIA DA COSTA ; KOSLOSKI, RICARDO AJAX ; <b>JUNIOR, LUIZ CARLOS MIYADAIRA RIBEIRO</b>
+ . Using Scrum in Outsourced Government Projects: An Action Research. 
+In: 2016 49th Hawaii International Conference on System Sciences 
+(HICSS), 2016, Koloa. 2016 49th Hawaii International Conference on 
+System Sciences (HICSS). p. 5447. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">SOUZA SOBRINHO, L. P. ; FIGUEIREDO, R. M. C. ; VENSON, E. ; <b>RIBEIRO JUNIOR, L. C. M.</b>
+ . APPLICATION OF THE SCRUM AGILE FRAMEWORK TO THE MANAGEMENT PROCESS OF
+ SOFTWARE DEVELOPMENT OUTSOURCING IN A BRAZILIAN GOVERNMENT AGENCY. In: 
+Contecsi - International Conference on Management of Technology and 
+Information Systems, 2015, São Paulo/SP. The 12th International 
+Conference on Management of Technology and Information Systems, 2015. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>3. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5"><a tabindex="105" class="icone-producao icone-doi" href="http://dx.doi.org/10.5748/9788599693117-12contecsi/ps-3175" target="_blank"></a>BRITO, MAYLON FELIX DE ; FIGUEIREDO, REJANE MARIA DA COSTA ; VENSON, ELAINE ; <b>RIBEIRO JR, LUIZ CARLOS MIYADAIRA</b>
+ ; KOSLOSKI, COLABORADOR RICARDO AJAX DIAS . Transferência de 
+Conhecimento em Projetos de Desenvolvimento de Software no Contexto de 
+Contratação. In: 12th CONTECSI International Conference on Information 
+Systems and Technology Management, 2015, Sao Paulo. Proceedings of the 
+12th CONTECSI International Conference on Information Systems and 
+Technology Management. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>4. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">LIMA, A.S.C. ; FIGUEIREDO, R. M. C. ; BRITO, M. F. ; <b>RIBEIRO JUNIOR, L. C. M.</b>
+ ; KOSLOSKI, R. A. D. . Padrões de Requisitos para Software Embarcados. 
+In: Encontro de Ciência e Tecnologia do Gama (ECT Gama), 2012, 
+Brasília/DF. Encontro de Ciência e Tecnologia do Gama (ECT Gama), 2012. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>5. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5"><b><a tabindex="106" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>;
+ CROZARA, K. H ; LANNA, A. L. P. M. ; RAMOS, C.S ; FIGUEIREDO, R. M. C. .
+ Catálogo de Padrões de Definição de Processos de Software. In: XI 
+Simpósio Brasileiro de Qualidade de Software - SBQS. De 11 a 15 de 
+Junho., 2012. Simpósio Brasileiro de Qualidade de Software - SBQS., 
+2012. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>6. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">
+		<img src="0468265522433921_files/ico_relevante.gif" style="icone-relevancia">
+		<b><a tabindex="107" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>;
+ RAMOS, C.S ; CROZARA, K. H ; NERI, R. H. ; ALVES, E. ; FIGUEIREDO, R. 
+M. C. . Definição de Processos de Software baseado em uma Arquitetura de
+ Componentes de Processo. In: X Simpósio Brasileiro de Qualidade de 
+Software - SBQS, 2011, Curitiba. X Simpósio Brasileiro de Qualidade de 
+Software, 2011. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>7. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">CROZARA, K. H ; FIGUEIREDO, R.M.C ; RAMOS, C.S ; <b><a tabindex="108" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>
+ . Modelos de Avaliação e de Implantação de Processos de Software em 
+Micro e Pequenas Empresas: Uma Análise Comparativa. In: 7° CONTECSI 
+International Conference on Information Systems and Technology 
+Management, 2010, São Paulo. 7° CONTECSI International Conference on 
+Information Systems and Technology Management, 2010. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>8. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">FIGUEIREDO, R.M.C ; <b><a tabindex="109" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>
+ ; SALES, A.B. ; LARANJEIRA, L. A.F. ; ROCHA, A. . Teaching Software 
+Quality in an Interdisciplinary Course of Engineering. In: 7th 
+International Conference on the Quality of Information and 
+Communications Technology (QUATIC)., 2010, Porto. International 
+Conference on the Quality of Information and Communications Technology, 
+2010. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>9. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">FIGUEIREDO, R.M.C ; NERI, R. H. ; <b><a tabindex="110" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>
+ ; CRUZ, F. W. ; OLIVEIRA, A. B. S. . Graduação em Engenharia de 
+Software em um campus de engenharias. In: Congresso Brasileiro de 
+Educação em Engenharia, 2010, Fortaleza. 38ª Edição do Congresso 
+Brasileiro de Educação em Engenharia, 2010. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>10. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">FIGUEIREDO, R.M.C ; <b><a tabindex="111" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>
+ ; SALES, A.B. ; CANEDO, E. D. ; CHAIM, R. M. ; ROCHA, A. ; SANTOS, G. 
+A. ; RAMOS, C.S . Graduação em Engenharia de Software: uma proposta de 
+flexibilização e interdisciplinaridade. In: Congresso Brasileiro de 
+Software: Teoria e Prática - Fórum em Educação de Engenharia de 
+Software, 2010, Salvador. Congresso Brasileiro de Software: Teoria e 
+Prática - III Fórum em Educação de Engenharia de Software, 2010. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>11. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">FIGUEIREDO, R.M.C ; <b><a tabindex="112" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>
+ ; RAMOS, C.S ; CANEDO, E. D. . Graduação em Engenharia de Software 
+versus Graduação em Engenharia de Computação: uma reflexão. In: 
+Congresso Brasileiro de Software: Teoria e Prática - Fórum em Educação 
+de Engenharia de Software, 2010, Salvador. Congresso Brasileiro de 
+Software: Teoria e Prática - III Fórum em Educação de Engenharia de 
+Software, 2010. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>12. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">Nascimento, Thercio Rodrigues ; Ramos, Cristiane Soares ; <b><a tabindex="113" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>
+ . Aplicação de Controle Estatístico de Processo (CEP) no contexto do 
+MR-MPS em uma Fábrica de Software. In: V Workshop Anual do MPS, 2009, 
+Campinas. V Workshop Anual do MPS - WAMPS 2009, 2009. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>13. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5"><b><a tabindex="114" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>; <a tabindex="115" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0725312844547101" target="_blank">Antonio Mauro Saraiva</a>
+ ; MURAKAMI, E. . PADRÕES DE ANÁLISE E PROJETO PARA DESENVOLVIMENTO DE 
+SISTEMAS DE INFORMAÇÕES ESPAÇO-TEMPORAIS PARA AGRICULTURA DE PRECISÃO. 
+In: VI Congresso Brasileiro de Agroinformática, 2007, São Pedro. Anais 
+do VI Congresso Brasileiro de Agroinformática, 2007. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>14. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">
+		<img src="0468265522433921_files/ico_relevante.gif" style="icone-relevancia">
+		<b><a tabindex="116" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>; <a tabindex="117" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0725312844547101" target="_blank">Antonio Mauro Saraiva</a>
+ ; MURAKAMI, E. . jSTF: A J2EE-BASED SPATIO-TEMPORAL FRAMEWORK FOR 
+PRECISION AGRICULTURE INFORMATION SYSTEMS. In: 8th International 
+Conference on Precision Agriculture and Other Precision Resources 
+Management, ICPA'06, 2006, Minneapolis. Proceedings of 8th International
+ Conference on Precision Agriculture and Other Precision Resources 
+Management, ICPA'06, 2006. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>15. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">
+		<img src="0468265522433921_files/ico_relevante.gif" style="icone-relevancia">
+		<b><a tabindex="118" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>; <a tabindex="119" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0725312844547101" target="_blank">Antonio Mauro Saraiva</a>
+ ; MURAKAMI, E. . COMPONENTES ESPAÇO-TEMPORAL PARA AGRICULTURA DE 
+PRECISÃO. In: Congresso Brasileiro de Agricultura de Precisão, 2004, 
+Piracicaba. Anais do Congresso Brasileiro de Agricultura de Precisão ? 
+ConBAP 2004, 2004. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>16. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">MURAKAMI, E. ; CUGNASCA, E. ; <b><a tabindex="120" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b> ; <a tabindex="121" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0725312844547101" target="_blank">Antonio Mauro Saraiva</a>
+ . DESENVOLVIMENTO DE SOFTWARE PARA AGRICULTURA DE PRECISÃO BASEADO EM 
+COMPONENTES INTEROPERÁVEIS. In: IV Congresso Brasileiro da Sociedade 
+Brasileira de Informática aplicada à Agropecuária e à Agroindústria, 
+2003, Porto Seguro. Anais de IV Congresso Brasileiro da Sociedade 
+Brasileira de Informática aplicada à Agropecuária e Agroindústria, 2003.
+ </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>17. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5"><b><a tabindex="122" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>; <a tabindex="123" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0725312844547101" target="_blank">Antonio Mauro Saraiva</a>
+ ; MURAKAMI, E. ; CUGNASCA, E. . MODELAGEM DE BANCO DE DADOS 
+ESPAÇO-TEMPORAL PARA AGRICULTURA DE PRECISÃO. In: IV Congresso 
+Brasileiro da Sociedade Brasileira de Informática aplicada à 
+Agropecuária e Agroindústria, 2003, Porto Seguro. Anais de IV Congresso 
+Brasileiro da Sociedade Brasileira de Informática aplicada à 
+Agropecuária e Agroindústria, 2003. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>18. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5"><b><a tabindex="124" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>.
+ BUSCA BASEADA EM CONTEÚDO EM DOCUMENTOS DE FALA/TEXTO EM UM BANCO DE 
+DADOS MHEG-5. In: V Simposio Brasileiro de Sistemas Multimídia e 
+Hipermídia, 1999, Goiania. Anais do V Simpósio Brasileiro de Sistemas 
+Multimídia e Hipermídia - SBMIDIA'99, 1999. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>19. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5"><b><a tabindex="125" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>.
+ METADATA FOR CONTENT-BASED SEARCH ON AN MHEG-5 MULTIMEDIA OBJECTS 
+SERVER.. In: Third IEEE-Meta-Data Conference, 1999, Bethesda. 
+Proceedings of Third IEEE-Meta-Data Conference, 1999. </div>
+</div>
+<br class="clear">
+<div class="cita-artigos">
+<b><a tabindex="126" name="TrabalhosPublicadosAnaisCongresso"></a>Resumos expandidos publicados em anais de congressos</b>
+</div>
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">MURAKAMI, E. ; <a tabindex="127" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0725312844547101" target="_blank">Antonio Mauro Saraiva</a> ; <b><a tabindex="128" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>
+ ; MOLIN, J. P. . A SOLUTION FOR INTEROPERABILITY OF PRECISION 
+AGRICULTURE APPLICATIONS USING WEB SERVICES. In: 4th European Conference
+ on Precision Agriculture ? ECPA, 2003, Berlin. Proceedings of 4th 
+European Conference on Precision Agriculture, 2003. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5"><b><a tabindex="129" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>; <a tabindex="130" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0725312844547101" target="_blank">Antonio Mauro Saraiva</a>
+ ; MURAKAMI, E. . A GEO-SPATIAL DATABASE FOR PRECISION AGRICULTURE 
+INFORMATION SYSTEMS. In: 4th European Conference on Precision 
+Agriculture ? ECPA, 2003, Berlin. Proceedings of 4th European Conference
+ on Precision Agriculture ? ECPA, 2003. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>3. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">MURAKAMI, E. ; <b><a tabindex="131" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b> ; CUGNASCA, E. ; <a tabindex="132" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0725312844547101" target="_blank">Antonio Mauro Saraiva</a>
+ . AN INFRASTRUCTURE FOR DEVELOPMENT OF INFORMATION SYSTEMS FOR 
+PRECISION AGRICULTURE. In: 6th International Conference on Precision 
+Agriculture and Other Precision Resources Management, 2002, Bloomington.
+ Proceedings of 6th International Conference on Precision Agriculture 
+and Other Precision Resources Management, 2002. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>4. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5"><b><a tabindex="133" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>.
+ A COMPONENT BASED FRAMEWORK FOR INFORMATION SYSTEMS FOR PRECISION 
+AGRICULTURE. In: 2nd International Symposium om Precision Agriculture, 
+2002, Viçosa. Proceedings of 2nd International Symposium om Precision 
+Agriculture, 2002. </div>
+</div>
+<br class="clear">
+</div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="134" name="Bancas">
+<h1 tabindex="0">Bancas</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell">
+<a tabindex="135" name="ParticipacaoBancasTrabalho"></a><br class="clear"><div class="inst_back">
+<b>Participação em bancas de trabalhos de conclusão</b>
+</div>
+<div class="cita-artigos">
+<b>Mestrado</b>
+</div>
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">Jacobi, R. P.; <b><a tabindex="136" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>;
+ Alves, V. R..  Participação em banca de Bruno de Souza Costa Pedroso. 
+Besouro: Aprimoração a Aferição Automática de Conformidade das 
+Atividades de Desenvolvimento com TDD. 2011. Dissertação (Mestrado em 
+Ciência da Computação) - Universidade de Brasília. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">Campos F. B.; Ferneda, E.; <b><a tabindex="137" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>.
+  Participação em banca de Osíris Francisco Martinelli. Estimativa 
+Precoce em Manutenção Evolutiva. 2009. Dissertação (Mestrado em Gestão 
+do Conhecimento e da Tec. da Informação) - Universidade Católica de 
+Brasília. </div>
+</div>
+<br class="clear"><br class="clear"><a tabindex="138" name="ParticipacaoBancasComissoes"></a><br class="clear"><div class="inst_back">
+<b>Participação em bancas de comissões julgadoras</b>
+</div>
+<div class="cita-artigos">
+<b>Concurso público</b>
+</div>
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">Freitas; <b><a tabindex="139" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>; MURAKAMI, E.. Edital 210/2010 - Área Arquitetura de Software.
+							2011. Universidade de Brasília. </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">MURAKAMI, E.; <b><a tabindex="140" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>. Edital 01/2010 - Área Linguagens de Programação.
+							2010. Universidade do Estado de Santa Catarina. </div>
+</div>
+<br class="clear">
+</div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="141" name="Eventos">
+<h1 tabindex="0">Eventos</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell">
+<div class="layout-cell layout-cell-12 data-cell">
+<a tabindex="142" name="ParticipacaoEventos"></a><br class="clear"><div class="inst_back">
+<b>Participação em eventos, congressos, exposições e feiras</b>
+</div>
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">X Simpósio Brasileiro de Qualidade de 
+Software.Definição de Processos de Software baseado em uma Arquitetura 
+de Componentes de Processo.
+							2011. (Simpósio). 
+					</div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">CBSOFT - Congresso Brasileiro de 
+Software: Teoria e Prática. Graduação em Engenharia de Software: uma 
+Proposta de Flexibilização e Interdisciplinaridade e Graduação em 
+Engenharia de Software versus Graduação em Engenharia de Computação: uma
+ reflexão.. 2010. (Congresso). </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>3. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">Workshop Anual do MPS. Aplicação de 
+Controle Estatístico de Processo (CEP) no contexto do MR-MPS em uma 
+Fábrica de Software. 2009. (Congresso). </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>4. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">VI Congresso Brasileiro de 
+Agroinformática. Padrões de Análise e Projeto para Desenvolvimento de 
+Sistemas de Informações para Agricultura de Precisão. 2007. (Congresso).
+ </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>5. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">Congresso Brasileiro de Agricultura de Precisão. Componentes Espaço-Temorais para Agricultura de Precisão. 2004. (Congresso). </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>6. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">IV Congresso da Sociedade Brasileira de 
+Informática aplicada à Agropecuária e à Agroindustria - SBIAGRO. 
+Modelagem de Banco de Dados Espaço-Temporal para Agricultura de 
+Precisão. 2003. (Congresso). </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>7. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">V Simpósio Brasileiro de Sistemas 
+Multimídia e Hipermídia.Busca baseada em Conteúdo em Documentos de 
+Fala/Texto em um Banco de Dados MHEG-5.
+							1999. (Simpósio). 
+					</div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>8. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">XIII Simpósio Brasileiro de Banco de Dados.
+							1998. (Simpósio). 
+					</div>
+</div>
+<br class="clear">
+</div>
+<a tabindex="143" name="OrganizacaoEventos"></a><br class="clear"><div class="inst_back">
+<b>Organização de eventos, congressos, exposições e feiras</b>
+</div>
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">Goulart, J.N.V ; Avila, S. M. ; <b><a tabindex="144" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>
+ ; Anflor, C.T.M. ; CANEDO, E. D. ; Nunes, M.A.A. ; Malcher, L. ; Hung, 
+E.M. ; Ramos, C.S. ; Silva, J. F. . III Encontro de Ciência e 
+Tecnologia. 2011. (Outro). </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5"><b><a tabindex="145" class="tooltip" title="Clique para visualizar o currículo" href="http://lattes.cnpq.br/0468265522433921" target="_blank">RIBEIRO JUNIOR, L. C. M.</a></b>; Avila, S. M. . II Encontro de Ciência e Tecnologia. 2010. (Outro). </div>
+</div>
+<br class="clear">
+</div><br class="clear"></div><br class="clear"><div class="title-wrapper">
+<a tabindex="146" name="Orientacoes">
+<h1 tabindex="0">Orientações</h1>
+</a>
+<hr class="separator">
+<div class="layout-cell layout-cell-12 data-cell">
+<a tabindex="147" name="Orientacaoemandamento"></a><br class="clear"><div class="inst_back">
+<b>Orientações e supervisões em andamento</b>
+</div>
+<div class="cita-artigos">
+<b>Iniciação científica</b>
+</div>
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>1. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">Eduardo Barbosa. Definição de Processos 
+de Software baseado em uma Arquitetura de Componentes de Processo. 
+Início: 2010. Iniciação científica (Graduando em Engenharia de Software)
+  - Universidade de Brasília. (Orientador). </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>2. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">Rodrigo Siqueira Melo. Desenvolvimento de
+ uma Arquitetura de Software. Início: 2010. Iniciação científica 
+(Graduando em Engenharia de Software)  - Universidade de Brasília, 
+Fundação Universidade de Brasília. (Orientador). </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>3. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">Kamilla Holanda Crozara. Definição de 
+Processos de Software baseado em uma Arquitetura de Componentes de 
+Processo. Início: 2010. Iniciação científica (Graduando em Engenharia de
+ Software)  - Universidade de Brasília, Fundação Universidade de 
+Brasília. (Orientador). </div>
+</div>
+<br class="clear">
+<div class="layout-cell layout-cell-1 text-align-right">
+<div class="layout-cell-pad-5 text-align-right">
+<b>4. </b>
+</div>
+</div>
+<div class="layout-cell layout-cell-11">
+<div class="layout-cell-pad-5">Vitor Makoto Matayoshi. Desenvolvimento 
+de uma Ferramenta de Gestão de Requisitos. Início: 2010. Iniciação 
+científica (Graduando em Engenharia de Software)  - Universidade de 
+Brasília, Fundação Universidade de Brasília. (Orientador). </div>
+</div>
+<br class="clear">
+</div><br class="clear"></div><br class="clear"><br class="clear"><div class="rodape-cv">Página gerada pelo Sistema Currículo Lattes em 04/08/2016 às 14:04:20</div><br class="clear"><div class="control-bar-wrapper"><a tabindex="148" href="http://buscatextual.cnpq.br/buscatextual/download.do?metodo=apresentar&amp;idcnpq=0468265522433921" target="_blank" class="button"><span class="mini-ico mini-ico-down"></span>Baixar Currículo</a><a tabindex="149" class="button" href="javascript:window.print()"><span class="mini-ico mini-ico-list"></span>Imprimir Currículo</a>
+</div><br class="clear"></div>
+</div>
+</div>
+</div>
+</div>
+<div style="display: none;" class="to-top-bar" id="toTop">
+<a tabindex="150" href="javascript:void(0)" class="topo-width center">
+<div class="id-orgao">
+<span>CNPq</span> | Uma agência do Ministério da Ciência, Tecnologia e Inovação</div>
+</a>
+</div>
+
+
+<div style="z-index: 1001; display: none;" _megamenupos="0pos" id="menu-dados-gerais" class="megamenu">
+		
+		<div class="column"><h3 tabindex="0"></h3><ul>
+		
+		
+		<li><a tabindex="11" href="#Identificacao">Identificação</a></li>
+		
+	
+		
+		
+		<li><a tabindex="12" href="#Endereco">Endereço</a></li>
+		
+	
+		
+		
+		<li><a tabindex="13" href="#Idiomas">Idiomas</a></li>
+		
+	</ul></div>
+		
+		
+		<div class="clear"></div></div><div style="z-index: 1002; display: none;" _megamenupos="1pos" id="menu-formacao" class="megamenu">
+		
+		<div class="column"><h3 tabindex="0"></h3><ul>
+		
+		
+		<li><a tabindex="15" href="#FormacaoAcademicaTitulacao">Formação acadêmica/titulação</a></li>
+		
+	
+		
+		
+		<li><a tabindex="16" href="#FormacaoComplementar">Formação complementar</a></li>
+		
+	</ul></div>
+		
+		
+		<div class="clear"></div></div><div style="z-index: 1003; display: none;" _megamenupos="2pos" id="menu-atuacao" class="megamenu">
+		
+		<div class="column"><h3 tabindex="0"></h3><ul>
+		
+		
+		<li><a tabindex="18" href="#AtuacaoProfissional">Atuação profissional</a></li>
+		
+	
+		
+		
+		<li><a tabindex="19" href="#LinhaPesquisa">Linhas de pesquisa</a></li>
+		
+	
+		
+		
+		<li><a tabindex="20" href="#AreasAtuacao">Áreas de atuação</a></li>
+		
+	</ul></div>
+		
+		
+		<div class="clear"></div></div><div style="z-index: 1004; display: none;" _megamenupos="3pos" id="menu-projetos" class="megamenu">
+		
+		<div class="column"><h3 tabindex="0"></h3><ul>
+		
+		
+		<li><a tabindex="22" href="#ProjetosPesquisa">Projetos de pesquisa</a></li>
+		
+	
+		
+		
+		<li><a tabindex="23" href="#ProjetosExtensao">Projetos de extensão</a></li>
+		
+	
+		
+		
+		<li><a tabindex="24" href="#ProjetosDesenvolvimento">Projetos de desenvolvimento</a></li>
+		
+	</ul></div>
+		
+		
+		<div class="clear"></div></div><div style="z-index: 1005; display: none;" _megamenupos="4pos" id="menu-producoes" class="megamenu">
+		
+		<div class="column"><div class="subtitMenu"><a tabindex="26" href="#ProducaoBibliografica">Produção Bibliográfica</a></div><h3 tabindex="0"></h3><ul>
+		
+		
+		<li><a tabindex="27" href="#ArtigosCompletos">Artigos completos publicados em periódicos</a></li>
+		
+	
+		
+		
+		<li><a tabindex="28" href="#ArtigosAceitos">Artigos aceitos para publicação</a></li>
+		
+	
+		
+		
+		<li><a tabindex="29" href="#LivrosCapitulos">Livros e capítulos</a></li>
+		
+	
+		
+		
+		<li><a tabindex="30" href="#TextosJornaisRevistas">Textos em jornais ou revistas (magazine)</a></li>
+		
+	
+		
+		
+		<li><a tabindex="31" href="#TrabalhosPublicadosAnaisCongresso">Trabalhos publicados em anais de congressos</a></li>
+		
+	
+		
+		
+		<li><a tabindex="32" href="#ApresentacaoTrabalho">Apresentações de trabalho</a></li>
+		
+	
+		
+		
+		<li><a tabindex="33" href="#OutrasProducoesBibliograficas">Partitura musical</a></li>
+		
+	
+		
+		
+		<li><a tabindex="34" href="#OutrasProducoesBibliograficas">Tradução</a></li>
+		
+	
+		
+		
+		<li><a tabindex="35" href="#OutrasProducoesBibliograficas">Prefácio, pósfacio</a></li>
+		
+	
+		
+		
+		<li><a tabindex="36" href="#OutrasProducoesBibliograficas">Outras produções bibliográficas</a></li>
+		
+	</ul></div><div class="column"><div class="subtitMenu"><a tabindex="37" href="#ProducaoTecnica">Produção Técnica</a></div><h3 tabindex="0"></h3><ul>
+		
+		
+		<li><a tabindex="38" href="#AssessoriaConsultoria">Assessoria e consultoria</a></li>
+		
+	
+		
+		
+		<li><a tabindex="39" href="#SoftwareSemPatente">Programas de computador sem registro</a></li>
+		
+	
+		
+		
+		<li><a tabindex="40" href="#ProdutosTecnologicos">Produtos tecnológicos</a></li>
+		
+	
+		
+		
+		<li><a tabindex="41" href="#ProcessosTecnicas">Processos e técnicas</a></li>
+		
+	
+		
+		
+		<li><a tabindex="42" href="#TrabalhosTecnicos">Trabalhos técnicos</a></li>
+		
+	
+		
+		
+		<li><a tabindex="43" href="#DemaisProducaoTecnica">Cartas, mapas ou similares</a></li>
+		
+	
+		
+		
+		<li><a tabindex="44" href="#DemaisProducaoTecnica">Curso de curta duração ministrado</a></li>
+		
+	
+		
+		
+		<li><a tabindex="45" href="#DemaisProducaoTecnica">Desenvolvimento de material didático ou instrucional</a></li>
+		
+	
+		
+		
+		<li><a tabindex="46" href="#DemaisProducaoTecnica">Editoração</a></li>
+		
+	
+		
+		
+		<li><a tabindex="47" href="#ManutencaoObraArtistica">Manutenção de obra artística</a></li>
+		
+	
+		
+		
+		<li><a tabindex="48" href="#DemaisProducaoTecnica">Maquete</a></li>
+		
+	
+		
+		
+		<li><a tabindex="49" href="#EntrevistasMesasRedondas">Entrevistas, mesas redondas, programas e comentários na mídia</a></li>
+		
+	
+		
+		
+		<li><a tabindex="50" href="#DemaisProducaoTecnica">Relatório de pesquisa</a></li>
+		
+	
+		
+		
+		<li><a tabindex="51" href="#RedesSociais">Redes sociais, websites e blogs</a></li>
+		
+	
+		
+		
+		<li><a tabindex="52" href="#DemaisProducoesTecnicas">Outras produções técnicas</a></li>
+		
+	</ul></div><div class="column"><div class="subtitMenu"><a tabindex="53" href="#ProducaoArtisticaCultural">Produção Artística/Cultural</a></div><h3 tabindex="0"></h3><ul>
+		
+		
+		<li><a tabindex="54" href="#ArtesCenicas">Artes cênicas</a></li>
+		
+	
+		
+		
+		<li><a tabindex="55" href="#Musica">Música</a></li>
+		
+	
+		
+		
+		<li><a tabindex="56" href="#ArtesVisuais">Artes visuais</a></li>
+		
+	
+		
+		
+		<li><a tabindex="57" href="#OutrasProducoesArtisticas">Outras produções artísticas/culturais</a></li>
+		
+	</ul></div>
+		
+		
+		<div class="clear"></div></div><div style="z-index: 1006; display: none;" _megamenupos="5pos" id="menu-eventos" class="megamenu">
+		
+		<div class="column"><h3 tabindex="0"></h3><ul>
+		
+		
+		<li><a tabindex="59" href="#ParticipacaoEventos">Participação em eventos, congressos, exposições e feiras</a></li>
+		
+	
+		
+		
+		<li><a tabindex="60" href="#OrganizacaoEventos">Organização de eventos, congressos, exposições e feiras</a></li>
+		
+	</ul></div>
+		
+		
+		<div class="clear"></div></div><div style="z-index: 1007; display: none;" _megamenupos="6pos" id="menu-orientacoes" class="megamenu">
+		
+		<div class="column"><h3 tabindex="0"></h3><ul>
+		
+		
+		<li><a tabindex="62" href="#Orientacoesconcluidas">Orientações e supervisões concluídas</a></li>
+		
+	
+		
+		
+		<li><a tabindex="63" href="#Orientacaoemandamento">Orientações e supervisões em andamento</a></li>
+		
+	</ul></div>
+		
+		
+		<div class="clear"></div></div><div style="z-index: 1008; display: none;" _megamenupos="7pos" id="menu-bancas" class="megamenu">
+		
+		<div class="column"><h3 tabindex="0"></h3><ul>
+		
+		
+		<li><a tabindex="65" href="#ParticipacaoBancasTrabalho">Participação em bancas de trabalhos de conclusão</a></li>
+		
+	
+		
+		
+		<li><a tabindex="66" href="#ParticipacaoBancasComissoes">Participação em bancas de comissões julgadoras</a></li>
+		
+	</ul></div>
+		
+		
+		<div class="clear"></div></div><div style="z-index: 1009; display: none;" _megamenupos="8pos" id="menu-informacoes-complementares" class="megamenu">
+		
+		<div class="column"><h3 tabindex="0"></h3><ul>
+		
+		
+		<li><a tabindex="68" href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&amp;id=K4770151H4&amp;tipo=completo&amp;idiomaExibicao=1">Mostrar informações complementares</a></li>
+		
+	</ul></div>
+		
+		
+		<div class="clear"></div></div></body></html>

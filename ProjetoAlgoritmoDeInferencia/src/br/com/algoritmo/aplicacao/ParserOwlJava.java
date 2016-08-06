@@ -23,7 +23,7 @@ public class ParserOwlJava {
 		ResultSet results = null;
 		lista = new ArrayList<String>();
 		try {
-			in = new FileInputStream(new File("Ontologias/Ontologia.owl"));
+			in = new FileInputStream(new File("Curriculos/saida/cvs_lattes.owl"));
 			
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();

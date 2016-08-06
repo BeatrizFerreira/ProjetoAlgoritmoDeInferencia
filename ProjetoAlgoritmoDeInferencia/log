@@ -1,0 +1,3010 @@
+[PARAMETRO]  global-nome_do_grupo  =  cvs_lattes
+[PARAMETRO]  global-arquivo_de_entrada  =  /home/beatriz/ProjetoAlgoritmoDeInferencia/ProjetoAlgoritmoDeInferencia/Curriculos/cvs.list
+[PARAMETRO]  global-diretorio_de_saida  =  /home/beatriz/ProjetoAlgoritmoDeInferencia/ProjetoAlgoritmoDeInferencia/Curriculos/saida
+[PARAMETRO]  global-email_do_admin  =  jesus.mena@ufabc.edu.br
+[PARAMETRO]  global-idioma  =  PT
+[PARAMETRO]  global-itens_desde_o_ano  =  1990
+[PARAMETRO]  global-itens_ate_o_ano  =  2013
+[PARAMETRO]  global-itens_por_pagina  =  1000
+[PARAMETRO]  global-criar_paginas_jsp  =  nao
+[PARAMETRO]  global-google_analytics_key  =  UA-5266248-1
+[PARAMETRO]  global-prefixo  =  
+[PARAMETRO]  global-diretorio_de_armazenamento_de_cvs  =  /home/beatriz/ProjetoAlgoritmoDeInferencia/ProjetoAlgoritmoDeInferencia/Curriculos
+[PARAMETRO]  relatorio-salvar_publicacoes_em_formato_ris  =  sim
+[PARAMETRO]  relatorio-incluir_artigo_em_periodico  =  sim
+[PARAMETRO]  relatorio-incluir_livro_publicado  =  sim
+[PARAMETRO]  relatorio-incluir_capitulo_de_livro_publicado  =  sim
+[PARAMETRO]  relatorio-incluir_texto_em_jornal_de_noticia  =  sim
+[PARAMETRO]  relatorio-incluir_trabalho_completo_em_congresso  =  sim
+[PARAMETRO]  relatorio-incluir_resumo_expandido_em_congresso  =  sim
+[PARAMETRO]  relatorio-incluir_resumo_em_congresso  =  sim
+[PARAMETRO]  relatorio-incluir_artigo_aceito_para_publicacao  =  sim
+[PARAMETRO]  relatorio-incluir_apresentacao_de_trabalho  =  sim
+[PARAMETRO]  relatorio-incluir_outro_tipo_de_producao_bibliografica  =  sim
+[PARAMETRO]  relatorio-incluir_software_com_patente  =  sim
+[PARAMETRO]  relatorio-incluir_software_sem_patente  =  sim
+[PARAMETRO]  relatorio-incluir_produto_tecnologico  =  sim
+[PARAMETRO]  relatorio-incluir_processo_ou_tecnica  =  sim
+[PARAMETRO]  relatorio-incluir_trabalho_tecnico  =  sim
+[PARAMETRO]  relatorio-incluir_outro_tipo_de_producao_tecnica  =  sim
+[PARAMETRO]  relatorio-incluir_producao_artistica  =  sim
+[PARAMETRO]  relatorio-mostrar_orientacoes  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_pos_doutorado  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_doutorado  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_mestrado  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_monografia_de_especializacao  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_tcc  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_iniciacao_cientifica  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_outro_tipo  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_pos_doutorado  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_doutorado  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_mestrado  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_monografia_de_especializacao  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_tcc  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_iniciacao_cientifica  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_outro_tipo  =  sim
+[PARAMETRO]  relatorio-incluir_projeto  =  sim
+[PARAMETRO]  relatorio-incluir_premio  =  sim
+[PARAMETRO]  relatorio-incluir_participacao_em_evento  =  sim
+[PARAMETRO]  relatorio-incluir_organizacao_de_evento  =  sim
+[PARAMETRO]  grafo-mostrar_grafo_de_colaboracoes  =  sim
+[PARAMETRO]  grafo-mostrar_todos_os_nos_do_grafo  =  sim
+[PARAMETRO]  grafo-considerar_rotulos_dos_membros_do_grupo  =  nao
+[PARAMETRO]  grafo-mostrar_aresta_proporcional_ao_numero_de_colaboracoes  =  sim
+[PARAMETRO]  grafo-incluir_artigo_em_periodico  =  sim
+[PARAMETRO]  grafo-incluir_livro_publicado  =  sim
+[PARAMETRO]  grafo-incluir_capitulo_de_livro_publicado  =  sim
+[PARAMETRO]  grafo-incluir_texto_em_jornal_de_noticia  =  sim
+[PARAMETRO]  grafo-incluir_trabalho_completo_em_congresso  =  sim
+[PARAMETRO]  grafo-incluir_resumo_expandido_em_congresso  =  sim
+[PARAMETRO]  grafo-incluir_resumo_em_congresso  =  sim
+[PARAMETRO]  grafo-incluir_artigo_aceito_para_publicacao  =  sim
+[PARAMETRO]  grafo-incluir_apresentacao_de_trabalho  =  si[PARAMETRO]  global-nome_do_grupo  =  cvs_lattes
+[PARAMETRO]  global-arquivo_de_entrada  =  /home/beatriz/ProjetoAlgoritmoDeInferencia/ProjetoAlgoritmoDeInferencia/Curriculos/cvs.list
+[PARAMETRO]  global-diretorio_de_saida  =  /home/beatriz/ProjetoAlgoritmoDeInferencia/ProjetoAlgoritmoDeInferencia/Curriculos/saida
+[PARAMETRO]  global-email_do_admin  =  jesus.mena@ufabc.edu.br
+[PARAMETRO]  global-idioma  =  PT
+[PARAMETRO]  global-itens_desde_o_ano  =  1990
+[PARAMETRO]  global-itens_ate_o_ano  =  2013
+[PARAMETRO]  global-itens_por_pagina  =  1000
+[PARAMETRO]  global-criar_paginas_jsp  =  nao
+[PARAMETRO]  global-google_analytics_key  =  UA-5266248-1
+[PARAMETRO]  global-prefixo  =  
+[PARAMETRO]  global-diretorio_de_armazenamento_de_cvs  =  /home/beatriz/ProjetoAlgoritmoDeInferencia/ProjetoAlgoritmoDeInferencia/Curriculos
+[PARAMETRO]  relatorio-salvar_publicacoes_em_formato_ris  =  sim
+[PARAMETRO]  relatorio-incluir_artigo_em_periodico  =  sim
+[PARAMETRO]  relatorio-incluir_livro_publicado  =  sim
+[PARAMETRO]  relatorio-incluir_capitulo_de_livro_publicado  =  sim
+[PARAMETRO]  relatorio-incluir_texto_em_jornal_de_noticia  =  sim
+[PARAMETRO]  relatorio-incluir_trabalho_completo_em_congresso  =  sim
+[PARAMETRO]  relatorio-incluir_resumo_expandido_em_congresso  =  sim
+[PARAMETRO]  relatorio-incluir_resumo_em_congresso  =  sim
+[PARAMETRO]  relatorio-incluir_artigo_aceito_para_publicacao  =  sim
+[PARAMETRO]  relatorio-incluir_apresentacao_de_trabalho  =  sim
+[PARAMETRO]  relatorio-incluir_outro_tipo_de_producao_bibliografica  =  sim
+[PARAMETRO]  relatorio-incluir_software_com_patente  =  sim
+[PARAMETRO]  relatorio-incluir_software_sem_patente  =  sim
+[PARAMETRO]  relatorio-incluir_produto_tecnologico  =  sim
+[PARAMETRO]  relatorio-incluir_processo_ou_tecnica  =  sim
+[PARAMETRO]  relatorio-incluir_trabalho_tecnico  =  sim
+[PARAMETRO]  relatorio-incluir_outro_tipo_de_producao_tecnica  =  sim
+[PARAMETRO]  relatorio-incluir_producao_artistica  =  sim
+[PARAMETRO]  relatorio-mostrar_orientacoes  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_pos_doutorado  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_doutorado  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_mestrado  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_monografia_de_especializacao  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_tcc  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_iniciacao_cientifica  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_em_andamento_outro_tipo  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_pos_doutorado  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_doutorado  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_mestrado  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_monografia_de_especializacao  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_tcc  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_iniciacao_cientifica  =  sim
+[PARAMETRO]  relatorio-incluir_orientacao_concluida_outro_tipo  =  sim
+[PARAMETRO]  relatorio-incluir_projeto  =  sim
+[PARAMETRO]  relatorio-incluir_premio  =  sim
+[PARAMETRO]  relatorio-incluir_participacao_em_evento  =  sim
+[PARAMETRO]  relatorio-incluir_organizacao_de_evento  =  sim
+[PARAMETRO]  grafo-mostrar_grafo_de_colaboracoes  =  sim
+[PARAMETRO]  grafo-mostrar_todos_os_nos_do_grafo  =  sim
+[PARAMETRO]  grafo-considerar_rotulos_dos_membros_do_grupo  =  nao
+[PARAMETRO]  grafo-mostrar_aresta_proporcional_ao_numero_de_colaboracoes  =  sim
+[PARAMETRO]  grafo-incluir_artigo_em_periodico  =  sim
+[PARAMETRO]  grafo-incluir_livro_publicado  =  sim
+[PARAMETRO]  grafo-incluir_capitulo_de_livro_publicado  =  sim
+[PARAMETRO]  grafo-incluir_texto_em_jornal_de_noticia  =  sim
+[PARAMETRO]  grafo-incluir_trabalho_completo_em_congresso  =  sim
+[PARAMETRO]  grafo-incluir_resumo_expandido_em_congresso  =  sim
+[PARAMETRO]  grafo-incluir_resumo_em_congresso  =  sim
+[PARAMETRO]  grafo-incluir_artigo_aceito_para_publicacao  =  sim
+[PARAMETRO]  grafo-incluir_apresentacao_de_trabalho  =  sim
+[PARAMETRO]  grafo-incluir_outro_tipo_de_producao_bibliografica  =  sim
+[PARAMETRO]  grafo-incluir_software_com_patente  =  sim
+[PARAMETRO]  grafo-incluir_software_sem_patente  =  sim
+[PARAMETRO]  grafo-incluir_produto_tecnologico  =  sim
+[PARAMETRO]  grafo-incluir_processo_ou_tecnica  =  sim
+[PARAMETRO]  grafo-incluir_trabalho_tecnico  =  sim
+[PARAMETRO]  grafo-incluir_outro_tipo_de_producao_tecnica  =  sim
+[PARAMETRO]  grafo-incluir_producao_artistica  =  sim
+[PARAMETRO]  grafo-incluir_grau_de_colaboracao  =  sim
+[PARAMETRO]  mapa-mostrar_mapa_de_geolocalizacao  =  nao
+[PARAMETRO]  mapa-incluir_membros_do_grupo  =  sim
+[PARAMETRO]  mapa-incluir_alunos_de_pos_doutorado  =  sim
+[PARAMETRO]  mapa-incluir_alunos_de_doutorado  =  sim
+[PARAMETRO]  mapa-incluir_alunos_de_mestrado  =  sim
+[PARAMETRO]  relatorio-incluir-internacionalizacao  =  nao
+
+[ROTULO]  [sem rotulo]
+(*) Utilizando CV armazenado no cache: /home/beatriz/ProjetoAlgoritmoDeInferencia/ProjetoAlgoritmoDeInferencia/Curriculos/0468265522433921
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte
+m
+[PARAMETRO]  grafo-incluir_outro_tipo_de_producao_bibliografica  =  sim
+[PARAMETRO]  grafo-incluir_software_com_patente  =  sim
+[PARAMETRO]  grafo-incluir_software_sem_patente  =  sim
+[PARAMETRO]  grafo-incluir_produto_tecnologico  =  sim
+[PARAMETRO]  grafo-incluir_processo_ou_tecnica  =  sim
+[PARAMETRO]  grafo-incluir_trabalho_tecnico  =  sim
+[PARAMETRO]  grafo-incluir_outro_tipo_de_producao_tecnica  =  sim
+[PARAMETRO]  grafo-incluir_producao_artistica  =  sim
+[PARAMETRO]  grafo-incluir_grau_de_colaboracao  =  sim
+[PARAMETRO]  mapa-mostrar_mapa_de_geolocalizacao  =  nao
+[PARAMETRO]  mapa-incluir_membros_do_grupo  =  sim
+[PARAMETRO]  mapa-incluir_alunos_de_pos_doutorado  =  sim
+[PARAMETRO]  mapa-incluir_alunos_de_doutorado  =  sim
+[PARAMETRO]  mapa-incluir_alunos_de_mestrado  =  sim
+[PARAMETRO]  relatorio-incluir-internacionalizacao  =  nao
+
+[ROTULO]  [sem rotulo]
+(*) Utilizando CV armazenado no cache: /home/beatriz/ProjetoAlgoritmoDeInferencia/ProjetoAlgoritmoDeInferencia/Curriculos/0468265522433921
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+        return codecs.utf_8_decode(input, errors, True)
+write_func(byte.decode('utf-8'))
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data    
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+      File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+    write_func(byte.decode('utf-8'))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeErrorTraceback (most recent call last):
+: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0x87 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0x87 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+    return codecs.utf_8_decode(input, errors, True)
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeErrorUnicodeDecodeError: : 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data'utf8' codec can't decode byte 0x87 in position 0: invalid start byte
+
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+: 'utf8' codec can't decode byte 0x83 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    UnicodeDecodeErrorwrite_func(byte.decode('utf-8'))
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+
+    return codecs.utf_8_decode(input, errors, True)
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0x87 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError    write_func(byte.decode('utf-8'))
+: 'utf8' codec can't decode byte 0x87 in position 0: invalid start byte
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    Traceback (most recent call last):
+return codecs.utf_8_decode(input, errors, True)
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError:     'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of datawrite_func(byte.decode('utf-8'))
+
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0x83 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0x83 in position 0: invalid start byte  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+Traceback (most recent call last):
+UnicodeDecodeError  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    UnicodeDecodeErrorwrite_func(byte.decode('utf-8'))
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+
+    return codecs.utf_8_decode(input, errors, True)
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0x87 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+        return codecs.utf_8_decode(input, errors, True)
+write_func(byte.decode('utf-8'))
+UnicodeDecodeError  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+: 'utf8' codec can't decode byte 0x9a in position 0: invalid start byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0x83 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError:     'utf8' codec can't decode byte 0x9a in position 0: invalid start bytewrite_func(byte.decode('utf-8'))
+
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa1 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+    Traceback (most recent call last):
+write_func(byte.decode('utf-8'))
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa1 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: Traceback (most recent call last):
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+      File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+        write_func(byte.decode('utf-8'))
+return codecs.utf_8_decode(input, errors, True)
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data    
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeErrorTraceback (most recent call last):
+:   File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    write_func(byte.decode('utf-8'))
+UnicodeDecodeError  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte    
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    write_func(byte.decode('utf-8'))
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+UnicodeDecodeError:     'utf8' codec can't decode byte 0xb5 in position 0: invalid start bytereturn codecs.utf_8_decode(input, errors, True)
+
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    UnicodeDecodeErrorwrite_func(byte.decode('utf-8'))
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+    write_func(byte.decode('utf-8'))
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+      File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError    write_func(byte.decode('utf-8'))
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: Traceback (most recent call last):
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+        write_func(byte.decode('utf-8'))
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+    return codecs.utf_8_decode(input, errors, True)
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError    : write_func(byte.decode('utf-8'))
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    Traceback (most recent call last):
+return codecs.utf_8_decode(input, errors, True)
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+    write_func(byte.decode('utf-8'))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
++ ID-MEMBRO   : 0
++ ROTULO      : [sem rotulo]
++ NOME REAL   : Luiz Carlos Miyadaira Ribeiro Junior
++ SEXO        : Masculino
++ NOME Cits.  : RIBEIRO JUNIOR, L. C. M.;RIBEIRO JUNIOR, LUIZ CARLOS MIYADAIRA;RIBEIRO JR, LUIZ CARLOS MIYADAIRA;JUNIOR, LUIZ CARLOS MIYADAIRA RIBEIRO
++ PERIODO     : 
++ BOLSA Prod. : 
++ ENDERECO    : Universidade de Brasília, Faculdade Gama. Área Especial 2 Lote 14 Setor Central 72405-610 - Brasilia, DF - Brasil Telefone: (61) 34843443 URL da Homepage: http://www.fga.unb.br/unbgama/
++ URL         : http://lattes.cnpq.br/0468265522433921
++ ATUALIZACAO : 20/04/2016
++ FOTO        : 0468265522433921_files/servletrecuperafoto.gif
++ RESUMO      : Professor Adjunto da Universidade de Brasília, é graduado em Tecnologia em Processamento de Dados pela Faculdade de Informática de Lins (1995), com especialização em Análise de Sistemas pela Faculdade de Informática de Lins e IBM (1996), mestrado em Ciência da Computação pela Universidade Federal de São Carlos (1999) e doutorado em Engenharia Elétrica pela Escola Politécnica da Universidade de São Paulo (2007). Possui 8 anos de experiência profissional na área de desenvolvimento de software, tendo atuado em grandes empresas de desenvolvimento de software exercendo papéis de Analista de Requisitos, Arquiteto de Software e Gerente de Projetos. Participa de projetos de melhoria de processos de software, baseado nos modelos de qualidade de software CMMI e MPS.BR. Possui mais de 15 anos de experiência acadêmica como professor universitário e pesquisador. (Texto informado pelo autor)
++ COLABORADs. : 2
+- Numero de colaboradores (identificado)      : 2
+- Artigos completos publicados em periódicos  : 2
+- Livros publicados/organizados ou edições    : 0
+- Capítulos de livros publicados              : 0
+- Textos em jornais de notícias/revistas      : 0
+- Trabalhos completos publicados em congressos: 16
+- Resumos expandidos publicados em congressos : 4
+- Resumos publicados em anais de congressos   : 0
+- Artigos aceitos para publicação             : 0
+- Apresentações de Trabalho                   : 0
+- Demais tipos de produção bibliográfica      : 0
+- Softwares com registro de patente           : 0
+- Softwares sem registro de patente           : 0
+- Produtos tecnológicos                       : 0
+- Processos ou técnicas                       : 0
+- Trabalhos técnicos                          : 0
+- Demais tipos de produção técnica            : 0
+- Produção artística/cultural                 : 0
+- Orientações em andamento
+  . Supervições de pos doutorado              : 0
+  . Tese de doutorado                         : 0
+  . Dissertações de mestrado                  : 0
+  . Monografías de especialização             : 0
+  . TCC                                       : 0
+  . Iniciação científica                      : 4
+  . Orientações de outra natureza             : 0
+- Orientações concluídas
+  . Supervições de pos doutorado              : 0
+  . Tese de doutorado                         : 0
+  . Dissertações de mestrado                  : 0
+  . Monografías de especialização             : 0
+  . TCC                                       : 0
+  . Iniciação científica                      : 0
+  . Orientações de outra natureza             : 0
+- Projetos de pesquisa                        : 1
+- Prêmios e títulos                           : 0
+- Participação em eventos                     : 8
+- Organização de eventos                      : 2
+
+
+(*) Utilizando CV armazenado no cache: /home/beatriz/ProjetoAlgoritmoDeInferencia/ProjetoAlgoritmoDeInferencia/Curriculos/2043085454508615
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
++ ID-MEMBRO   : 0
++ ROTULO      : [sem rotulo]
++ NOME REAL   : Luiz Carlos Miyadaira Ribeiro Junior
++ SEXO        : Masculino
++ NOME Cits.  : RIBEIRO JUNIOR, L. C. M.;RIBEIRO JUNIOR, LUIZ CARLOS MIYADAIRA;RIBEIRO JR, LUIZ CARLOS MIYADAIRA;JUNIOR, LUIZ CARLOS MIYADAIRA RIBEIRO
++ PERIODO     : 
++ BOLSA Prod. : 
++ ENDERECO    : Universidade de Brasília, Faculdade Gama. Área Especial 2 Lote 14 Setor Central 72405-610 - Brasilia, DF - Brasil Telefone: (61) 34843443 URL da Homepage: http://www.fga.unb.br/unbgama/
++ URL         : http://lattes.cnpq.br/0468265522433921
++ ATUALIZACAO : 20/04/2016
++ FOTO        : 0468265522433921_files/servletrecuperafoto.gif
++ RESUMO      : Professor Adjunto da Universidade de Brasília, é graduado em Tecnologia em Processamento de Dados pela Faculdade de Informática de Lins (1995), com especialização em Análise de Sistemas pela Faculdade de Informática de Lins e IBM (1996), mestrado em Ciência da Computação pela Universidade Federal de São Carlos (1999) e doutorado em Engenharia Elétrica pela Escola Politécnica da Universidade de São Paulo (2007). Possui 8 anos de experiência profissional na área de desenvolvimento de software, tendo atuado em grandes empresas de desenvolvimento de software exercendo papéis de Analista de Requisitos, Arquiteto de Software e Gerente de Projetos. Participa de projetos de melhoria de processos de software, baseado nos modelos de qualidade de software CMMI e MPS.BR. Possui mais de 15 anos de experiência acadêmica como professor universitário e pesquisador. (Texto informado pelo autor)
++ COLABORADs. : 2
+- Numero de colaboradores (identificado)      : 2
+- Artigos completos publicados em periódicos  : 2
+- Livros publicados/organizados ou edições    : 0
+- Capítulos de livros publicados              : 0
+- Textos em jornais de notícias/revistas      : 0
+- Trabalhos completos publicados em congressos: 16
+- Resumos expandidos publicados em congressos : 4
+- Resumos publicados em anais de congressos   : 0
+- Artigos aceitos para publicação             : 0
+- Apresentações de Trabalho                   : 0
+- Demais tipos de produção bibliográfica      : 0
+- Softwares com registro de patente           : 0
+- Softwares sem registro de patente           : 0
+- Produtos tecnológicos                       : 0
+- Processos ou técnicas                       : 0
+- Trabalhos técnicos                          : 0
+- Demais tipos de produção técnica            : 0
+- Produção artística/cultural                 : 0
+- Orientações em andamento
+  . Supervições de pos doutorado              : 0
+  . Tese de doutorado                         : 0
+  . Dissertações de mestrado                  : 0
+  . Monografías de especialização             : 0
+  . TCC                                       : 0
+  . Iniciação científica                      : 4
+  . Orientações de outra natureza             : 0
+- Orientações concluídas
+  . Supervições de pos doutorado              : 0
+  . Tese de doutorado                         : 0
+  . Dissertações de mestrado                  : 0
+  . Monografías de especialização             : 0
+  . TCC                                       : 0
+  . Iniciação científica                      : 0
+  . Orientações de outra natureza             : 0
+- Projetos de pesquisa                        : 1
+- Prêmios e títulos                           : 0
+- Participação em eventos                     : 8
+- Organização de eventos                      : 2
+
+
+(*) Utilizando CV armazenado no cache: /home/beatriz/ProjetoAlgoritmoDeInferencia/ProjetoAlgoritmoDeInferencia/Curriculos/2043085454508615
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+    write_func(byte.decode('utf-8'))
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError:     'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of datawrite_func(byte.decode('utf-8'))
+
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError:     'utf8' codec can't decode byte 0xa7 in position 0: invalid start bytewrite_func(byte.decode('utf-8'))
+
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError:     'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of datawrite_func(byte.decode('utf-8'))
+
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeErrorTraceback (most recent call last):
+: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError:   File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+    Traceback (most recent call last):
+write_func(byte.decode('utf-8'))
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+    Traceback (most recent call last):
+write_func(byte.decode('utf-8'))
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: UnicodeDecodeError'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+: 'utf8' codec can't decode byte 0xa0 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+    write_func(byte.decode('utf-8'))
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+        return codecs.utf_8_decode(input, errors, True)
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byteUnicodeDecodeError
+: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa0 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeErrorTraceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+    write_func(byte.decode('utf-8'))
+UnicodeDecodeError  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte    
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError    write_func(byte.decode('utf-8'))
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    write_func(byte.decode('utf-8'))
+UnicodeDecodeError:   File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+    return codecs.utf_8_decode(input, errors, True)
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+      File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+        write_func(byte.decode('utf-8'))
+return codecs.utf_8_decode(input, errors, True)
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data    
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeErrorTraceback (most recent call last):
+:   File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+        return codecs.utf_8_decode(input, errors, True)
+write_func(byte.decode('utf-8'))
+UnicodeDecodeError  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    write_func(byte.decode('utf-8'))
+      File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError    return codecs.utf_8_decode(input, errors, True)
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+      File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    UnicodeDecodeErrorreturn codecs.utf_8_decode(input, errors, True)
+: 'utf8' codec can't decode byte 0xad in position 0: invalid start byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+    UnicodeDecodeErrorwrite_func(byte.decode('utf-8'))
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+
+    return codecs.utf_8_decode(input, errors, True)
+Traceback (most recent call last):
+UnicodeDecodeError  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+: 'utf8' codec can't decode byte 0xad in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+      File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+write_func(byte.decode('utf-8'))
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+UnicodeDecodeError    : return codecs.utf_8_decode(input, errors, True)
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+UnicodeDecodeError: Traceback (most recent call last):
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError    : write_func(byte.decode('utf-8'))
+'utf8' codec can't decode byte 0xa1 in position 0: invalid start byte
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError    : write_func(byte.decode('utf-8'))
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    Traceback (most recent call last):
+return codecs.utf_8_decode(input, errors, True)
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    Traceback (most recent call last):
+return codecs.utf_8_decode(input, errors, True)
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+    UnicodeDecodeErrorwrite_func(byte.decode('utf-8'))
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa1 in position 0: invalid start byteUnicodeDecodeError
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+      File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    write_func(byte.decode('utf-8'))
+      File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError    return codecs.utf_8_decode(input, errors, True)
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeErrorTraceback (most recent call last):
+:   File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+      File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+        write_func(byte.decode('utf-8'))
+return codecs.utf_8_decode(input, errors, True)
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data    
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: Traceback (most recent call last):
+'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: Traceback (most recent call last):
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    write_func(byte.decode('utf-8'))
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+UnicodeDecodeError    : return codecs.utf_8_decode(input, errors, True)
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    write_func(byte.decode('utf-8'))
+      File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError    return codecs.utf_8_decode(input, errors, True)
+: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    write_func(byte.decode('utf-8'))
+      File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError    return codecs.utf_8_decode(input, errors, True)
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError:     'utf8' codec can't decode byte 0xa9 in position 0: invalid start bytewrite_func(byte.decode('utf-8'))
+
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    write_func(byte.decode('utf-8'))
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+UnicodeDecodeError:     'utf8' codec can't decode byte 0xa7 in position 0: invalid start bytereturn codecs.utf_8_decode(input, errors, True)
+
+UnicodeDecodeError: Traceback (most recent call last):
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    write_func(byte.decode('utf-8'))
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+UnicodeDecodeError:     'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of datareturn codecs.utf_8_decode(input, errors, True)
+
+UnicodeDecodeError: Traceback (most recent call last):
+'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    write_func(byte.decode('utf-8'))
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+UnicodeDecodeError    : return codecs.utf_8_decode(input, errors, True)
+'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    write_func(byte.decode('utf-8'))
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+UnicodeDecodeError:     'utf8' codec can't decode byte 0xa9 in position 0: invalid start bytereturn codecs.utf_8_decode(input, errors, True)
+
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+      File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+    Traceback (most recent call last):
+write_func(byte.decode('utf-8'))
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeErrorUnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data: 
+'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+        return codecs.utf_8_decode(input, errors, True)
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeErrorUnicodeDecodeError: : 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError:   File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: Traceback (most recent call last):
+'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError:   File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+Traceback (most recent call last):
+UnicodeDecodeError  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa0 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    Traceback (most recent call last):
+write_func(byte.decode('utf-8'))
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+    Traceback (most recent call last):
+write_func(byte.decode('utf-8'))
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: UnicodeDecodeError'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data: 
+'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    Traceback (most recent call last):
+write_func(byte.decode('utf-8'))
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+    Traceback (most recent call last):
+write_func(byte.decode('utf-8'))
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa0 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+    write_func(byte.decode('utf-8'))
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError    : write_func(byte.decode('utf-8'))
+'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    Traceback (most recent call last):
+return codecs.utf_8_decode(input, errors, True)
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError:   File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError:   File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    UnicodeDecodeErrorwrite_func(byte.decode('utf-8'))
+: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+    write_func(byte.decode('utf-8'))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+Traceback (most recent call last):
+UnicodeDecodeError  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    write_func(byte.decode('utf-8'))
+UnicodeDecodeError  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+    return codecs.utf_8_decode(input, errors, True)
+Traceback (most recent call last):
+UnicodeDecodeError  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+      File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+      File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeErrorUnicodeDecodeError: : 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeErrorTraceback (most recent call last):
+:   File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte    
+write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa9 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb5 in position 0: invalid start byte
++ ID-MEMBRO   : 1
++ ROTULO      : [sem rotulo]
++ NOME REAL   : Milene Serrano
++ SEXO        : Masculino
++ NOME Cits.  : PRADO, M.;SERRANO, M.;SERRANO, Milene
++ PERIODO     : 
++ BOLSA Prod. : 
++ ENDERECO    : Universidade de Brasília, Campus Gama. Área Especial de Indústria Projeção A - UNB Setor Leste (Gama) 72444240 - Brasilia, DF - Brasil - Caixa-postal: 38097 URL da Homepage: http://fga.unb.br/
++ URL         : http://lattes.cnpq.br/2043085454508615
++ ATUALIZACAO : 11/09/2015
++ FOTO        : 2043085454508615_files/servletrecuperafoto.gif
++ RESUMO      : Sou graduada em Engenharia de Computação pela Universidade Federal de São Carlos (UFSCar) e pós-graduada (mestrado) em Ciência da Computação pela mesma instituição de ensino, sob a orientação da Professora Dra. Rosângela Aparecida Dellosso Penteado. Durante a realização do mestrado, fui bolsista CAPES por mérito e classificação segundo os critérios do Departamento de Computação da UFSCar. Fiz estágio supervisionado para docente da UFSCar, ministrando aulas para alunos de graduação na disciplina de "Paradigmas de Linguagem de Programação". Participei de um projeto de pesquisa "Projeto Apyon Studio - Fase II : Modelo Gráfico de Dependência entre as Regras de Negócio e o Impacto Físico Financeiro sobre a Manutenção". Ao longo desse projeto, fui bolsista FAPESP TTI nível 4. Atuei como pesquisadora e desenvolvedora, integrante do projeto no módulo de Regras de Negócio e colaboradora nos demais módulos do projeto. Conclui meu doutorado em Ciência - Informática na Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio) na área de Engenharia de Software sob a orientação do Professor Ph.D Carlos José Pereira de Lucena. Além disso, realizei parte do meu doutorado na Universidade de Toronto, no Canadá, sob a orientação do Professor Ph.D John Mylopoulos, e apoiada financeiramente pelo CNPQ com uma bolsa SWE. Atuo como colaboradora (pesquisadora e desenvolvedora) no Grupo de Pesquisa do Laboratório de Engenharia de Software (LES - PUC-Rio). Esse grupo desenvolve vários projetos e conta com o apoio financeiro de agências de fomento (ex. FINEP, CNPq e CAPES) bem como de empresas privadas (ex. IBM e Globo.com). Atualmente, sou professora, Adjunta, com regime de dedicação exclusiva, na Universidade de Brasília (UnB-FGA), no curso de Engenharia de Software. Meus interesses concentram-se nas áreas de Engenharia de Software, Engenharia de Requisitos e Engenharia Reversa. Dentre os tópicos de interesse, têm-se: (i) diferentes Paradigmas, com destaque para Sistemas Multiagentes, Orientação a Objetos, Orientação a Comportamento e Orientação à Meta; (ii) Transparência de Software; (iii) Computação Ubíqua, Pervasiva e Móvel; e (iv) Robótica Educacional. (Texto informado pelo autor)
++ COLABORADs. : 3
+- Numero de colaboradores (identificado)      : 3
+- Artigos completos publicados em periódicos  : 0
+- Livros publicados/organizados ou edições    : 0
+- Capítulos de livros publicados              : 2
+- Textos em jornais de notícias/revistas      : 0
+- Trabalhos completos publicados em congressos: 11
+- Resumos expandidos publicados em congressos : 0
+- Resumos publicados em anais de congressos   : 0
+- Artigos aceitos para publicação             : 0
+- Apresentações de Trabalho                   : 5
+- Demais tipos de produção bibliográfica      : 13
+- Softwares com registro de patente           : 0
+- Softwares sem registro de patente           : 0
+- Produtos tecnológicos                       : 1
+- Processos ou técnicas                       : 0
+- Trabalhos técnicos                          : 2
+- Demais tipos de produção técnica            : 0
+- Produção artística/cultural                 : 0
+- Orientações em andamento
+  . Supervições de pos doutorado              : 0
+  . Tese de doutorado                         : 0
+  . Dissertações de mestrado                  : 0
+  . Monografías de especialização             : 0
+  . TCC                                       : 0
+  . Iniciação científica     + ID-MEMBRO   : 1
++ ROTULO      : [sem rotulo]
++ NOME REAL   : Milene Serrano
++ SEXO        : Masculino
++ NOME Cits.  : PRADO, M.;SERRANO, M.;SERRANO, Milene
++ PERIODO     : 
++ BOLSA Prod. : 
++ ENDERECO    : Universidade de Brasília, Campus Gama. Área Especial de Indústria Projeção A - UNB Setor Leste (Gama) 72444240 - Brasilia, DF - Brasil - Caixa-postal: 38097 URL da Homepage: http://fga.unb.br/
++ URL         : http://lattes.cnpq.br/2043085454508615
++ ATUALIZACAO : 11/09/2015
++ FOTO        : 2043085454508615_files/servletrecuperafoto.gif
++ RESUMO      : Sou graduada em Engenharia de Computação pela Universidade Federal de São Carlos (UFSCar) e pós-graduada (mestrado) em Ciência da Computação pela mesma instituição de ensino, sob a orientação da Professora Dra. Rosângela Aparecida Dellosso Penteado. Durante a realização do mestrado, fui bolsista CAPES por mérito e classificação segundo os critérios do Departamento de Computação da UFSCar. Fiz estágio supervisionado para docente da UFSCar, ministrando aulas para alunos de graduação na disciplina de "Paradigmas de Linguagem de Programação". Participei de um projeto de pesquisa "Projeto Apyon Studio - Fase II : Modelo Gráfico de Dependência entre as Regras de Negócio e o Impacto Físico Financeiro sobre a Manutenção". Ao longo desse projeto, fui bolsista FAPESP TTI nível 4. Atuei como pesquisadora e desenvolvedora, integrante do projeto no módulo de Regras de Negócio e colaboradora nos demais módulos do projeto. Conclui meu doutorado em Ciência - Informática na Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio) na área de Engenharia de Software sob a orientação do Professor Ph.D Carlos José Pereira de Lucena. Além disso, realizei parte do meu doutorado na Universidade de Toronto, no Canadá, sob a orientação do Professor Ph.D John Mylopoulos, e apoiada financeiramente pelo CNPQ com uma bolsa SWE. Atuo como colaboradora (pesquisadora e desenvolvedora) no Grupo de Pesquisa do Laboratório de Engenharia de Software (LES - PUC-Rio). Esse grupo desenvolve vários projetos e conta com o apoio financeiro de agências de fomento (ex. FINEP, CNPq e CAPES) bem como de empresas privadas (ex. IBM e Globo.com). Atualmente, sou professora, Adjunta, com regime de dedicação exclusiva, na Universidade de Brasília (UnB-FGA), no curso de Engenharia de Software. Meus interesses concentram-se nas áreas de Engenharia de Software, Engenharia de Requisitos e Engenharia Reversa. Dentre os tópicos de interesse, têm-se: (i) diferentes Paradigmas, com destaque para Sistemas Multiagentes, Orientação a Objetos, Orientação a Comportamento e Orientação à Meta; (ii) Transparência de Software; (iii) Computação Ubíqua, Pervasiva e Móvel; e (iv) Robótica Educacional. (Texto informado pelo autor)
++ COLABORADs. : 3
+- Numero de colaboradores (identificado)      : 3
+- Artigos completos publicados em periódicos  : 0
+- Livros publicados/organizados ou edições    : 0
+- Capítulos de livros publicados              : 2
+- Textos em jornais de notícias/revistas      : 0
+- Trabalhos completos publicados em congressos: 11
+- Resumos expandidos publicados em congressos : 0
+- Resumos publicados em anais de congressos   : 0
+- Artigos aceitos para publicação             : 0
+- Apresentações de Trabalho                   : 5
+- Demais tipos de produção bibliográfica      : 13
+- Softwares com registro de patente           : 0
+- Softwares sem registro de patente           : 0
+- Produtos tecnológicos                       : 1
+- Processos ou técnicas                       : 0
+- Trabalhos técnicos                          : 2
+- Demais tipos de produção técnica            : 0
+- Produção artística/cultural                 : 0
+- Orientações em andamento
+  . Supervições de pos doutorado              : 0
+  . Tese de doutorado                         : 0
+  . Dissertações de mestrado                  : 0
+  . Monografías de especialização             : 0
+  . TCC                                       : 0
+  . Iniciação científica                      : 7
+  . Orientações de outra natureza             : 0
+- Orientações concluídas
+  . Supervições de pos doutorado              : 0
+  . Tese de doutorado                         : 0
+  . Dissertações de mestrado                  : 0
+  . Monografías de especialização             : 0
+  . TCC                                       : 0
+  . Iniciação científica                      : 13
+  . Orientações de outra natureza             : 0
+- Projetos de pesquisa                        : 3
+- Prêmios e títulos                           : 2
+- Participação em eventos                     : 24
+- Organização de eventos                      : 2
+
+
+(*) Utilizando CV armazenado no cache: /home/beatriz/ProjetoAlgoritmoDeInferencia/ProjetoAlgoritmoDeInferencia/Curriculos/8075435338067782
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa1 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xad in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa1 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa1 in position 0: invalid start byte
+                 : 7
+  . Orientações de outra natureza             : 0
+- Orientações concluídas
+  . Supervições de pos doutorado              : 0
+  . Tese de doutorado                         : 0
+  . Dissertações de mestrado                  : 0
+  . Monografías de especialização             : 0
+  . TCC                                       : 0
+  . Iniciação científica                      : 13
+  . Orientações de outra natureza             : 0
+- Projetos de pesquisa                        : 3
+- Prêmios e títulos                           : 2
+- Participação em eventos                     : 24
+- Organização de eventos                      : 2
+
+
+(*) Utilizando CV armazenado no cache: /home/beatriz/ProjetoAlgoritmoDeInferencia/ProjetoAlgoritmoDeInferencia/Curriculos/8075435338067782
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xb3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa1 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xad in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa1 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa7 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa3 in position 0: invalid start byte
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc3 in position 0: unexpected end of data
+Traceback (most recent call last):
+  File "_ctypes/callbacks.c", line 314, in 'calling callback function'
+  File "/usr/local/lib/python2.7/dist-packages/tidylib/sink.py", line 79, in put_byte
+    write_func(byte.decode('utf-8'))
+  File "/usr/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xa1 in position 0: invalid start byte
++ ID-MEMBRO   : 2
++ ROTULO      : [sem rotulo]
++ NOME REAL   : Fábio Macêdo Mendes
++ SEXO        : Masculino
++ NOME Cits.  : MENDES, F. M.;FÁBIO M. MENDES;MENDES, FÁBIO M.;MENDES, F.M.;MENDES, FABIO MACE^DO;MENDES, FABIO MACEDO;MENDES, FA'BIO MACE^DO
++ PERIODO     : 
++ BOLSA Prod. : 
++ ENDERECO    : Universidade de Brasília, Faculdade UnB Gama. Área Especial 2 Lote 14 Setor Central Gama 70919-970 - Brasilia, DF - Brasil Telefone: (61) 34849719
++ URL         : http://lattes.cnpq.br/8075435338067782
++ ATUALIZACAO : 19/11/2015
++ FOTO        : 8075435338067782_files/servletrecuperafoto.gif
++ RESUMO      : Possui mestrado em Física pela Universidade de Brasília(2006) e doutorado em Física pela Universidade de Brasília(2009). Atualmente é Professor Adjunto da Universidade de Brasília. Tem experiência na área de Física, com ênfase em Física Estatística. Atuando principalmente nos seguintes temas:Processos Gaussianos, Inferência Bayesiana, Processos estocásticos, Equação de Langevin. (Texto gerado automaticamente pela aplicação CVLattes)
++ COLABORADs. : 2
+- Numero de colaboradores (identificado)      : 2
+- Artigos completos publicados em periódicos  : 3
+- Livros publicados/organizados ou edições    : 0
+- Capítulos de livros publicados              : 0
+- Textos em jornais de notícias/revistas      : 0
+- Trabalhos completos publicados em congressos: 6
+- Resumos expandidos publicados em congressos : 0
+- Resumos publicados em anais de congressos   : 3
+- Artigos aceitos para publicação             : 0
+- Apresentações de Trabalho                   : 2
+- Demais tipos de produção bibliográfica      : 0
+- Softwares com registro de patente           : 0
+- Softwares sem registro de patente           : 0
+- Produtos tecnológicos                       : 0
+- Processos ou técnicas                       : 0
+- Trabalhos técnicos                          : 0
+- Demais tipos de produção técnica            : 1
+- Produção artística/cultural                 : 0
+- Orientações em andamento
+  . Supervições de pos doutorado              : 0
+  . Tese de doutorado                         : 1
+  . Dissertações de mestrado                  : 0
+  . Monografías de especialização             : 0
+  . TCC                                       : 0
+  . Iniciação científica                      : 0
+  . Orientações de outra natureza             : 0
+- Orientações concluídas
+  . Supervições de pos doutorado              : 0
+  . Tese de doutorado                         : 0
+  . Dissertações de mestrado                  : 0
+  . Monografías de especialização             : 0
+  . TCC                                       : 0
+  . Iniciação científica                      : 0
+  . Orientações de outra natureza             : 0
+- Projetos de pesquisa                        : 2
+- Prêmios e títulos                           : 0
+- Participação em eventos                     : 7
+- Organização de eventos                      : 0
+
+
+[CALCULANDO AUTHOR-RANK (PROCESSO ITERATIVO)]
+0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99  
+[CRIANDO GRAFOS DE COLABORACOES SEM PESOS]
+
+[CRIANDO GRAFOS DE COLABORACOES COM PESOS]
+
+[CRIANDO GRAFOS DE COLABORACOES NORMALIZADO]
+[ROTULOS]
+- ['[sem rotulo]']
+- ['']
+
+[LISTA DE MATRIZES DE FREQUENCIA]
+
+Artigo em periodico
+None
+
+Livro publicado
+None
+
+Capitulo de livro publicado
+None
+
+Texto em jornal de noticia
+None
+
+Trabalho completo em congresso
+None
+
+Resumo expandido em congresso
+None
+
+Resumo em congresso
+None
+
+Artigo aceito
+None
+
+Apresentacao de trabalho
+None
+
+Outro tipo de producao bibliografica
+None
+
+Software com patente
+None
+
+Software sem patente
+None
+
+Produto tecnologico
+None
+
+Processo ou tecnica
+None
+
+Trabalho tecnico
+None
+
+Outro tipo de produ+ ID-MEMBRO   : 2
++ ROTULO      : [sem rotulo]
++ NOME REAL   : Fábio Macêdo Mendes
++ SEXO        : Masculino
++ NOME Cits.  : MENDES, F. M.;FÁBIO M. MENDES;MENDES, FÁBIO M.;MENDES, F.M.;MENDES, FABIO MACE^DO;MENDES, FABIO MACEDO;MENDES, FA'BIO MACE^DO
++ PERIODO     : 
++ BOLSA Prod. : 
++ ENDERECO    : Universidade de Brasília, Faculdade UnB Gama. Área Especial 2 Lote 14 Setor Central Gama 70919-970 - Brasilia, DF - Brasil Telefone: (61) 34849719
++ URL         : http://lattes.cnpq.br/8075435338067782
++ ATUALIZACAO : 19/11/2015
++ FOTO        : 8075435338067782_files/servletrecuperafoto.gif
++ RESUMO      : Possui mestrado em Física pela Universidade de Brasília(2006) e doutorado em Física pela Universidade de Brasília(2009). Atualmente é Professor Adjunto da Universidade de Brasília. Tem experiência na área de Física, com ênfase em Física Estatística. Atuando principalmente nos seguintes temas:Processos Gaussianos, Inferência Bayesiana, Processos estocásticos, Equação de Langevin. (Texto gerado automaticamente pela aplicação CVLattes)
++ COLABORADs. : 2
+- Numero de colaboradores (identificado)      : 2
+- Artigos completos publicados em periódicos  : 3
+- Livros publicados/organizados ou edições    : 0
+- Capítulos de livros publicados              : 0
+- Textos em jornais de notícias/revistas      : 0
+- Trabalhos completos publicados em congressos: 6
+- Resumos expandidos publicados em congressos : 0
+- Resumos publicados em anais de congressos   : 3
+- Artigos aceitos para publicação             : 0
+- Apresentações de Trabalho                   : 2
+- Demais tipos de produção bibliográfica      : 0
+- Softwares com registro de patente           : 0
+- Softwares sem registro de patente           : 0
+- Produtos tecnológicos                       : 0
+- Processos ou técnicas                       : 0
+- Trabalhos técnicos                          : 0
+- Demais tipos de produção técnica            : 1
+- Produção artística/cultural                 : 0
+- Orientações em andamento
+  . Supervições de pos doutorado              : 0
+  . Tese de doutorado                         : 1
+  . Dissertações de mestrado                  : 0
+  . Monografías de especialização             : 0
+  . TCC                                       : 0
+  . Iniciação científica                      : 0
+  . Orientações de outra natureza             : 0
+- Orientações concluídas
+  . Supervições de pos doutorado              : 0
+  . Tese de doutorado                         : 0
+  . Dissertações de mestrado                  : 0
+  . Monografías de especialização             : 0
+  . TCC                                       : 0
+  . Iniciação científica                      : 0
+  . Orientações de outra natureza             : 0
+- Projetos de pesquisa                        : 2
+- Prêmios e títulos                           : 0
+- Participação em eventos                     : 7
+- Organização de eventos                      : 0
+
+
+[CALCULANDO AUTHOR-RANK (PROCESSO ITERATIVO)]
+0  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99  
+[CRIANDO GRAFOS DE COLABORACOES SEM PESOS]
+
+[CRIANDO GRAFOS DE COLABORACOES COM PESOS]
+
+[CRIANDO GRAFOS DE COLABORACOES NORMALIZADO]
+[ROTULOS]
+- ['[sem rotulo]']
+- ['']
+
+[LISTA DE MATRIZES DE FREQUENCIA]
+
+Artigo em periodico
+None
+
+Livro publicado
+None
+
+Capitulo de livro publicado
+None
+
+Texto em jornal de noticia
+None
+
+Trabalho completo em congresso
+None
+
+Resumo expandido em congresso
+None
+
+Resumo em congresso
+None
+
+Artigo aceito
+None
+
+Apresentacao de trabalho
+None
+
+Outro tipo de producao bibliografica
+None
+
+Software com patente
+None
+
+Software sem patente
+None
+
+Produto tecnologico
+None
+
+Processo ou tecnica
+None
+
+Trabalho tecnico
+None
+
+Outro tipo de producao tecnica
+None
+
+Producao artistica
+None
+
+[VETOR DE CO-AUTORIA]
+[[ 0.]
+ [ 0.]
+ [ 0.]]
+
+[MATRIZ DE FREQUENCIA NORMALIZADA]
+
+
+[CRIANDO GRAFICO DE BARRAS]
+PB0: 
+['*itens sem ano', 2011, 2012]
+[3, 1, 1]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB2: 
+[2011]
+[2]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB4: 
+['*itens sem ano', 2003, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]
+[2, 2, 1, 1, 1, 4, 4, 6, 5, 4, 3]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB5: 
+['*itens sem ano', 2002, 2003]
+[1, 1, 2]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB6: 
+[2006, 2011, 2012]
+[1, 1, 1]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB8: 
+['*itens sem ano', 2006, 2010, 2013]
+[2, 1, 1, 3]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB9: 
+['*itens sem ano', 2001, 2002, 2007, 2008, 2010]
+[1, 1, 1, 1, 7, 2]
+
+[CRIANDO GRAFICO DE BARRAS]
+PT2: 
+[2006]
+[1]
+
+[CRIANDO GRAFICO DE BARRAS]
+PT4: 
+['*itens sem ano']
+[2]
+
+[CRIANDO GRAFICO DE BARRAS]
+PT5: 
+[2010]
+[1]
+
+[CRIANDO GRAFICO DE BARRAS]
+OA1: 
+[2011]
+[1]
+
+[CRIANDO GRAFICO DE BARRAS]
+OA5: 
+[2010, 2013]
+[4, 7]
+
+[CRIANDO GRAFICO DE BARRAS]
+OC5: 
+[2013]
+[13]
+
+[CRIANDO GRAFICO DE BARRAS]
+Pm: 
+[2003, 2011]
+[1, 1]
+
+[CRIANDO GRAFICO DE BARRAS]
+Pj: 
+[1996, 2003, 2006, 2012, 2013]
+[1, 2, 1, 1, 1]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB: 
+['*itens sem ano', 2001, 2002, 2003, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]
+[9, 1, 2, 4, 1, 3, 2, 11, 4, 9, 9, 6, 6]
+
+[CRIANDO GRAFICO DE BARRAS]
+PT: 
+['*itens sem ano', 2006, 2010]
+[2, 1, 1]
+
+[CRIANDO GRAFICO DE BARRAS]
+OA: 
+[2010, 2011, 2013]
+[4, 1, 7]
+
+[CRIANDO GRAFICO DE BARRAS]
+OC: 
+[2013]
+[13]
+
+[CRIANDO GRAFICO DE BARRAS]
+Ep: 
+[1998, 1999, 2003, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2013]
+[1, 1, 1, 1, 3, 2, 5, 3, 5, 4, 13]
+
+[CRIANDO GRAFICO DE BARRAS]
+Eo: 
+[2010, 2011, 2013]
+[1, 1, 2]
+Traceback (most recent call last):
+  File "./scriptLattes.py", line 64, in <module>
+    novoGrupo.gerarOntologia()
+  File "scriptLattes/grupo.py", line 167, in gerarOntologia
+    ontologia = GeradorOntologia(self)
+  File "scriptLattes/geradorOntologia.py", line 63, in __init__
+    self.gerarMembros()
+  File "scriptLattes/geradorOntologia.py", line 84, in gerarMembros
+    print "Area de atuacao " + area.descricao
+UnicodeEncodeError: 'ascii' codec can't encode character u'\xe1' in position 23: ordinal not in range(128)
+cao tecnica
+None
+
+Producao artistica
+None
+
+[VETOR DE CO-AUTORIA]
+[[ 0.]
+ [ 0.]
+ [ 0.]]
+
+[MATRIZ DE FREQUENCIA NORMALIZADA]
+
+
+[CRIANDO GRAFICO DE BARRAS]
+PB0: 
+['*itens sem ano', 2011, 2012]
+[3, 1, 1]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB2: 
+[2011]
+[2]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB4: 
+['*itens sem ano', 2003, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]
+[2, 2, 1, 1, 1, 4, 4, 6, 5, 4, 3]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB5: 
+['*itens sem ano', 2002, 2003]
+[1, 1, 2]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB6: 
+[2006, 2011, 2012]
+[1, 1, 1]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB8: 
+['*itens sem ano', 2006, 2010, 2013]
+[2, 1, 1, 3]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB9: 
+['*itens sem ano', 2001, 2002, 2007, 2008, 2010]
+[1, 1, 1, 1, 7, 2]
+
+[CRIANDO GRAFICO DE BARRAS]
+PT2: 
+[2006]
+[1]
+
+[CRIANDO GRAFICO DE BARRAS]
+PT4: 
+['*itens sem ano']
+[2]
+
+[CRIANDO GRAFICO DE BARRAS]
+PT5: 
+[2010]
+[1]
+
+[CRIANDO GRAFICO DE BARRAS]
+OA1: 
+[2011]
+[1]
+
+[CRIANDO GRAFICO DE BARRAS]
+OA5: 
+[2010, 2013]
+[4, 7]
+
+[CRIANDO GRAFICO DE BARRAS]
+OC5: 
+[2013]
+[13]
+
+[CRIANDO GRAFICO DE BARRAS]
+Pm: 
+[2003, 2011]
+[1, 1]
+
+[CRIANDO GRAFICO DE BARRAS]
+Pj: 
+[1996, 2003, 2006, 2012, 2013]
+[1, 2, 1, 1, 1]
+
+[CRIANDO GRAFICO DE BARRAS]
+PB: 
+['*itens sem ano', 2001, 2002, 2003, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]
+[9, 1, 2, 4, 1, 3, 2, 11, 4, 9, 9, 6, 6]
+
+[CRIANDO GRAFICO DE BARRAS]
+PT: 
+['*itens sem ano', 2006, 2010]
+[2, 1, 1]
+
+[CRIANDO GRAFICO DE BARRAS]
+OA: 
+[2010, 2011, 2013]
+[4, 1, 7]
+
+[CRIANDO GRAFICO DE BARRAS]
+OC: 
+[2013]
+[13]
+
+[CRIANDO GRAFICO DE BARRAS]
+Ep: 
+[1998, 1999, 2003, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2013]
+[1, 1, 1, 1, 3, 2, 5, 3, 5, 4, 13]
+
+[CRIANDO GRAFICO DE BARRAS]
+Eo: 
+[2010, 2011, 2013]
+[1, 1, 2]
+Traceback (most recent call last):
+  File "./scriptLattes.py", line 64, in <module>
+    novoGrupo.gerarOntologia()
+  File "scriptLattes/grupo.py", line 167, in gerarOntologia
+    ontologia = GeradorOntologia(self)
+  File "scriptLattes/geradorOntologia.py", line 63, in __init__
+    self.gerarMembros()
+  File "scriptLattes/geradorOntologia.py", line 84, in gerarMembros
+    print "Area de atuacao " + area.descricao
+UnicodeEncodeError: 'ascii' codec can't encode character u'\xe1' in position 23: ordinal not in range(128)
