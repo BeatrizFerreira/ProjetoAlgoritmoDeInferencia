@@ -318,6 +318,8 @@ public class TrataString {
 	    List<String> listaCompararBaseBr = new ArrayList<String>();
 	    List<String> listaCompararDestinoEn = new ArrayList<String>();
 	    List<String> listaCompararDestinoBr = new ArrayList<String>();
+	    MeaningEnUS meaningEnUS = new MeaningEnUS();
+	    MeaningPtBR meaningPtBR = new MeaningPtBR();
 	    listaCompararBase = new ArrayList<String>();
 	    listaCompararDestino = new ArrayList<String>();
 	    strBase.selecionarStr(carrega.tratarStr(strASerTratadaBase.toLowerCase()));

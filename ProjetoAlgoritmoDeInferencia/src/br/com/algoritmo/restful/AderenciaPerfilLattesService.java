@@ -1,10 +1,12 @@
 package br.com.algoritmo.restful;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.lang.ProcessBuilder.Redirect;
@@ -31,7 +33,7 @@ public class AderenciaPerfilLattesService {
 	@Path("/aderencia")
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
-	public String getValorAderencia(String dados) throws IOException, ParseException{
+	public String getValorAderencia(String dados) throws IOException, ParseException, InterruptedException{
 		
 		JSONParser parser = new JSONParser();
 		JSONObject dados_requisicao = (JSONObject) parser.parse(dados);
@@ -54,8 +56,7 @@ public class AderenciaPerfilLattesService {
 		bw.write(individuo_destino.get("id_destino").toString() + ", " + individuo_destino.get("nome_destino").toString() + "\n");
 		bw.close();
 		
-		//TODO: conversao de arquivos para RDF - executar comando no scriptLattes
-		//this.gerarOntologiaScriptLattes();
+		this.gerarOntologiaScriptLattes();
 		
 		TrataString trataString = new TrataString();
 		ArrayList<String> destinos = new ArrayList<String>();
@@ -71,7 +72,8 @@ public class AderenciaPerfilLattesService {
 
 		System.out.println(resposta.toString());
 		
-		//DELETAR TODOS OS ARQUIVOS GERADOS NO FINAL
+		this.removerArquivos(new File("Curriculos/"));
+		this.removerArquivos(new File("Curriculos/saida/"));
 
 		return resposta.toString();
 	}
@@ -86,12 +88,23 @@ public class AderenciaPerfilLattesService {
 		out.write(conteudo);
 		out.close();
 	}
-	
-	private void gerarOntologiaScriptLattes() throws IOException{
-		ProcessBuilder pb = new ProcessBuilder("./scriptLattes.py", "padrao.config");
-		pb.directory(new File("/home/beatriz/ScriptLattes"));
-		pb.start();
-		System.out.println("heyyy");
-	}
 
+	private void gerarOntologiaScriptLattes() throws IOException, InterruptedException{
+		ProcessBuilder pb = new ProcessBuilder("./scriptLattes.py", "padrao.config");
+		pb.directory(new File("/home/beatriz/ScriptLattes"));		
+		Process p = pb.start();
+		
+		BufferedReader reader =	new BufferedReader(new InputStreamReader(p.getInputStream()));
+		while ((reader.readLine()) != null) {}
+		p.waitFor();
+	}
+	
+	public void removerArquivos(File f) {
+        if (f.isDirectory()) {
+            File[] files = f.listFiles();
+            for (File file : files) {
+            	file.delete();
+            }
+        }
+	}
 }
