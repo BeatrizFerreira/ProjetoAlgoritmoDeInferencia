@@ -12,6 +12,7 @@ import java.io.Writer;
 import java.lang.ProcessBuilder.Redirect;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
@@ -28,12 +29,13 @@ import br.com.algoritmo.aplicacao.TrataString;
 
 @Path("/AderenciaPerfilLattes")
 public class AderenciaPerfilLattesService {
+	
 	@SuppressWarnings("unchecked")
 	@POST
-	@Path("/aderencia")
+	@Path("/aderenciaSimples")
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
-	public String getValorAderencia(String dados) throws IOException, ParseException, InterruptedException{
+	public String getValorAderenciaSimples(String dados) throws IOException, ParseException, InterruptedException{
 		
 		JSONParser parser = new JSONParser();
 		JSONObject dados_requisicao = (JSONObject) parser.parse(dados);
@@ -69,14 +71,64 @@ public class AderenciaPerfilLattesService {
 		resposta.put("equivalencias", trataString.getEquivalencias());
 		resposta.put("individuo_base", individuo_base);
 		resposta.put("individuo_destino", individuo_destino);
-
-		System.out.println(resposta.toString());
 		
 		this.removerArquivos(new File("Curriculos/"));
 		this.removerArquivos(new File("Curriculos/saida/"));
 
 		return resposta.toString();
 	}
+	
+	@SuppressWarnings("unchecked")
+	@POST
+	@Path("/aderenciaComposta")
+	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
+	public String getValorAderenciaComposta(String dados) throws IOException, ParseException, InterruptedException{
+		JSONObject resposta = new JSONObject();
+		JSONParser parser = new JSONParser();
+		JSONObject dados_requisicao = (JSONObject) parser.parse(dados);
+		
+		JSONObject individuo_base = (JSONObject) parser.parse(dados_requisicao.get("individuo_base").toString());
+		JSONObject individuos_destino = (JSONObject) parser.parse(dados_requisicao.get("individuos_destino").toString());
+		String cv_base_conteudo = dados_requisicao.get("cv_base").toString();
+		JSONObject cvs_destino_conteudo = (JSONObject) parser.parse(dados_requisicao.get("cvs_destino").toString());
+		
+		ArrayList<String> destinos = new ArrayList<String>(individuos_destino.keySet());
+		
+		this.salvarArquivoHTML(individuo_base.get("id_base").toString(), cv_base_conteudo);
+
+		// para cada individuo destino, escrever um cvs.list e mandar executar o restante das coisas
+		File lista_cvs_lattes = new File("Curriculos/cvs.list");
+		if (!lista_cvs_lattes.exists()) {
+			lista_cvs_lattes.createNewFile();
+		}
+		
+		for (int i = 0; i < cvs_destino_conteudo.size(); i++){
+			FileWriter escritor = new FileWriter(lista_cvs_lattes.getAbsoluteFile());
+			BufferedWriter bw = new BufferedWriter(escritor);
+			bw.write(individuo_base.get("id_base").toString() + ", " + individuo_base.get("nome_base").toString() + "\n");
+			bw.write(individuos_destino.get(destinos.get(i)) + ", " + destinos.get(i) + "\n");
+			bw.close();
+			this.salvarArquivoHTML(individuos_destino.get(destinos.get(i)).toString(), cvs_destino_conteudo.get(destinos.get(i)).toString());
+			this.gerarOntologiaScriptLattes();
+			TrataString trataString = new TrataString();
+			trataString.calculaFatorAderencia(individuo_base.get("nome_base").toString(), destinos);
+			JSONObject resultadoIndividualAderencia = new JSONObject();
+			resultadoIndividualAderencia.put("valor_total_somado", trataString.getQuantidadeProducoesAderentes());
+			resultadoIndividualAderencia.put("percentual_aderencia", trataString.getValoresPercentuaisAderencia());
+			resultadoIndividualAderencia.put("equivalencias", trataString.getEquivalencias());
+			resultadoIndividualAderencia.put("individuo_destino", destinos.get(i));
+			resposta.put(individuo_base.get("id_base").toString() + '_' + individuos_destino.get(destinos.get(i)).toString(), resultadoIndividualAderencia);
+		}
+		
+		resposta.put("individuo_base", individuo_base.get("nome_base").toString());
+		
+		this.removerArquivos(new File("Curriculos/"));
+		this.removerArquivos(new File("Curriculos/saida/"));
+
+		return resposta.toString();
+	}
+
 	
 	private void salvarArquivoHTML(String nome_arquivo, String conteudo) throws IOException{
 		File arquivo_base = new File("Curriculos/" + nome_arquivo);
@@ -91,7 +143,7 @@ public class AderenciaPerfilLattesService {
 
 	private void gerarOntologiaScriptLattes() throws IOException, InterruptedException{
 		ProcessBuilder pb = new ProcessBuilder("./scriptLattes.py", "padrao.config");
-		pb.directory(new File("/home/beatriz/ScriptLattes"));		
+		pb.directory(new File("/home/beatriz/ScriptLattes"));	
 		Process p = pb.start();
 		
 		BufferedReader reader =	new BufferedReader(new InputStreamReader(p.getInputStream()));

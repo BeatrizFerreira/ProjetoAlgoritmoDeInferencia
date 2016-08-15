@@ -32,7 +32,7 @@ public class TrataString {
 	private static StopWords carrega = new StopWords();
 	private static ArrayList<String> listaBase;
 	private static ArrayList<String> listaDestino;
-	private static Map<String, ArrayList<String>> equivalencias = new HashMap<String, ArrayList<String>>();
+	private static Map<String, ArrayList<String>> equivalencias;
 	private static ArrayList<String> listaEq;
 	
 	public TrataString(){}
@@ -56,11 +56,10 @@ public class TrataString {
 	 */
 	
 	public void calculaFatorAderencia(String nome_base, ArrayList<String> nome_cvs_destinos) throws IOException{
+		valorTotalSomado = 0;
+		equivalencias = new HashMap<String, ArrayList<String>>();
 		ParserOwlJava parse = new ParserOwlJava();
 		listaBase = parse.consultaProducaoBibliografica(nome_base);
-		// carregar lista destino em um loop com o array passado
-		
-		// carrega o array de palavras do StopWords
 		carrega.carregaStopWords();
 		
 		if(listaBase.isEmpty()){
@@ -74,7 +73,7 @@ public class TrataString {
 		}
 		
 		double valorPercentualAderende = 0.0;
-		//d de destino (cv destino)
+
 		for(int d = 0; d < nome_cvs_destinos.size(); d++){
 			listaDestino = parse.consultaProducaoBibliografica(nome_cvs_destinos.get(d));
 			if (listaDestino.isEmpty()){
@@ -92,15 +91,15 @@ public class TrataString {
 	
 	
 	private static void comparaListasBaseDestino(){
-		System.out.println("TAMANHO DA LISTA BASE: "+ listaBase.size());
-		System.out.println("TAMANHO DA LISTA DESTINO: "+ listaDestino.size());
+		//System.out.println("TAMANHO DA LISTA BASE: "+ listaBase.size());
+		//System.out.println("TAMANHO DA LISTA DESTINO: "+ listaDestino.size());
 		
 		for (int i = 0; i< listaBase.size(); i++){
 			auxIListaBase = i;
 			listaEq = new ArrayList<String>();
 			for (int j = 0; j< listaDestino.size(); j++){
-				System.out.println("ITEM: "+i+" LISTA BASE -- "+ listaBase.get(i) +"");
-				System.out.println("ITEM: "+j+" LISTA DESTINO -- "+ listaDestino.get(j) +"");
+				//System.out.println("ITEM: "+i+" LISTA BASE -- "+ listaBase.get(i) +"");
+				//System.out.println("ITEM: "+j+" LISTA DESTINO -- "+ listaDestino.get(j) +"");
 				auxJListaDestino = j;
 				carregarSinonimosDesktop(listaBase.get(i).toUpperCase(), listaDestino.get(j).toUpperCase());				
 			}
@@ -148,7 +147,6 @@ public class TrataString {
 	     while(token.hasMoreTokens()) {  
 	            String local = token.nextToken();  
 	            listaSinonimoBase.add(local);
-	            //System.out.println(local);  
 	    } 
 	     return listaSinonimoBase;
 	}
@@ -171,53 +169,52 @@ public class TrataString {
 	 * @return
 	 */
 	public ArrayList<String> selecionarStr (String str){
-		 listaStrSelecionadas = new ArrayList<String>();
-		 ArrayList<String> listaStrTmpSelecionadas = new ArrayList<String>();
-		 ArrayList<Integer> listaTmp = new ArrayList<Integer>();
+		listaStrSelecionadas = new ArrayList<String>();
+		ArrayList<String> listaStrTmpSelecionadas = new ArrayList<String>();
+		ArrayList<Integer> listaTmp = new ArrayList<Integer>();
 		str = Normalizer.normalize(str, Normalizer.Form.NFD);
 		str = str.replaceAll("[^\\p{ASCII}]", "").replace(":", "").replace(".", "");
-		 StringTokenizer token = new StringTokenizer(str, " ");
-	     while(token.hasMoreTokens()) {  
-	            String local = token.nextToken(); 
-	            listaStrTmpSelecionadas.add(local);
+		StringTokenizer token = new StringTokenizer(str, " ");
+	    while(token.hasMoreTokens()) {  
+	    	String local = token.nextToken(); 
+	        listaStrTmpSelecionadas.add(local);
 	    }
-	     Random radom  = new Random();
-	     int numeroTmp = 0;
-	     if (listaStrTmpSelecionadas.size() <= 5){
-	    	 listaStrSelecionadas.addAll(listaStrTmpSelecionadas);
-	    	 return listaStrSelecionadas;
-	     }else{
-	    	 while (listaTmp.size() < 5) {
-		         numeroTmp=radom.nextInt(listaStrTmpSelecionadas.size());
-		         if (listaTmp.contains(numeroTmp) == false){
-		        	 listaTmp.add(numeroTmp);
-		        	 listaStrSelecionadas.add(listaStrTmpSelecionadas.get(numeroTmp));
-		         }
-		     }
-		     return listaStrSelecionadas;
-	     }
+	    Random radom  = new Random();
+	    int numeroTmp = 0;
+	    if (listaStrTmpSelecionadas.size() <= 5){
+	    	listaStrSelecionadas.addAll(listaStrTmpSelecionadas);
+	    	return listaStrSelecionadas;
+	    }else{
+	    	while (listaTmp.size() < 5) {
+	    		numeroTmp=radom.nextInt(listaStrTmpSelecionadas.size());
+		        if (listaTmp.contains(numeroTmp) == false){
+		        	listaTmp.add(numeroTmp);
+		        	listaStrSelecionadas.add(listaStrTmpSelecionadas.get(numeroTmp));
+		        }
+		    }
+		    return listaStrSelecionadas;
+	    }
 	}
 	
 	public static boolean compararListaSinonimos (ArrayList<String> listaSinonimosBase, ArrayList<String> listaSinonimosDestino){
-
-		//int valorObtidoNaComparacao = 0;
+		int valorObtidoNaComparacao = 0;
 		boolean saoEquivalentes = false;
 
 		if(listaSinonimosBase.size() > 0 && listaSinonimosDestino.size() > 0){
 			for (int i = 0; i< listaSinonimosBase.size(); i++){
 				for (int j = 0; j< listaSinonimosDestino.size(); j++){
 					if(listaSinonimosBase.get(i).toUpperCase().equalsIgnoreCase(listaSinonimosDestino.get(j).toUpperCase())){
-						System.out.println(listaSinonimosBase.get(i) + " = " + listaSinonimosDestino.get(j));
-						//valorObtidoNaComparacao = 1;
+						//System.out.println(listaSinonimosBase.get(i) + " = " + listaSinonimosDestino.get(j));
+						valorObtidoNaComparacao = 1;
 						//System.out.println("Valor Adquirido: "+valorObtidoNaComparacao);
 						System.err.println("EQUIVALENTE "+ listaBase.get(auxIListaBase) + " A " + listaDestino.get(auxJListaDestino) );
-						valorTotalSomado += 1;
+						valorTotalSomado = valorTotalSomado + valorObtidoNaComparacao;
 						saoEquivalentes = true;
 					}
 				}
 			}
 		}else{
-			System.out.println("NENHUMA CORRESPONDENCIA ENCONTRADA! VALOR 0!");
+			//System.out.println("NENHUMA CORRESPONDENCIA ENCONTRADA! VALOR 0!");
 		}
 		return saoEquivalentes;
 	}
@@ -250,7 +247,7 @@ public class TrataString {
 	    }
 	    listaCompararBase.addAll(listaCompararBaseEn);
 	    
-	    System.out.println("lista de strings SELECIONADAS base: " +listaStrSelecionadas);
+	    //System.out.println("lista de strings SELECIONADAS base: " +listaStrSelecionadas);
 	    for (int i = 0; i<listaStrSelecionadas.size(); i++){
 	    	lisBrBase.listaSinonimosBr(listaStrSelecionadas.get(i));
             
@@ -264,15 +261,15 @@ public class TrataString {
 	    }
 	    listaCompararBase.addAll(listaCompararBaseBr);
 	    
-	    System.out.println("LISTA DE SINONIMOS BASE INGLES/PORTUGUES: "+listaCompararBase);
+	    //System.out.println("LISTA DE SINONIMOS BASE INGLES/PORTUGUES: "+listaCompararBase);
 	    if (listaCompararBase.isEmpty()){
-        	System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
+        	//System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
         }
 	    SinonimosEn lisEnDestino = new SinonimosEn();
 	    SinonimosBr lisBrDestino= new SinonimosBr();
 	    TrataString strDestino = new TrataString();
 	    strDestino.selecionarStr(carrega.tratarStr(strASerTratadaDestino.toLowerCase()));
-	    System.out.println("lista de strings SELECIONADAS destino: " +listaStrSelecionadas);
+	    //System.out.println("lista de strings SELECIONADAS destino: " +listaStrSelecionadas);
 	    for (int i = 0; i<listaStrSelecionadas.size(); i++){
 	    	//System.out.println(str.selecionarStr(str.tratarStr(strASerTratadaDestino)).get(i));
 	    	lisEnDestino.sendRequest(listaStrSelecionadas.get(i), language, "lMsJYeVm6u7rAH05pX2w", output);
@@ -296,10 +293,10 @@ public class TrataString {
 	    }
 	    listaCompararDestino.addAll(listaCompararDestinoBr);
 	    
-	    System.out.println("LISTA DE SINONIMOS DESTINO INGLES/PORTUGUES: "+listaCompararDestino);
+	    //System.out.println("LISTA DE SINONIMOS DESTINO INGLES/PORTUGUES: "+listaCompararDestino);
 	    
 	    if (listaCompararDestino.isEmpty()){
-        	System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
+        	//System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
         }  
 	     
 	    compararListaSinonimos(listaCompararBase, listaCompararDestino);
@@ -340,7 +337,7 @@ public class TrataString {
 	    }
 	    listaCompararBase.addAll(listaCompararBaseEn);
 	    
-	    System.out.println("lista de strings SELECIONADAS base: " +listaStrSelecionadas);
+	    //System.out.println("lista de strings SELECIONADAS base: " +listaStrSelecionadas);
 	    for (int i = 0; i<listaStrSelecionadas.size(); i++){
 	    	try {
 				lisBrBase.getWord(listaStrSelecionadas.get(i));
@@ -358,9 +355,9 @@ public class TrataString {
 	    }
 	    listaCompararBase.addAll(listaCompararBaseBr);
 	    
-	    System.out.println("LISTA DE SINONIMOS BASE INGLES/PORTUGUES: "+listaCompararBase);
+	    //System.out.println("LISTA DE SINONIMOS BASE INGLES/PORTUGUES: "+listaCompararBase);
 	    if (listaCompararBase.isEmpty()){
-        	System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
+        	//System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
         }
 
 	    TrataString strDestino = new TrataString();
@@ -368,7 +365,7 @@ public class TrataString {
 	    ThesaurusPtBR lisBrDestino = new ThesaurusPtBR();
 	    
 	    strDestino.selecionarStr(carrega.tratarStr(strASerTratadaDestino.toLowerCase()));
-	    System.out.println("lista de strings SELECIONADAS destino: " +listaStrSelecionadas);
+	    //System.out.println("lista de strings SELECIONADAS destino: " +listaStrSelecionadas);
 	    for (int i = 0; i<listaStrSelecionadas.size(); i++){
 	    	try {
 				lisEnDestino.getWord(listaStrSelecionadas.get(i));
@@ -401,10 +398,10 @@ public class TrataString {
 	    }
 	    listaCompararDestino.addAll(listaCompararDestinoBr);
 	    
-	    System.out.println("LISTA DE SINONIMOS DESTINO INGLES/PORTUGUES: "+listaCompararDestino);
+	    //System.out.println("LISTA DE SINONIMOS DESTINO INGLES/PORTUGUES: "+listaCompararDestino);
 	    
 	    if (listaCompararDestino.isEmpty()){
-        	System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
+        	//System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
         }
 	    
 	    if (compararListaSinonimos(listaCompararBase, listaCompararDestino)){
