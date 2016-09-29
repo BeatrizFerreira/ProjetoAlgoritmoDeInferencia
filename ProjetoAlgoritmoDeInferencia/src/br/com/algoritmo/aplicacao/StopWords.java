@@ -6,10 +6,13 @@ import java.util.*;
 
 public class StopWords {
 	public static List<String> listaStopWords = new ArrayList<String>();
+	public static final String TOMCAT_DIR = System.getProperty("catalina.base");
 
 	public void carregaStopWords() throws IOException{
-		File texto = new File("StopWords/stopwords");
-
+		//File texto = new File("StopWords/stopwords");
+		File dir = new File(TOMCAT_DIR + "/aux/StopWords");
+        dir.mkdirs();
+        File texto = new File("stopwords");
 		texto.createNewFile();
 		FileReader fr = new FileReader(texto);
 		@SuppressWarnings("resource")

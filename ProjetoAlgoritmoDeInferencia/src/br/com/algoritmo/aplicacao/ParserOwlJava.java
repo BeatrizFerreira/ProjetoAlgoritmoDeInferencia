@@ -17,13 +17,15 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 public class ParserOwlJava {
 	public static ArrayList<String> lista = null;
 	public static int tamanhoLista = 0;
+	public static final String TMP_DIR = System.getProperty("java.io.tmpdir");
 	
 	public ArrayList<String> consultaProducaoBibliografica(String nomeIndividuo) {
 		InputStream in = null;
 		ResultSet results = null;
 		lista = new ArrayList<String>();
 		try {
-			in = new FileInputStream(new File("Curriculos/saida/cvs_lattes.owl"));
+			in = new FileInputStream(new File(TMP_DIR + "/Curriculos/saida/cvs_lattes.owl"));
+			//in = new FileInputStream(new File("Curriculos/saida/cvs_lattes.owl"));
 			
 			Model model = ModelFactory.createMemModelMaker()
 					.createDefaultModel();
@@ -42,7 +44,7 @@ public class ParserOwlJava {
 
 			com.hp.hpl.jena.query.Query query = QueryFactory
 					.create(queryString);
-			System.out.println("QUERY: " + query);
+			//System.out.println("QUERY: " + query);
 			QueryExecution qe = QueryExecutionFactory.create(query, model);
 			results = qe.execSelect();
 			tamanhoLista = 0;

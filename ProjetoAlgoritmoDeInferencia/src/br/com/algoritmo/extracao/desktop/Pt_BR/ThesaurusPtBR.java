@@ -17,9 +17,12 @@ import java.util.HashMap;
 public class ThesaurusPtBR {
 	private HashMap<String, Integer> index;
 	private RandomAccessFile data;
+	public static final String TOMCAT_DIR = System.getProperty("catalina.base");
 
 	public ThesaurusPtBR() {
-		this("Resources/th_pt_BR.idx", "Resources/th_pt_BR.dat");
+		// this("Resources/th_pt_BR.idx", "Resources/th_pt_BR.dat");
+		this(TOMCAT_DIR + "/aux/Resources/th_pt_BR.idx", TOMCAT_DIR + "/aux/Resources/th_pt_BR.dat");
+
 	}
 
 	public ThesaurusPtBR(String indexFile, String dataFile) {

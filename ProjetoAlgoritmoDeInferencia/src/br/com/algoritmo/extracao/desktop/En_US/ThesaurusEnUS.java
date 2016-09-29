@@ -13,9 +13,11 @@ import java.util.*;
 public class ThesaurusEnUS {
 	private HashMap<String, Integer> index;
 	private RandomAccessFile data = null;
+	public static final String TOMCAT_DIR = System.getProperty("catalina.base");
 
 	public ThesaurusEnUS() {
-		this("Resources/th_en_US_new.idx", "Resources/th_en_US_new.dat");
+		// this("Resources/th_en_US_new.idx", "Resources/th_en_US_new.dat");
+		this(TOMCAT_DIR + "/aux/Resources/th_en_US_new.idx", TOMCAT_DIR + "/aux/Resources/th_en_US_new.dat");
 	}
 
 	@SuppressWarnings("hiding")

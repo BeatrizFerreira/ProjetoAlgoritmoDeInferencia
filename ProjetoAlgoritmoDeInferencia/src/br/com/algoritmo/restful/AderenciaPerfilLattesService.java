@@ -29,6 +29,7 @@ import br.com.algoritmo.aplicacao.TrataString;
 
 @Path("/AderenciaPerfilLattes")
 public class AderenciaPerfilLattesService {
+	public static final String TMP_DIR = System.getProperty("java.io.tmpdir");
 	
 	@SuppressWarnings("unchecked")
 	@POST
@@ -47,7 +48,10 @@ public class AderenciaPerfilLattesService {
 		this.salvarArquivoHTML(individuo_base.get("id_base").toString(), cv_base_conteudo);
 		this.salvarArquivoHTML(individuo_destino.get("id_destino").toString(), dados_requisicao.get("cv_destino").toString());
 				
-		File lista_cvs_lattes = new File("Curriculos/cvs.list");
+		// File lista_cvs_lattes = new File("Curriculos/cvs.list");
+		File cvs_dir = new File(TMP_DIR + "/Curriculos/");
+		cvs_dir.mkdirs();
+		File lista_cvs_lattes = new File(cvs_dir, "cvs.list");
 		if (!lista_cvs_lattes.exists()) {
 			lista_cvs_lattes.createNewFile();
 		}
@@ -99,7 +103,10 @@ public class AderenciaPerfilLattesService {
 		this.salvarArquivoHTML(individuo_base.get("id_base").toString(), cv_base_conteudo);
 
 		// para cada individuo destino, escrever um cvs.list e mandar executar o restante das coisas
-		File lista_cvs_lattes = new File("Curriculos/cvs.list");
+		// File lista_cvs_lattes = new File("Curriculos/cvs.list");
+		File cvs_dir = new File(TMP_DIR + "/Curriculos/");
+		cvs_dir.mkdirs();
+		File lista_cvs_lattes = new File(cvs_dir, "cvs.list");
 		if (!lista_cvs_lattes.exists()) {
 			lista_cvs_lattes.createNewFile();
 		}
@@ -126,13 +133,19 @@ public class AderenciaPerfilLattesService {
 		
 		this.removerArquivos(new File("Curriculos/"));
 		this.removerArquivos(new File("Curriculos/saida/"));
+		// this.removerArquivos(new File(TMP_DIR + "Curriculos/"));
+		// this.removerArquivos(new File(TMP_DIR + "Curriculos/saida/"));
 
 		return resposta.toString();
 	}
 
 	
 	private void salvarArquivoHTML(String nome_arquivo, String conteudo) throws IOException{
-		File arquivo_base = new File("Curriculos/" + nome_arquivo);
+		// File arquivo_base = new File("Curriculos/" + nome_arquivo);
+		File cvs_dir = new File(TMP_DIR + "/Curriculos/");
+		cvs_dir.mkdirs();
+		File arquivo_base = new File(cvs_dir,nome_arquivo);
+
 		if (!arquivo_base.exists()) {
 			arquivo_base.createNewFile();
 		}
