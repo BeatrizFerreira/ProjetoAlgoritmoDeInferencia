@@ -75,6 +75,7 @@ public class AderenciaPerfilLattesService {
 		this.removerArquivos(new File("Curriculos/"));
 		this.removerArquivos(new File("Curriculos/saida/"));
 
+		System.out.println(resposta.toString());
 		return resposta.toString();
 	}
 	
@@ -147,7 +148,8 @@ public class AderenciaPerfilLattesService {
 		Process p = pb.start();
 		
 		BufferedReader reader =	new BufferedReader(new InputStreamReader(p.getInputStream()));
-		while ((reader.readLine()) != null) {}
+		String buffer = "";
+		while ((buffer = (reader.readLine())) != null) {System.out.println(buffer);}
 		p.waitFor();
 	}
 	

@@ -18,6 +18,7 @@ public class ThesaurusEnUS {
 		this("Resources/th_en_US_new.idx", "Resources/th_en_US_new.dat");
 	}
 
+	@SuppressWarnings("hiding")
 	public ThesaurusEnUS(String indexFile, String dataFile) {
 		index = new HashMap<String, Integer>();
 		
@@ -90,6 +91,15 @@ public class ThesaurusEnUS {
 
 		// something fucked up... this should never happen
 		return null;
+	}
+	
+	public void closeFile(){
+		try {
+			data.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

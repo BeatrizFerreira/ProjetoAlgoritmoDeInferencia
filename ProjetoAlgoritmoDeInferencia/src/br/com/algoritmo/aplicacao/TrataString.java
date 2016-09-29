@@ -34,6 +34,9 @@ public class TrataString {
 	private static ArrayList<String> listaDestino;
 	private static Map<String, ArrayList<String>> equivalencias;
 	private static ArrayList<String> listaEq;
+	private static TrataString strBase;
+    private static ThesaurusEnUS lisEnBase;
+    private static ThesaurusPtBR lisBrBase;
 	
 	public TrataString(){}
 	
@@ -56,6 +59,9 @@ public class TrataString {
 	 */
 	
 	public void calculaFatorAderencia(String nome_base, ArrayList<String> nome_cvs_destinos) throws IOException{
+		strBase = new TrataString();
+	    lisEnBase = new ThesaurusEnUS();
+	    lisBrBase = new ThesaurusPtBR();
 		valorTotalSomado = 0;
 		equivalencias = new HashMap<String, ArrayList<String>>();
 		ParserOwlJava parse = new ParserOwlJava();
@@ -87,6 +93,8 @@ public class TrataString {
 			valorPercentualAderende = ((double)valorTotalSomado) / (((double)listaBase.size() * (double)listaDestino.size())*5) * 100;
 			listaValores.add(valorPercentualAderende);
 		}
+		lisEnBase.closeFile();
+	    lisBrBase.closeFile();
 	}
 	
 	
@@ -204,7 +212,7 @@ public class TrataString {
 			for (int i = 0; i< listaSinonimosBase.size(); i++){
 				for (int j = 0; j< listaSinonimosDestino.size(); j++){
 					if(listaSinonimosBase.get(i).toUpperCase().equalsIgnoreCase(listaSinonimosDestino.get(j).toUpperCase())){
-						//System.out.println(listaSinonimosBase.get(i) + " = " + listaSinonimosDestino.get(j));
+						System.out.println(listaSinonimosBase.get(i) + " = " + listaSinonimosDestino.get(j));
 						valorObtidoNaComparacao = 1;
 						//System.out.println("Valor Adquirido: "+valorObtidoNaComparacao);
 						System.err.println("EQUIVALENTE "+ listaBase.get(auxIListaBase) + " A " + listaDestino.get(auxJListaDestino) );
@@ -214,7 +222,7 @@ public class TrataString {
 				}
 			}
 		}else{
-			//System.out.println("NENHUMA CORRESPONDENCIA ENCONTRADA! VALOR 0!");
+			System.out.println("NENHUMA CORRESPONDENCIA ENCONTRADA! VALOR 0!");
 		}
 		return saoEquivalentes;
 	}
@@ -308,15 +316,10 @@ public class TrataString {
 	 * @throws IOException 
 	 */
 	public static void carregarSinonimosDesktop(String strASerTratadaBase, String strASerTratadaDestino){
-		TrataString strBase = new TrataString();
-	    ThesaurusEnUS lisEnBase = new ThesaurusEnUS();
-	    ThesaurusPtBR lisBrBase = new ThesaurusPtBR();
 	    List<String> listaCompararBaseEn = new ArrayList<String>();
 	    List<String> listaCompararBaseBr = new ArrayList<String>();
 	    List<String> listaCompararDestinoEn = new ArrayList<String>();
 	    List<String> listaCompararDestinoBr = new ArrayList<String>();
-	    MeaningEnUS meaningEnUS = new MeaningEnUS();
-	    MeaningPtBR meaningPtBR = new MeaningPtBR();
 	    listaCompararBase = new ArrayList<String>();
 	    listaCompararDestino = new ArrayList<String>();
 	    strBase.selecionarStr(carrega.tratarStr(strASerTratadaBase.toLowerCase()));

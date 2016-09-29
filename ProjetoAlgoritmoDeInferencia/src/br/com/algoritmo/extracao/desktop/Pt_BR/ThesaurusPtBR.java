@@ -97,5 +97,14 @@ public class ThesaurusPtBR {
 		// something fucked up... this should never happen
 		return null;
 	}
+	
+	public void closeFile(){
+		try {
+			data.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 }
