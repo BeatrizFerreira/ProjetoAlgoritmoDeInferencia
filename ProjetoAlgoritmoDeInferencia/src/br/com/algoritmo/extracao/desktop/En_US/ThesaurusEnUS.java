@@ -85,7 +85,7 @@ public class ThesaurusEnUS {
 			for (int i = 0; i < meaningCount; i++) {
 				word.addMeaning(data.readLine());
 			}
-			data.close();
+			//data.close();
 			return word;
 		} catch (IOException e) {
 			e.getMessage();

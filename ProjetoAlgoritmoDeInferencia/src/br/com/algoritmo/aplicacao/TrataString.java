@@ -37,6 +37,8 @@ public class TrataString {
 	private static TrataString strBase;
     private static ThesaurusEnUS lisEnBase;
     private static ThesaurusPtBR lisBrBase;
+    private static ThesaurusEnUS lisEnDestino;
+    private static ThesaurusPtBR lisBrDestino;
 	
 	public TrataString(){}
 	
@@ -62,6 +64,8 @@ public class TrataString {
 		strBase = new TrataString();
 	    lisEnBase = new ThesaurusEnUS();
 	    lisBrBase = new ThesaurusPtBR();
+	    lisEnDestino = new ThesaurusEnUS();
+	    lisBrDestino = new ThesaurusPtBR();
 		valorTotalSomado = 0;
 		equivalencias = new HashMap<String, ArrayList<String>>();
 		ParserOwlJava parse = new ParserOwlJava();
@@ -95,6 +99,8 @@ public class TrataString {
 		}
 		lisEnBase.closeFile();
 	    lisBrBase.closeFile();
+	    lisBrDestino.closeFile();
+	    lisEnDestino.closeFile();
 	}
 	
 	
@@ -364,8 +370,6 @@ public class TrataString {
         }
 
 	    TrataString strDestino = new TrataString();
-	    ThesaurusEnUS lisEnDestino = new ThesaurusEnUS();
-	    ThesaurusPtBR lisBrDestino = new ThesaurusPtBR();
 	    
 	    strDestino.selecionarStr(carrega.tratarStr(strASerTratadaDestino.toLowerCase()));
 	    //System.out.println("lista de strings SELECIONADAS destino: " +listaStrSelecionadas);

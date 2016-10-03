@@ -91,7 +91,7 @@ public class ThesaurusPtBR {
 				word.addMeaning(data.readLine());
 
 			}
-			data.close();
+			//data.close();
 			return word;
 		} catch (IOException e) {
 			e.getMessage();

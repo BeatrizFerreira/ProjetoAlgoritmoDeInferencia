@@ -76,8 +76,8 @@ public class AderenciaPerfilLattesService {
 		resposta.put("individuo_base", individuo_base);
 		resposta.put("individuo_destino", individuo_destino);
 		
-		this.removerArquivos(new File("Curriculos/"));
-		this.removerArquivos(new File("Curriculos/saida/"));
+		this.removerArquivos(new File(TMP_DIR + "/Curriculos/"));
+		this.removerArquivos(new File(TMP_DIR + "/Curriculos/saida/"));
 
 		System.out.println(resposta.toString());
 		return resposta.toString();
@@ -131,10 +131,8 @@ public class AderenciaPerfilLattesService {
 		
 		resposta.put("individuo_base", individuo_base.get("nome_base").toString());
 		
-		this.removerArquivos(new File("Curriculos/"));
-		this.removerArquivos(new File("Curriculos/saida/"));
-		// this.removerArquivos(new File(TMP_DIR + "Curriculos/"));
-		// this.removerArquivos(new File(TMP_DIR + "Curriculos/saida/"));
+		this.removerArquivos(new File(TMP_DIR + "/Curriculos/"));
+		this.removerArquivos(new File(TMP_DIR + "/Curriculos/saida/"));
 
 		return resposta.toString();
 	}
