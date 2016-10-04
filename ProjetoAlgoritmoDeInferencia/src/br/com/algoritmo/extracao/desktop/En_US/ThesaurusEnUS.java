@@ -75,6 +75,7 @@ public class ThesaurusEnUS {
 
 		// find the word in the data
 		try {
+			data.seek(0);
 			data.seek(offset);
 			String line = data.readLine();
 			String[] segments = line.split("\\|");

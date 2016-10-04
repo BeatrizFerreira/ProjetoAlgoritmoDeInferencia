@@ -10,9 +10,7 @@ public class StopWords {
 
 	public void carregaStopWords() throws IOException{
 		//File texto = new File("StopWords/stopwords");
-		File dir = new File(TOMCAT_DIR + "/aux/StopWords");
-        dir.mkdirs();
-        File texto = new File("stopwords");
+        File texto = new File(TOMCAT_DIR + "/aux/StopWords/stopwords");
 		texto.createNewFile();
 		FileReader fr = new FileReader(texto);
 		@SuppressWarnings("resource")
