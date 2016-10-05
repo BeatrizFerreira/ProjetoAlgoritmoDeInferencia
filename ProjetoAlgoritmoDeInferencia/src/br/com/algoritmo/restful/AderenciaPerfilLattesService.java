@@ -65,9 +65,8 @@ public class AderenciaPerfilLattesService {
 		this.gerarOntologiaScriptLattes();
 		
 		TrataString trataString = new TrataString();
-		ArrayList<String> destinos = new ArrayList<String>();
-		destinos.add(individuo_destino.get("nome_destino").toString());
-		trataString.calculaFatorAderencia(individuo_base.get("nome_base").toString(), destinos);
+		String nomeDestino = individuo_destino.get("nome_destino").toString();
+		trataString.calculaFatorAderencia(individuo_base.get("nome_base").toString(), nomeDestino);
 
 		JSONObject resposta = new JSONObject();
 		resposta.put((String) "valor_total_somado", trataString.getQuantidadeProducoesAderentes());
@@ -111,16 +110,24 @@ public class AderenciaPerfilLattesService {
 			lista_cvs_lattes.createNewFile();
 		}
 		
-		for (int i = 0; i < cvs_destino_conteudo.size(); i++){
-			FileWriter escritor = new FileWriter(lista_cvs_lattes.getAbsoluteFile());
-			BufferedWriter bw = new BufferedWriter(escritor);
-			bw.write(individuo_base.get("id_base").toString() + ", " + individuo_base.get("nome_base").toString() + "\n");
+		FileWriter escritor = new FileWriter(lista_cvs_lattes.getAbsoluteFile());
+		BufferedWriter bw = new BufferedWriter(escritor);
+		bw.write(individuo_base.get("id_base").toString() + ", " + individuo_base.get("nome_base").toString() + "\n");
+		
+		for (int i = 0; i < destinos.size(); i++){
+			// escreve entrada no arquivo cvs.list
 			bw.write(individuos_destino.get(destinos.get(i)) + ", " + destinos.get(i) + "\n");
-			bw.close();
+			// salva o arquivo do individuo destino
 			this.salvarArquivoHTML(individuos_destino.get(destinos.get(i)).toString(), cvs_destino_conteudo.get(destinos.get(i)).toString());
-			this.gerarOntologiaScriptLattes();
+		}
+		
+		bw.close();
+		
+		this.gerarOntologiaScriptLattes();
+		
+		for (int i = 0; i < destinos.size(); i++){
 			TrataString trataString = new TrataString();
-			trataString.calculaFatorAderencia(individuo_base.get("nome_base").toString(), destinos);
+			trataString.calculaFatorAderencia(individuo_base.get("nome_base").toString(), destinos.get(i));
 			JSONObject resultadoIndividualAderencia = new JSONObject();
 			resultadoIndividualAderencia.put("valor_total_somado", trataString.getQuantidadeProducoesAderentes());
 			resultadoIndividualAderencia.put("percentual_aderencia", trataString.getValoresPercentuaisAderencia());
@@ -165,10 +172,8 @@ public class AderenciaPerfilLattesService {
 			@Override
 			public void run() {
 				while (!arquivo_lattes.exists()){
-					System.out.println("verificando existencia de arquivo");
-					System.out.println(arquivo_lattes.getAbsolutePath());
 				}
-				System.out.println("arquivo criado, destruindo processo");
+				System.out.println("arquivo criado, destruindo processo...");
 				try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
@@ -182,7 +187,6 @@ public class AderenciaPerfilLattesService {
 		
 		
 		while (((buffer_erro = (erro_reader.readLine())) != null)) {
-			System.out.println(buffer_erro);
 		}
 		p.waitFor();
 	}

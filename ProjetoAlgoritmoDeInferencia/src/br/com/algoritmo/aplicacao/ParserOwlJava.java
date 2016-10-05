@@ -49,7 +49,7 @@ public class ParserOwlJava {
 			results = qe.execSelect();
 			tamanhoLista = 0;
 			String strTituloDadosBasicos = null;
-			System.out.println("RESULTADO: " + query);
+			//System.out.println("RESULTADO: " + query);
 			while (results.hasNext()) {
 				QuerySolution soln = results.nextSolution();
 

@@ -6,11 +6,10 @@ import java.util.ArrayList;
 public class MainTeste {
 
 	public static void main(String[] args) throws IOException {
-		ArrayList<String> destinos = new ArrayList<String>();
-		destinos.add("Fábio Macêdo Mendes");
+		String individuoDestino = "Fábio Macêdo Mendes";
 		String individuoBase = "Luiz Carlos Miyadaira Ribeiro Junior";
 		TrataString trataString = new TrataString();
-		trataString.calculaFatorAderencia(individuoBase, destinos);
+		trataString.calculaFatorAderencia(individuoBase, individuoDestino);
 		
 		System.err.println("---------------------------------------------------------------------------");
 		System.err.println("Quantidade de producoes aderentes: "+ trataString.getQuantidadeProducoesAderentes());

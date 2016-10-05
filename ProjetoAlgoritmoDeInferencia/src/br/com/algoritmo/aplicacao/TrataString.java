@@ -60,7 +60,7 @@ public class TrataString {
 	 * @throws IOException 
 	 */
 	
-	public void calculaFatorAderencia(String nome_base, ArrayList<String> nome_cvs_destinos) throws IOException{
+	public void calculaFatorAderencia(String nome_base, String nome_destino) throws IOException{
 		strBase = new TrataString();
 	    lisEnBase = new ThesaurusEnUS();
 	    lisBrBase = new ThesaurusPtBR();
@@ -71,33 +71,29 @@ public class TrataString {
 		ParserOwlJava parse = new ParserOwlJava();
 		listaBase = parse.consultaProducaoBibliografica(nome_base);
 		carrega.carregaStopWords();
-		System.out.println("STOP WORDS = " + StopWords.listaStopWords.toString());
+		double valorPercentualAderende = 0.0;
 		
 		if(listaBase.isEmpty()){
 			System.err.println("Nao ha como realizar comparacao. Lista base vazia.");
 			return;
 		}
 		
-		if(nome_cvs_destinos.isEmpty()){
+		if(nome_destino.isEmpty() || nome_destino == null){
 			System.err.println("Nao ha perfis destinos para serem comparados.");
 			return;
 		}
 		
-		double valorPercentualAderende = 0.0;
-
-		for(int d = 0; d < nome_cvs_destinos.size(); d++){
-			listaDestino = parse.consultaProducaoBibliografica(nome_cvs_destinos.get(d));
-			if (listaDestino.isEmpty()){
-				System.err.println("Lista destino " + nome_cvs_destinos.get(d) + " esta vazia.");
-				continue;
-			}
-			// agora compara a lista base com a lista destino do individuo 'd'
-			comparaListasBaseDestino();
-			
-			// calcular o valor do percentual de aderencia e inserir na lista de valores 
-			valorPercentualAderende = ((double)valorTotalSomado) / (((double)listaBase.size() * (double)listaDestino.size())*5) * 100;
-			listaValores.add(valorPercentualAderende);
+		listaDestino = parse.consultaProducaoBibliografica(nome_destino);
+		if (listaDestino.isEmpty()){
+			System.err.println("Lista destino " + nome_destino + " esta vazia.");
 		}
+		// agora compara a lista base com a lista destino do individuo 'd'
+		comparaListasBaseDestino();
+		
+		// calcular o valor do percentual de aderencia e inserir na lista de valores 
+		valorPercentualAderende = ((double)valorTotalSomado) / (((double)listaBase.size() * (double)listaDestino.size())*5) * 100;
+		listaValores.add(valorPercentualAderende);
+
 		lisEnBase.closeFile();
 	    lisBrBase.closeFile();
 	    lisBrDestino.closeFile();
