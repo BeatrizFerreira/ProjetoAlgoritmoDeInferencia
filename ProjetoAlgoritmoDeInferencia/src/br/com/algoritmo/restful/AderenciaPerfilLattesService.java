@@ -78,7 +78,7 @@ public class AderenciaPerfilLattesService {
 		this.removerArquivos(new File(TMP_DIR + "/Curriculos/"));
 		this.removerArquivos(new File(TMP_DIR + "/Curriculos/saida/"));
 
-		System.out.println(resposta.toString());
+		System.out.println("Calculo de aderencia simples finalizado.");
 		return resposta.toString();
 	}
 	
@@ -141,6 +141,7 @@ public class AderenciaPerfilLattesService {
 		this.removerArquivos(new File(TMP_DIR + "/Curriculos/"));
 		this.removerArquivos(new File(TMP_DIR + "/Curriculos/saida/"));
 
+		System.out.println("Calculo de aderencia composta finalizado.");
 		return resposta.toString();
 	}
 

@@ -74,18 +74,18 @@ public class TrataString {
 		double valorPercentualAderende = 0.0;
 		
 		if(listaBase.isEmpty()){
-			System.err.println("Nao ha como realizar comparacao. Lista base vazia.");
+			// System.err.println("Nao ha como realizar comparacao. Lista base vazia.");
 			return;
 		}
 		
 		if(nome_destino.isEmpty() || nome_destino == null){
-			System.err.println("Nao ha perfis destinos para serem comparados.");
+			// System.err.println("Nao ha perfis destinos para serem comparados.");
 			return;
 		}
 		
 		listaDestino = parse.consultaProducaoBibliografica(nome_destino);
 		if (listaDestino.isEmpty()){
-			System.err.println("Lista destino " + nome_destino + " esta vazia.");
+			// System.err.println("Lista destino " + nome_destino + " esta vazia.");
 		}
 		// agora compara a lista base com a lista destino do individuo 'd'
 		comparaListasBaseDestino();
@@ -102,15 +102,15 @@ public class TrataString {
 	
 	
 	private static void comparaListasBaseDestino(){
-		System.out.println("TAMANHO DA LISTA BASE: "+ listaBase.size());
-		System.out.println("TAMANHO DA LISTA DESTINO: "+ listaDestino.size());
+		// System.out.println("TAMANHO DA LISTA BASE: "+ listaBase.size());
+		// System.out.println("TAMANHO DA LISTA DESTINO: "+ listaDestino.size());
 		
 		for (int i = 0; i< listaBase.size(); i++){
 			auxIListaBase = i;
 			listaEq = new ArrayList<String>();
 			for (int j = 0; j< listaDestino.size(); j++){
-				System.out.println("ITEM: "+i+" LISTA BASE -- "+ listaBase.get(i) +"");
-				System.out.println("ITEM: "+j+" LISTA DESTINO -- "+ listaDestino.get(j) +"");
+				// System.out.println("ITEM: "+i+" LISTA BASE -- "+ listaBase.get(i) +"");
+				// System.out.println("ITEM: "+j+" LISTA DESTINO -- "+ listaDestino.get(j) +"");
 				auxJListaDestino = j;
 				carregarSinonimosDesktop(listaBase.get(i).toUpperCase(), listaDestino.get(j).toUpperCase());				
 			}
@@ -215,17 +215,17 @@ public class TrataString {
 			for (int i = 0; i< listaSinonimosBase.size(); i++){
 				for (int j = 0; j< listaSinonimosDestino.size(); j++){
 					if(listaSinonimosBase.get(i).toUpperCase().equalsIgnoreCase(listaSinonimosDestino.get(j).toUpperCase())){
-						System.out.println(listaSinonimosBase.get(i) + " = " + listaSinonimosDestino.get(j));
+						// System.out.println(listaSinonimosBase.get(i) + " = " + listaSinonimosDestino.get(j));
 						valorObtidoNaComparacao = 1;
-						//System.out.println("Valor Adquirido: "+valorObtidoNaComparacao);
-						System.err.println("EQUIVALENTE "+ listaBase.get(auxIListaBase) + " A " + listaDestino.get(auxJListaDestino) );
+						// System.out.println("Valor Adquirido: "+valorObtidoNaComparacao);
+						// System.err.println("EQUIVALENTE "+ listaBase.get(auxIListaBase) + " A " + listaDestino.get(auxJListaDestino) );
 						valorTotalSomado = valorTotalSomado + valorObtidoNaComparacao;
 						saoEquivalentes = true;
 					}
 				}
 			}
 		}else{
-			System.out.println("NENHUMA CORRESPONDENCIA ENCONTRADA! VALOR 0!");
+			// System.out.println("NENHUMA CORRESPONDENCIA ENCONTRADA! VALOR 0!");
 		}
 		return saoEquivalentes;
 	}
@@ -343,7 +343,7 @@ public class TrataString {
 	    }
 	    listaCompararBase.addAll(listaCompararBaseEn);
 	    
-	    System.out.println("lista de strings SELECIONADAS base: " +listaStrSelecionadas);
+	    // System.out.println("lista de strings SELECIONADAS base: " +listaStrSelecionadas);
 	    for (int i = 0; i<listaStrSelecionadas.size(); i++){
 	    	try {
 				lisBrBase.getWord(listaStrSelecionadas.get(i));
@@ -361,15 +361,15 @@ public class TrataString {
 	    }
 	    listaCompararBase.addAll(listaCompararBaseBr);
 	    
-	    System.out.println("LISTA DE SINONIMOS BASE INGLES/PORTUGUES: "+listaCompararBase);
+	    // System.out.println("LISTA DE SINONIMOS BASE INGLES/PORTUGUES: "+listaCompararBase);
 	    if (listaCompararBase.isEmpty()){
-        	System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
+        	//System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
         }
 
 	    TrataString strDestino = new TrataString();
 	    
 	    strDestino.selecionarStr(carrega.tratarStr(strASerTratadaDestino.toLowerCase()));
-	    System.out.println("lista de strings SELECIONADAS destino: " +listaStrSelecionadas);
+	    // System.out.println("lista de strings SELECIONADAS destino: " +listaStrSelecionadas);
 	    for (int i = 0; i<listaStrSelecionadas.size(); i++){
 	    	try {
 				lisEnDestino.getWord(listaStrSelecionadas.get(i));
@@ -402,10 +402,10 @@ public class TrataString {
 	    }
 	    listaCompararDestino.addAll(listaCompararDestinoBr);
 	    
-	    System.out.println("LISTA DE SINONIMOS DESTINO INGLES/PORTUGUES: "+listaCompararDestino);
+	    // System.out.println("LISTA DE SINONIMOS DESTINO INGLES/PORTUGUES: "+listaCompararDestino);
 	    
 	    if (listaCompararDestino.isEmpty()){
-        	System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
+        	// System.out.println("LISTA DE SINONIMOS EM PT VAZIA.");
         }
 	    
 	    if (compararListaSinonimos(listaCompararBase, listaCompararDestino)){
