@@ -156,11 +156,34 @@ public class AderenciaPerfilLattesService {
 	private void gerarOntologiaScriptLattes() throws IOException, InterruptedException{
 		ProcessBuilder pb = new ProcessBuilder("./scriptLattes.py", "padrao.config");
 		pb.directory(new File("/home/beatriz/ScriptLattes"));	
-		Process p = pb.start();
+		final Process p = pb.start();
+		BufferedReader erro_reader = new BufferedReader(new InputStreamReader(p.getErrorStream()));
+		String buffer_erro = "";
+		final File arquivo_lattes = new File(TMP_DIR + "/Curriculos/saida/cvs_lattes.owl");
+		Thread thread = new Thread(){
+
+			@Override
+			public void run() {
+				while (!arquivo_lattes.exists()){
+					System.out.println("verificando existencia de arquivo");
+					System.out.println(arquivo_lattes.getAbsolutePath());
+				}
+				System.out.println("arquivo criado, destruindo processo");
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				p.destroy();
+			}
+		};
+		thread.start();
 		
-		BufferedReader reader =	new BufferedReader(new InputStreamReader(p.getInputStream()));
-		String buffer = "";
-		while ((buffer = (reader.readLine())) != null) {System.out.println(buffer);}
+		
+		while (((buffer_erro = (erro_reader.readLine())) != null)) {
+			System.out.println(buffer_erro);
+		}
 		p.waitFor();
 	}
 	
